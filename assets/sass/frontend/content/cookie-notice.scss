@@ -1,0 +1,16 @@
+@import '_mixin';
+
+#sedno-cookie-notice {
+    background-color: $white;
+    color: $black;
+    padding: 12px 0;
+    @include main-padding-lr;
+    .cookie-notice-container {
+        text-align: center;
+        @include default_width;
+        @include font( 12, 15 );
+        .button {
+            display: none;
+        }
+    }
+}

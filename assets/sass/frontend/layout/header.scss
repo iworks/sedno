@@ -1,0 +1,66 @@
+@import '_mixin';
+
+#masthead {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .26 );
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@mixin logo_size() {
+    display: block;
+    width: 210px;
+    height: 90px;
+}
+
+.site-branding {
+    padding: 15px 20px 15px 0;
+}
+
+.site-title {
+    margin: 0;
+    @include logo_size;
+    background: {
+        repeat: no-repeat;
+        @include image('sedno-dziennik.svg');
+        position: center;
+        size: contain;
+    }
+    span {
+        display: none;
+    }
+    a {
+        @include logo_size;
+    }
+}
+
+.main-navigation {
+    .menu {
+        display: grid;
+        ul {
+            margin: {
+                right: 0;
+                left: auto;
+            }
+            > {
+                li {
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+body {
+    &.admin-bar {
+        margin-top: 32px;
+    }
+}
+
+    
+
+
+

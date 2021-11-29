@@ -1,0 +1,33 @@
+@import '_mixin';
+
+#sidebar-sedno-mp-1 {
+    background-color: $color_gray_1;
+    padding: 60px 0;
+}
+
+.most-important {
+    article {
+        display: flex;
+        align-items: top;
+    }
+    .post-thumbnail {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+body {
+    &.home {
+        main {
+            > {
+                article {
+                    .entry-content {
+                        border: 5px solid $color_gray_2;
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+

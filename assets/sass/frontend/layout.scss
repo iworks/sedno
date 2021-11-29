@@ -1,0 +1,15 @@
+@import '_mixin';
+
+.wrapper,
+#primary {
+    @include default_width;
+}
+
+
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/front-page';
+@import 'layout/login';
+
+

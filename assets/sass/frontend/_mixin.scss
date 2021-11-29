@@ -1,0 +1,329 @@
+/**
+ * Images version, increase it when you change any background image.
+ */
+$version: THEME_VERSION;
+$au: 1.618;
+
+$width: 100%;
+
+$width_s: 320px;
+$width_m: 768px;
+$width_l: 1024px;
+$width_x: 1200px;
+
+$default_width: $width_x;
+
+$white: #fff;
+$black: #000;
+
+/**
+ * colors
+ */
+
+$color_primary: #2a2d2e;
+$color_accent:  #7c2683;
+$color_alert:   #dd5137;
+$color_gray_1:  #e4e4e4;
+$color_gray_2:  #707070;
+$color_gray_3:  #888686;
+
+
+/**
+ * Links
+ */
+$color_link:    $color_accent;
+$color_visited: $color_accent;
+$color_hover:   $color_primary;
+
+/**
+ * radius
+ */
+$default_radius: 4px;
+
+/**
+ * Images
+ */
+
+$image_root: 'assets/images/';
+
+@mixin image( $image ) {
+    image: url(#{$image_root}#{$image}?v=#{$version});
+}
+
+@mixin icon( $image ) {
+    @include image( 'icons/#{$image}' );
+}
+
+@mixin default_width() {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    max-width: $default_width;
+    @media print {
+        max-width: 100%;
+    }
+    @media screen and ( max-width: #{ $width_x + 20px } ) {
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+    }
+}
+
+@mixin short_width() {
+    @include default_width;
+    max-width: 880px;
+    @media screen and ( max-width: #{ $width_s + 1px } ) {
+        max-width: 300px;
+    }
+}
+
+@mixin boxsizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin transition( $trans ) {
+    -webkit-transition: $trans;
+    -moz-transition: $trans;
+    -ms-transition: $trans;
+    -o-transition: $trans;
+    transition: $trans;
+}
+
+@mixin column($col) {
+    width: $width/12*$col;
+}
+
+@mixin radius( $radius: $default_radius ) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin boxshadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin textshadow( $shadow ) {
+    text-shadow: $shadow;
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+@mixin hide {
+    opacity: 0;
+    @include transition(opacity 0.4s);
+}
+@mixin show {
+    opacity: 1;
+    @include transition(opactiy 0.4s);
+}
+@mixin columns($columns) {
+    -webkit-columns: $columns;
+    -moz-columns: $columns;
+    columns: $columns;
+}
+@mixin reset_min() {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+@mixin reset_ul() {
+    @include reset_min;
+    list-style: none;
+}
+
+@mixin reset() {
+    @include reset_min;
+    background: transparent none;
+    border: 0;
+    bottom: auto;
+    color: inherit;
+    display: inline;
+    font: {
+        size: 100%;
+        family: 'Open Sans', sans-serif;
+        style: normal;
+        weight: 200;
+    }
+    left: auto;
+    line-height: $au;
+    list-style: none;
+    position: static;
+    right: auto;
+    top: auto;
+    @include boxshadow( none );
+    @include radius( 0 );
+    width: unset;
+    height: unset;
+    text-indent: unset;
+}
+
+@mixin background_size( $size)  {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin block_absolute() {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+@mixin random_border_color() {
+    border: 1px solid rgb(random(255),random(255),random(255));
+}
+
+@mixin link_active() {
+    text-decoration: none;
+    color: $color_link;
+    &:visited {
+        color: $color_visited;
+    }
+    &:hover {
+        color: $color_hover;
+    }
+    &:active {
+        color: $color_link;
+    }
+}
+
+/**
+ * fonts
+ */
+
+$font_root: 'assets/fonts/';
+
+@mixin font( $size, $line: au ) {
+    font-size: #{$size}px;
+    @if $size == $line {
+        line-height: 1;
+    } @else {
+        @if au == $line {
+            $line: $size * $au;
+        }
+        line-height: #{$line}px;
+    }
+}
+
+@mixin link() {
+    color: $color_link;
+    padding: 8px 15px;
+    @include font( 14, 17 );
+    &.link-add,
+    &.button-add {
+        &:before {
+            content: "+";
+            padding-right: 5px;
+        }
+    }
+}
+
+@mixin button() {
+    @include link;
+    border: 1px solid $color_accent;
+    @include radius;
+    background: {
+        color: $color_accent;
+        repeat: no-repeat;
+    }
+    color: $white;
+    &:hover {
+        background-color: $white;
+        color: $color_accent;
+        cursor: pointer;
+    }
+}
+
+@mixin button_reverse() {
+    @include button;
+    color: $color_accent;
+    background-color: $white;
+    border: 1px solid $color_accent;
+    &:hover {
+        background-color: $color_accent;
+        color: $white;
+    }
+}
+
+@mixin button_before_image() {
+    &:before {
+        display: block;
+        display: inline-block;
+        width: 27px;
+        height: 17px;
+        content: "";
+        background: {
+            repeat: no-repeat;
+            position: 0 center;
+            size: 14px auto;
+        }
+    }
+}
+
+@mixin grid( $columns: 1 ) {
+    display: grid;
+    column-gap: 9px;
+    grid-template-columns: repeat( #{ $columns }, 1fr );
+}
+
+@mixin a_color_primary() {
+    a {
+        color: $color_primary;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        &:focus {
+            border-bottom: 1px dashed $color_primary;
+        }
+    }
+}
+
+@mixin a_color_blue() {
+    a {
+        color: $color_blue_1;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        &:focus {
+            border-bottom: 1px dashed $color_blue_1;
+        }
+    }
+}
+
+@mixin main-padding-lr() {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@mixin background_gradient( $color1: $white, $color2: $color_accent ) {
+    background: transparent linear-gradient(90deg, $color1 0%, $color2 17%, $color2 83%, $color1 100%) 0% 0% no-repeat padding-box;
+}
+
+

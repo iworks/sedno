@@ -1,0 +1,45 @@
+@import '_mixin';
+
+body {
+    background-color: $white;
+    color: $color_primary;
+    @include font( 14, 22 );
+    @include a_color_primary;
+    .button {
+        @include button;
+        &.button-revers {
+            @include button_reverse;
+        }
+    }
+    .page-header {
+        align-items: center;
+        display: flex;
+        @media screen and ( min-width: $width_x ) {
+            min-height: 300px;
+        }
+        justify-content: center;
+        text-align: center;
+    }
+    main {
+        article {
+            header {
+                .entry-title {
+                    margin: 30px 0 40px;
+                    @include font( 30, 36 );
+                    @media screen and ( max-width: $width_m ) {
+                      @include font( 20, 24 );
+                      text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'content/login';
+@import 'content/forms';
+@import 'content/front-page';
+@import 'content/cookie-notice';
+@import 'content/lds-spinner';
+
+

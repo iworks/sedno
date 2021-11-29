@@ -1,0 +1,67 @@
+@import '_mixin';
+
+form {
+    button,
+    input,
+    select,
+    textarea {
+        @include font( 14, 17 );
+    }
+    input[type=submit] {
+        &.button {
+            padding: 0;
+        }
+    }
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=submit],
+    button,
+    select {
+        @include radius;
+        padding: 6px 10px;
+    }
+    input[type=text],
+    select {
+        background-color: $white;
+    }
+    label {
+    }
+    .required-descrpition {
+        strong {
+            color: $color_alert;
+        }
+    }
+    .required {
+        label {
+            span {
+                &:after {
+                    content: "*";
+                    color: $color_alert;
+                }
+            }
+            div {
+                span {
+                    &:after {
+                        content: "";
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    [disabled],
+    [readonly] {
+        opacity: .5;
+        &:hover {
+            cursor: default;
+        }
+    }
+    fieldset {
+        border: 0;
+    }
+    .select2-container {
+        width: 100% !important;
+    }
+}
+

@@ -1,0 +1,22 @@
+@import '_mixin';
+
+body {
+    &.home {
+        #primary {
+            @media screen and ( min-width: $width_l ) {
+                display: grid;
+                grid-template-columns: 545px auto;
+                column-gap: 31px;
+            }
+        }
+        .most-important {
+            header {
+                p {
+                    margin: 30px 0 40px;
+                    @include font(30, 36);
+                }
+            }
+        }
+    }
+}
+

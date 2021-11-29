@@ -1,0 +1,11 @@
+@import '_mixin';
+
+.site-footer {
+    background-color: $color_gray_3;
+    color: $white;
+    padding: 32px 0;
+    a {
+        color: $white;
+    }
+}
+

@@ -1,0 +1,33 @@
+body {
+    &.login {
+        .site {
+            #login {
+                @include main-padding-lr;
+                h1,
+                form,
+                #nav,
+                .message {
+                    @media screen and ( max-width: $width_m ) {
+                        max-width: 100%;
+                    }
+                }
+                h1 {
+                    @media screen and ( max-width: $width_m ) {
+                        text-align: center;
+                    }
+                    a {
+                        @media screen and ( max-width: $width_m ) {
+                            @include font( 20, 30);
+                        }
+                    }
+                }
+                form {
+                    @media screen and ( max-width: $width_m ) {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
