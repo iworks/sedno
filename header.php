@@ -25,23 +25,23 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'sedno' ); ?></a>
 
-    <header id="masthead" class="site-header">
-        <div class="wrapper">
+	<header id="masthead" class="site-header">
+		<div class="wrapper">
 		<div class="site-branding">
 <?php
 if ( is_front_page() ) {
-				?>
+	?>
 				<h1 class="site-title"><span><?php bloginfo( 'name' ); ?></span></h1>
 				<?php
-} else if ( is_home() ) {
-				?>
+} elseif ( is_home() ) {
+	?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></h1>
 				<?php
-            } else {
-				?>
+} else {
+	?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><span><?php bloginfo( 'name' ); ?></span></a></p>
 				<?php
-            }
+}
 ?>
 		</div><!-- .site-branding -->
 
@@ -55,6 +55,6 @@ if ( is_front_page() ) {
 				)
 			);
 			?>
-        </nav><!-- #site-navigation -->
-        </div>
+		</nav><!-- #site-navigation -->
+		</div>
 	</header><!-- #masthead -->

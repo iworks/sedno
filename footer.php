@@ -11,14 +11,14 @@
 
 ?>
 
-    <footer id="colophon" class="site-footer">
-        <div class="wrapper">
+	<footer id="colophon" class="site-footer">
+		<div class="wrapper">
 <?php
 if ( is_active_sidebar( 'sidebar-1' ) ) {
 	dynamic_sidebar( 'sidebar-1' );
 }
 ?>
-        </div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

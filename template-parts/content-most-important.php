@@ -22,7 +22,7 @@
 							),
 						)
 					);
-				?>
+					?>
 			</a>
-        <?php the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' ); ?>
+		<?php the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

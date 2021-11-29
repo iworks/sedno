@@ -5,6 +5,27 @@
     @include default_width;
 }
 
+body {
+    &.archive,
+    &.blog {
+        .site-main {
+            article {
+                display: grid;
+                grid-template-columns: 460px auto;
+                column-gap: 40px;
+                padding-bottom: 2em;
+                .entry-content {
+                    margin: 0;
+                }
+                .post-thumbnail {
+                    img {
+                        @include radius;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 @import 'layout/header';

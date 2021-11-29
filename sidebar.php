@@ -8,6 +8,6 @@
  */
 
 if ( is_front_page() ) {
-    get_template_part( 'template-parts/site-footer', 'front-page' );
+	get_template_part( 'template-parts/site-footer', 'front-page' );
 }
 
