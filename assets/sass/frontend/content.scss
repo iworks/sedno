@@ -4,7 +4,9 @@ body {
     background-color: $white;
     color: $color_primary;
     @include font( 14, 22 );
-    @include a_color_primary;
+    a {
+        @include link;
+    }
     .button {
         @include button;
         &.button-revers {

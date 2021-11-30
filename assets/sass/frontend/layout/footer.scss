@@ -7,5 +7,16 @@
     a {
         color: $white;
     }
+    .wp-block-columns {
+        justify-content: space-between;
+    }
+    .wp-block-column {
+        @media screen and ( min-width: $width_m ) {
+            max-width: 300px;
+        }
+        strong {
+            @include font(30);
+        }
+    }
 }
 

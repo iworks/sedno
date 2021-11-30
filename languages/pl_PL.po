@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
 "POT-Creation-Date: 2021-11-29 19:24:18+00:00\n"
-"PO-Revision-Date: 2021-11-29 20:18+0100\n"
+"PO-Revision-Date: 2021-11-30 08:28+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -25,55 +25,57 @@ msgstr ""
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Niestety, nie udało się znaleźć wybranej strony."
 
 #: 404.php:21
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Jak widać nie bardzo jest co wyświetlić w tym miejscu. Może warto spróbować "
+"poszukać lub użyć odnośników?"
 
 #: 404.php:30
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Najczęściej używane kategorie"
 
 #. translators: %1$s: smiley
 #: 404.php:48
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Proszę spróbować w archiwum miesięcznym. %1$s"
 
 #. translators: 1: title.
 #: comments.php:35
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "Jeden komentarz  do &ldquo;%1$s&rdquo;"
 
 #: comments.php:68
 msgid "Comments are closed."
-msgstr ""
+msgstr "Komentarze zostały wyłączone."
 
 #: front-page.php:21
 msgid "The most important topics:"
-msgstr ""
+msgstr "Najważniejsze tematy:"
 
 #: functions.php:58
 msgid "Primary"
-msgstr ""
+msgstr "Główny"
 
 #: functions.php:103
 msgid "Sidebar"
-msgstr ""
+msgstr "Panel boczny"
 
 #: functions.php:105
 msgid "Add widgets here."
-msgstr ""
+msgstr "Tutaj można dodać widżety."
 
 #: header.php:26
 msgid "Skip to content"
-msgstr ""
+msgstr "Przejdź do treści"
 
 #: header.php:49
 msgid "Primary Menu"
-msgstr ""
+msgstr "Menu główne"
 
 #: inc/class-sedno-cookie-notice.php:60
 msgid ""
@@ -83,26 +85,31 @@ msgid ""
 "your browser. If you do not agree, change the settings of your browser. For "
 "more information, refer to our %s."
 msgstr ""
+"Używamy plików cookies, aby ułatwić korzystanie z naszego serwisu oraz do "
+"celów statystycznych. Jeśli nie blokujesz tych plików, to zgadzasz się na "
+"ich użycie oraz zapisanie w pamięci urządzenia. Pamiętaj, że możesz "
+"samodzielnie zarządzać cookies, zmieniając ustawienia przeglądarki. Więcej "
+"informacji znajdziesz w naszej %s."
 
 #: inc/class-sedno-cookie-notice.php:98
 msgid "Close cookie information."
-msgstr ""
+msgstr "Zamknij informację o ciasteczkach."
 
 #: inc/class-sedno-cookie-notice.php:99
 msgid "Close cookie information"
-msgstr ""
+msgstr "Zamknij informację o ciasteczkach"
 
 #: inc/class-sedno-theme.php:96
 msgid "Submit Listing"
-msgstr ""
+msgstr "Dodaj ogłoszenie"
 
 #: inc/class-sedno-theme.php:395
 msgid "Main Page Footer One"
-msgstr ""
+msgstr "Stopka 1 strony głównej"
 
 #: inc/class-sedno-theme.php:403
 msgid "Main Page Footer Two"
-msgstr ""
+msgstr "Stopka 1 strony głównej"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:63
@@ -112,74 +119,78 @@ msgstr ", "
 #. translators: 1: list of categories.
 #: inc/template-tags.php:66
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Opublikowany w %s"
 
 #. translators: 1: list of tags.
 #: inc/template-tags.php:73
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "Otagowano %1$s"
 
 #. translators: %s: post title
 #: inc/template-tags.php:83
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:100 template-parts/content-page.php:39
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "Edytuj <span class=\"screen-reader-text\">%s</span>"
 
 #. translators: %s: search query.
 #: search.php:21
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Wyniki wyszukiwania dla: %s"
 
 #: single.php:23
 msgid "Previous:"
-msgstr ""
+msgstr "Poprzedni:"
 
 #: single.php:24
 msgid "Next:"
-msgstr ""
+msgstr "Następny:"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Niczego nie znaleziono"
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:24
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Czy można już opublikować pierwszy wpis? <a href=\"%1$s\">można zacząć "
+"tutaj</a>."
 
 #: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Przepraszamy, ale niczego nie znaleźliśmy. Proszę spróbować inną frazę."
 
 #: template-parts/content-none.php:44
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Wygląda na to, że szukana strona nie istnieje. Być może warto jej poszukać."
 
 #: template-parts/content-page.php:25 template-parts/content.php:53
 msgid "Pages:"
-msgstr ""
+msgstr "Strony:"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:40
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Czytaj dalej<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #. Theme Name of the plugin/theme
 msgid "SEDNO"
-msgstr ""
+msgstr "SEDNO"
 
 #. Theme URI of the plugin/theme
 msgid "https://sedno.org/"
-msgstr ""
+msgstr "https://sedno.org/"
 
 #. Description of the plugin/theme
 msgid "Sedno - Simple Catch - Child Theme is a child theme of Simple Catch"
@@ -191,28 +202,28 @@ msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s komentarz do &ldquo;%2$s&rdquo;"
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "%1$s komentarze do &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s komentarzy do &ldquo;%2$s&rdquo;"
 
 #: inc/class-sedno-cookie-notice.php:64
 msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Polityka prywatności"
 
 #: inc/class-sedno-theme.php:83
 msgctxt "login form title"
 msgid "Login"
-msgstr ""
+msgstr "Logowanie"
 
 #: inc/class-sedno-theme.php:86
 msgctxt "login form title"
 msgid "Register"
-msgstr ""
+msgstr "Zarejestruj się"
 
 #: inc/class-sedno-theme.php:89
 msgctxt "login form title"
 msgid "Lost Password"
-msgstr ""
+msgstr "Odzyskiwanie hasła"
 
 #. translators: %s: post date.
 #: inc/template-tags.php:30
@@ -230,4 +241,4 @@ msgstr "%s"
 #: inc/template-tags.php:70
 msgctxt "list item separator"
 msgid ", "
-msgstr ""
+msgstr ", "

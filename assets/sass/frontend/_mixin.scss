@@ -31,8 +31,8 @@ $color_gray_3:  #888686;
 /**
  * Links
  */
-$color_link:    $color_accent;
-$color_visited: $color_accent;
+$color_link:    $black;
+$color_visited: $black;
 $color_hover:   $color_primary;
 
 /**
@@ -202,20 +202,6 @@ $image_root: 'assets/images/';
     border: 1px solid rgb(random(255),random(255),random(255));
 }
 
-@mixin link_active() {
-    text-decoration: none;
-    color: $color_link;
-    &:visited {
-        color: $color_visited;
-    }
-    &:hover {
-        color: $color_hover;
-    }
-    &:active {
-        color: $color_link;
-    }
-}
-
 /**
  * fonts
  */
@@ -236,14 +222,16 @@ $font_root: 'assets/fonts/';
 
 @mixin link() {
     color: $color_link;
-    padding: 8px 15px;
-    @include font( 14, 17 );
-    &.link-add,
-    &.button-add {
-        &:before {
-            content: "+";
-            padding-right: 5px;
-        }
+    text-decoration: none;
+    &:visited {
+        color: $color_visited;
+    }
+    &:hover {
+        color: $color_hover;
+        text-decoration: underline;
+    }
+    &:active {
+        color: $color_accent;
     }
 }
 

@@ -26,25 +26,23 @@ module.exports = function(grunt) {
         // Concatenate those JS files into a single file (target: [source, source, ...]).
         js_files_concat: {
             "assets/scripts/customizer.js": [
-                // "assets/scripts/src/frontend/customizer.js",
+                "assets/scripts/src/frontend/customizer.js",
             ],
             "assets/scripts/frontend.js": [
-                // "assets/scripts/src/frontend/common.js",
-                // "assets/scripts/src/frontend/navigation.js",
-                // "assets/scripts/src/frontend/plugins/wp-job-manager.js",
+                "assets/scripts/src/frontend/common.js",
+                "assets/scripts/src/frontend/navigation.js",
                 // "assets/scripts/src/frontend/cookie-notice-front.js",
-                // "assets/scripts/src/frontend/user-profile.js",
-                // "assets/scripts/src/frontend/job-filters.js",
-                // "assets/scripts/src/frontend/service-worker-loader.js",
-                // "assets/externals/select2/js/select2.full.min.js",
+                "assets/scripts/src/frontend/fonts.js",
+                "assets/scripts/src/frontend/slider.js",
             ],
         },
 
         // SASS files to process. Resulting CSS files will be minified as well.
         css_files_compile: {
-            "assets/css/frontend/_s.css": "assets/sass/frontend/_s/style.scss",
-            "assets/css/frontend/layout.css": "assets/sass/frontend/layout.scss",
-            "assets/css/frontend/content.css": "assets/sass/frontend/content.scss",
+            "assets/css/frontend/_s.css":           "assets/sass/frontend/_s/style.scss",
+            "assets/css/frontend/font-family.css":  "assets/sass/frontend/font-family.scss",
+            "assets/css/frontend/layout.css":       "assets/sass/frontend/layout.scss",
+            "assets/css/frontend/content.css":      "assets/sass/frontend/content.scss",
             /**
              * Last at ALL!
              */
