@@ -8,6 +8,7 @@
  */
 
 get_header();
+get_template_part( 'template-parts/slider' );
 ?>
 	<main id="primary" class="site-main">
 		<?php

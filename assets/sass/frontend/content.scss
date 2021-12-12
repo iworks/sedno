@@ -1,6 +1,11 @@
 @import '_mixin';
 
 body {
+
+    --color-white: #{$white};
+    --color-blue-1: #{$color_blue_1};
+
+
     background-color: $white;
     color: $color_primary;
     @include font( 14, 22 );

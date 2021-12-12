@@ -21,11 +21,12 @@ $black: #000;
  */
 
 $color_primary: #2a2d2e;
-$color_accent:  #7c2683;
+$color_accent:  #406aa6;
 $color_alert:   #dd5137;
 $color_gray_1:  #e4e4e4;
 $color_gray_2:  #707070;
 $color_gray_3:  #888686;
+$color_blue_1:  #1c2b3f;
 
 
 /**
@@ -38,7 +39,7 @@ $color_hover:   $color_primary;
 /**
  * radius
  */
-$default_radius: 10px;
+$default_radius: 5px;
 
 /**
  * Images
@@ -238,6 +239,7 @@ $font_root: 'assets/fonts/';
 @mixin button() {
     @include link;
     border: 1px solid $color_accent;
+    padding: 10px 50px;
     @include radius;
     background: {
         color: $color_accent;
@@ -248,6 +250,7 @@ $font_root: 'assets/fonts/';
         background-color: $white;
         color: $color_accent;
         cursor: pointer;
+        text-decoration: none;
     }
 }
 

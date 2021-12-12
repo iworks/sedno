@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-11-29 19:24:18+00:00\n"
+"POT-Creation-Date: 2021-11-30 09:05:35+00:00\n"
 "PO-Revision-Date: 2021-11-30 08:28+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -131,11 +131,6 @@ msgstr "Otagowano %1$s"
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 
-#. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:100 template-parts/content-page.php:39
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "Edytuj <span class=\"screen-reader-text\">%s</span>"
-
 #. translators: %s: search query.
 #: search.php:21
 msgid "Search Results for: %s"
@@ -242,3 +237,6 @@ msgstr "%s"
 msgctxt "list item separator"
 msgid ", "
 msgstr ", "
+
+#~ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+#~ msgstr "Edytuj <span class=\"screen-reader-text\">%s</span>"
