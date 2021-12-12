@@ -16,15 +16,40 @@
     }
 }
 
+@mixin front_header() {
+    @include reset_min;
+    margin: 55px 0 42px;
+    font: {
+        weight: 600;
+        size: 40px;
+    }
+    color: var(--color-blue-2);
+}
+
 body {
     &.home {
         main {
             > {
                 article {
                     .entry-content {
-                        border: 5px solid $color_gray_2;
+                        border: 3px solid var(--color-blue-3);
                         padding: 1em;
                     }
+                }
+            }
+            h1 {
+                &.entry-title {
+                    @include front_header;
+                }
+            }
+            .most-important {
+                header {
+                    p {
+                        @include front_header;
+                    }
+                }
+                img {
+                    @include radius(10px);
                 }
             }
         }

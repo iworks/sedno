@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-12 18:06:27+00:00\n"
+"POT-Creation-Date: 2021-12-12 18:07:38+00:00\n"
 "PO-Revision-Date: 2021-12-12 19:07+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -192,7 +192,7 @@ msgid "https://sedno.org/"
 msgstr "https://sedno.org/"
 
 #. Description of the plugin/theme
-msgid "Sedno - Simple Catch - Child Theme is a child theme of Simple Catch"
+msgid "Sedno Theme"
 msgstr ""
 
 #. translators: 1: comment count number, 2: title.
