@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-11-30 09:05:35+00:00\n"
-"PO-Revision-Date: 2021-11-30 08:28+0100\n"
+"POT-Creation-Date: 2021-12-12 18:06:27+00:00\n"
+"PO-Revision-Date: 2021-12-12 19:07+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -53,7 +53,7 @@ msgstr "Jeden komentarz  do &ldquo;%1$s&rdquo;"
 msgid "Comments are closed."
 msgstr "Komentarze zostały wyłączone."
 
-#: front-page.php:21
+#: front-page.php:22
 msgid "The most important topics:"
 msgstr "Najważniejsze tematy:"
 
@@ -173,6 +173,10 @@ msgstr ""
 #: template-parts/content-page.php:25 template-parts/content.php:53
 msgid "Pages:"
 msgstr "Strony:"
+
+#: template-parts/content-slider.php:15
+msgid "Read more"
+msgstr "Czytaj dalej"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:40

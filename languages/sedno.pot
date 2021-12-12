@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1638263135200\n"
+"Project-Id-Version: SEDNO 1.0.0.1639332387750\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-11-30 09:05:35+00:00\n"
+"POT-Creation-Date: 2021-12-12 18:06:42+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: front-page.php:21
+#: front-page.php:22
 msgid "The most important topics:"
 msgstr ""
 
@@ -161,6 +161,10 @@ msgstr ""
 
 #: template-parts/content-page.php:25 template-parts/content.php:53
 msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-slider.php:15
+msgid "Read more"
 msgstr ""
 
 #: template-parts/content.php:40
