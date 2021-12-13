@@ -2,10 +2,18 @@
 
 body {
 
+    --color-white: #{$white};
+    --color-black: #{$black};
+
+    --color-accent: #{$color_accent};
+
     --color-blue-1: #{$color_blue_1};
     --color-blue-2: #{$color_blue_2};
     --color-blue-3: #{$color_blue_3};
-    --color-white: #{$white};
+
+    --color-gray-1: #{$color_gray_1};
+    --color-gray-2: #{$color_gray_2};
+    --color-gray-3: #{rgba( $color_gray_1, .3 )};
 
 
     background-color: $white;
@@ -28,20 +36,6 @@ body {
         }
         justify-content: center;
         text-align: center;
-    }
-    main {
-        article {
-            header {
-                .entry-title {
-                    margin: 30px 0 40px;
-                    @include font( 30, 36 );
-                    @media screen and ( max-width: $width_m ) {
-                      @include font( 20, 24 );
-                      text-align: center;
-                    }
-                }
-            }
-        }
     }
 }
 

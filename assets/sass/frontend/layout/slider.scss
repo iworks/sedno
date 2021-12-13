@@ -20,17 +20,22 @@
             &.active {
                 opacity: 1;
             }
+            h2 {
+                @include header_3;
+                margin: 0;
+            }
             .entry {
+                background-color: var(--color-blue-3);
                 color: var(--color-white);
-                background-color: var(--color-blue-1);
-                width: 500px;
-                padding: 120px 43px 0 56px;
                 height: 600px;
                 left: 0;
-                top: 0;
+                padding: 120px 43px 0 56px;
                 position: absolute;
+                top: 0;
+                width: 500px;
                 .entry-content {
                     padding-bottom: 10px;
+                    @include font(16,18);
                 }
             }
             .thumbnail {

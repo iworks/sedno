@@ -23,12 +23,13 @@ $black: #000;
 $color_primary: #2a2d2e;
 $color_accent:  #406aa6;
 $color_alert:   #dd5137;
-$color_gray_1:  #e4e4e4;
-$color_gray_2:  #707070;
-$color_gray_3:  #888686;
-$color_blue_1:  #1c2b3f;
+
+$color_gray_1:  #c8cfd8;
+$color_gray_2:  #5b6773;
+
+$color_blue_1:  #ccdaeb;
 $color_blue_2:  #254473;
-$color_blue_3:  #abbbd2;
+$color_blue_3:  #1c2b3f;
 
 
 /**
@@ -223,6 +224,33 @@ $font_root: 'assets/fonts/';
     }
 }
 
+@mixin font_crimson_pro() {
+    font-family: 'Crimson Pro', serif;
+}
+
+@mixin font_crimson_pro_semi_bold() {
+    @include font_crimson_pro;
+    font-weight: 600;
+}
+
+@mixin font_montserrat() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin font_montserrat_light() {
+    @include font_montserrat;
+    font-weight: 300;
+}
+
+@mixin font_montserrat_medium() {
+    @include font_montserrat;
+    font-weight: 500;
+}
+
+/**
+ * links
+ */
+
 @mixin link() {
     color: $color_link;
     text-decoration: none;
@@ -239,21 +267,27 @@ $font_root: 'assets/fonts/';
 }
 
 @mixin button() {
+    display: inline-block;
     @include link;
-    border: 1px solid $color_accent;
+    @include font( 16, 18 );
+    border: 1px solid var(--color-accent);
     padding: 10px 50px;
     @include radius;
     background: {
-        color: $color_accent;
+        color: var(--color-accent);
         repeat: no-repeat;
     }
-    color: $white;
+    color: var(--color-white);
+    &:visited {
+        color: var(--color-white);
+    }
     &:hover {
-        background-color: $white;
-        color: $color_accent;
+        background-color: var(--color-white);
+        color: var(--color-accent);
         cursor: pointer;
         text-decoration: none;
     }
+
 }
 
 @mixin button_reverse() {
@@ -319,4 +353,23 @@ $font_root: 'assets/fonts/';
     background: transparent linear-gradient(90deg, $color1 0%, $color2 17%, $color2 83%, $color1 100%) 0% 0% no-repeat padding-box;
 }
 
+/**
+ * headers
+ */
+
+@mixin header_1() {
+    @include font_crimson_pro_semi_bold;
+    @include font(40);
+    color: var(--color-blue-2);
+}
+
+@mixin header_2() {
+    @include font_montserrat_light;
+    @include font(25);
+}
+
+@mixin header_3() {
+    @include font_crimson_pro_semi_bold;
+    @include font(28,30);
+}
 

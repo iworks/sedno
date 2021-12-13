@@ -35,7 +35,7 @@ $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ) {
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
-			get_template_part( 'template-parts/content', 'most-important' );
+			get_template_part( 'template-parts/front-page/most-important' );
 	}
 	// no posts found
 }
@@ -43,6 +43,15 @@ if ( $the_query->have_posts() ) {
 wp_reset_postdata();
 
 
+$page_for_posts = get_option( 'page_for_posts' );
+$page           = get_page( $page_for_posts );
+if ( is_a( $page, 'WP_Post' ) ) {
+	printf(
+		'<p><a href="%s" class="button"><span>%s</span></a></p>',
+		get_permalink( $page ),
+		__( 'Browse all articles', 'sedno' )
+	);
+}
 ?>
 		</aside>
 	</main><!-- #main -->

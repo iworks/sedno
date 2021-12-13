@@ -1,5 +1,11 @@
 @import '_mixin';
 
+@mixin front_page_header() {
+    margin: 30px 0 40px;
+    @include header_3;
+    color: var(--color-blue-2);
+}
+
 body {
     &.home {
         #primary {
@@ -8,12 +14,50 @@ body {
                 grid-template-columns: 545px auto;
                 column-gap: 31px;
             }
+            > {
+                article {
+                    .entry-title {
+                        @include front_page_header;
+                    }
+                    .entry-content {
+                        border: 3px solid var(--color-blue-1);
+                        padding: 20px;
+                        > {
+                            :first-child {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .most-important {
             header {
                 p {
-                    margin: 30px 0 40px;
-                    @include font(30, 36);
+                    @include front_page_header;
+                }
+            }
+            article {
+                a {
+                    display: grid;
+                    grid-template-columns: 200px auto;
+                    column-gap: 20px;
+                }
+                h2 {
+                    @include header_3;
+                }
+                img {
+                    @include radius(10px);
+                }
+            }
+            .button {
+                span {
+                    &:after {
+                        content: "\203A";
+                        font-weight: 600;
+                        padding-left: 5px;
+                        font-size: 29px;
+                    }
                 }
             }
         }

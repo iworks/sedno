@@ -1,11 +1,11 @@
 @import '_mixin';
 
 .site-footer {
-    background-color: $color_gray_3;
+    background-color: var(--color-blue-3);
     color: $white;
     padding: 32px 0;
     a {
-        color: $white;
+        color: var(--color-white);
     }
     .wp-block-columns {
         justify-content: space-between;

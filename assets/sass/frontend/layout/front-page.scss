@@ -1,8 +1,22 @@
 @import '_mixin';
 
 #sidebar-sedno-mp-1 {
-    background-color: $color_gray_1;
+    background-color: var(--color-gray-3);
     padding: 60px 0;
+    .articles {
+        .wp-block-column {
+            display: grid;
+            grid-template-columns: 3px auto;
+            column-gap: 16px;
+            &:before {
+                content: "";
+                display: block;
+                width: 3px;
+                border-left: 3px solid var(--color-blue-5);
+                opacity: .4;
+            }
+        }
+    }
 }
 
 .most-important {
@@ -26,33 +40,4 @@
     color: var(--color-blue-2);
 }
 
-body {
-    &.home {
-        main {
-            > {
-                article {
-                    .entry-content {
-                        border: 3px solid var(--color-blue-3);
-                        padding: 1em;
-                    }
-                }
-            }
-            h1 {
-                &.entry-title {
-                    @include front_header;
-                }
-            }
-            .most-important {
-                header {
-                    p {
-                        @include front_header;
-                    }
-                }
-                img {
-                    @include radius(10px);
-                }
-            }
-        }
-    }
-}
 

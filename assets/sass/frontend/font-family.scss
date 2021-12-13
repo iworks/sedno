@@ -1,6 +1,19 @@
 @import '_mixin';
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    @include font_montserrat_light;
+    @include font(16, 22);
+}
+
+h1 {
+    @include header_1;
+}
+
+h2 {
+    @include header_2;
+}
+
+h3 {
+    @include header_3;
 }
 
