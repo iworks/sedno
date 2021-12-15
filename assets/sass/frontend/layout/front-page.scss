@@ -5,6 +5,7 @@
     padding: 60px 0;
     .articles {
         .wp-block-column {
+            color: var( --color-blue-2 );
             display: grid;
             grid-template-columns: 3px auto;
             column-gap: 16px;
@@ -12,10 +13,17 @@
                 content: "";
                 display: block;
                 width: 3px;
-                border-left: 3px solid var(--color-blue-5);
+                border-left: 3px solid var(--color-accent);
                 opacity: .4;
             }
         }
+    }
+}
+
+#sidebar-sedno-mp-2 {
+    h2 {
+        @include header_3;
+        color: var(--color-blue-2);
     }
 }
 

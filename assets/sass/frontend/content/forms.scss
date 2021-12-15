@@ -7,23 +7,17 @@ form {
     textarea {
         @include font( 14, 17 );
     }
+    button,
     input[type=submit] {
-        &.button {
-            padding: 0;
-        }
+        @include button;
     }
     input[type=text],
     input[type=email],
     input[type=password],
-    input[type=submit],
-    button,
     select {
         @include radius;
         padding: 6px 10px;
-    }
-    input[type=text],
-    select {
-        background-color: $white;
+        background-color: var(--color-white);
     }
     label {
     }
