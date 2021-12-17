@@ -14,8 +14,13 @@
         @media screen and ( min-width: $width_m ) {
             max-width: 300px;
         }
-        strong {
-            @include font(30);
+        p {
+            &:first-of-type {
+                strong {
+                    @include font(30);
+                    @include font_crimson_pro_semi_bold;
+                }
+            }
         }
     }
 }

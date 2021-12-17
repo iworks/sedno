@@ -1,6 +1,8 @@
 @import '_mixin';
 
-body {
+:root {
+    --font-family-serif: 'Crimson Pro', serif;
+    --font-family-sans-serif: 'Montserrat', sans-serif;
 
     --color-white: #{$white};
     --color-black: #{$black};
@@ -14,6 +16,11 @@ body {
     --color-gray-1: #{$color_gray_1};
     --color-gray-2: #{$color_gray_2};
     --color-gray-3: #{rgba( $color_gray_1, .3 )};
+
+}
+
+
+body {
 
 
     background-color: $white;
