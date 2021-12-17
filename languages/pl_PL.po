@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-13 20:04:04+00:00\n"
+"POT-Creation-Date: 2021-12-17 11:38:12+00:00\n"
 "PO-Revision-Date: 2021-12-13 21:04+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -81,7 +81,7 @@ msgstr "Przejdź do treści"
 msgid "Primary Menu"
 msgstr "Menu główne"
 
-#: inc/class-sedno-cookie-notice.php:60
+#: inc/class-sedno-cookie-notice.php:58
 msgid ""
 "We use cookies and similar technologies to provide services and to gather "
 "information for statistical and other purposes. You can change the way you "
@@ -95,11 +95,11 @@ msgstr ""
 "samodzielnie zarządzać cookies, zmieniając ustawienia przeglądarki. Więcej "
 "informacji znajdziesz w naszej %s."
 
-#: inc/class-sedno-cookie-notice.php:98
+#: inc/class-sedno-cookie-notice.php:90
 msgid "Close cookie information."
 msgstr "Zamknij informację o ciasteczkach."
 
-#: inc/class-sedno-cookie-notice.php:99
+#: inc/class-sedno-cookie-notice.php:91
 msgid "Close cookie information"
 msgstr "Zamknij informację o ciasteczkach"
 
@@ -208,7 +208,7 @@ msgstr[0] "%1$s komentarz do &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s komentarze do &ldquo;%2$s&rdquo;"
 msgstr[2] "%1$s komentarzy do &ldquo;%2$s&rdquo;"
 
-#: inc/class-sedno-cookie-notice.php:64
+#: inc/class-sedno-cookie-notice.php:62
 msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
