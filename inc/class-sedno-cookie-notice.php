@@ -6,7 +6,7 @@ class Sedno_Cookie_Notice extends Sedno {
 	 *
 	 * @var string
 	 */
-	protected $option_name = '_sedno_cookie_notice';
+	protected $option_name = '_iworks_cookie_notice';
 
 	/**
 	 * Cookie name string.
@@ -30,20 +30,18 @@ class Sedno_Cookie_Notice extends Sedno {
 	 */
 	public function __construct() {
 		parent::__construct();
-		add_action( 'wp_localize_script_sedno_jobs_theme', array( $this, 'add_cookie_data' ) );
 		add_action( 'wp_footer', array( $this, 'add_cookie_notice' ), PHP_INT_MAX );
-		add_action( 'wp_ajax_sedno_jobs_cookie_notice', array( $this, 'save_user_meta' ) );
-		add_action( 'wp_ajax_nopriv_sedno_jobs_dismiss_visitor_notice', array( $this, 'dismiss_visitor_notice' ) );
+		add_action( 'wp_ajax_iworks_cookie_notice', array( $this, 'save_user_meta' ) );
+		add_action( 'wp_ajax_nopriv_iworks_dismiss_visitor_notice', array( $this, 'dismiss_visitor_notice' ) );
 	}
 
 	private function set_data() {
 		if ( ! function_exists( 'get_privacy_policy_url' ) ) {
 			return;
 		}
-		$id         = 'sedno-cookie-notice';
+		$id         = 'iworks-cookie-notice';
 		$this->data = array(
 			'name'    => $id,
-			'id'      => sprintf( '#%s', $id ),
 			'cookie'  => array(
 				'domain'   => defined( 'COOKIE_DOMAIN' ) && COOKIE_DOMAIN ? COOKIE_DOMAIN : '',
 				'name'     => $this->cookie_name,
@@ -65,12 +63,6 @@ class Sedno_Cookie_Notice extends Sedno {
 				)
 			),
 		);
-	}
-
-	public function add_cookie_data( $data ) {
-		$this->set_data();
-		$data['cookie'] = $this->data;
-		return $data;
 	}
 
 	/**
@@ -100,7 +92,15 @@ class Sedno_Cookie_Notice extends Sedno {
 		);
 		$content .= '</div>';
 		$content .= '</div>';
-		echo apply_filters( 'opi_jobs_cookie_notice_output', $content, $this->data );
+		$content .= PHP_EOL;
+		echo apply_filters( 'iworks_cookie_notice_output', $content, $this->data );
+		/**
+		 * cookie js data
+		 */
+		echo '<script id="iworks-cookie-notice-js">';
+		printf( 'var iworks_cookie = %s;', wp_json_encode( $this->data ) );
+		echo '</script>';
+		echo PHP_EOL;
 	}
 
 	/**
@@ -192,7 +192,6 @@ class Sedno_Cookie_Notice extends Sedno {
 		}
 		wp_send_json_success();
 	}
-
 
 	/**
 	 * Dismiss the cookie notice for visitor.

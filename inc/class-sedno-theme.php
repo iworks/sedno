@@ -131,7 +131,7 @@ class Sedno_Theme extends Sedno {
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		);
 		$data = apply_filters( 'wp_localize_script_sedno_theme', $data );
-		wp_localize_script( 'sedno', 'opi_jobs_theme', $data );
+		wp_localize_script( 'sedno', 'sedno_theme', $data );
 	}
 
 	/**
