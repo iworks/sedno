@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-17 11:38:12+00:00\n"
+"POT-Creation-Date: 2021-12-21 16:45:34+00:00\n"
 "PO-Revision-Date: 2021-12-13 21:04+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -103,15 +103,15 @@ msgstr "Zamknij informację o ciasteczkach."
 msgid "Close cookie information"
 msgstr "Zamknij informację o ciasteczkach"
 
-#: inc/class-sedno-theme.php:96
+#: inc/class-sedno-theme.php:99
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:395
+#: inc/class-sedno-theme.php:397
 msgid "Main Page Footer One"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:403
+#: inc/class-sedno-theme.php:405
 msgid "Main Page Footer Two"
 msgstr "Stopka 1 strony głównej"
 
@@ -174,7 +174,8 @@ msgid ""
 msgstr ""
 "Wygląda na to, że szukana strona nie istnieje. Być może warto jej poszukać."
 
-#: template-parts/content-page.php:25 template-parts/content.php:53
+#: template-parts/content-page.php:25 template-parts/content-post.php:33
+#: template-parts/content.php:53
 msgid "Pages:"
 msgstr "Strony:"
 
@@ -213,17 +214,17 @@ msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
 
-#: inc/class-sedno-theme.php:83
+#: inc/class-sedno-theme.php:87
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:86
+#: inc/class-sedno-theme.php:90
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:89
+#: inc/class-sedno-theme.php:93
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"

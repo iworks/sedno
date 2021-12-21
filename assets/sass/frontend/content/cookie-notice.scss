@@ -1,8 +1,8 @@
-@import '_mixin';
+@import '../_mixin';
 
 #iworks-cookie-notice {
     background-color: var(--color-white);
-    color: var(--color-black);;
+    color: var(--color-black);
     padding: 12px 0;
     @include main-padding-lr;
     .cookie-notice-container {

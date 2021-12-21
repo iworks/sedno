@@ -3,7 +3,7 @@
 .site-footer {
     background-color: var(--color-blue-3);
     color: $white;
-    padding: 32px 0;
+    padding: var(--padding-default) 0;
     a {
         color: var(--color-white);
     }
@@ -14,11 +14,63 @@
         @media screen and ( min-width: $width_m ) {
             max-width: 300px;
         }
+        @media screen and ( min-width: $width_l ) {
+            max-width: 400px;
+        }
         p {
             &:first-of-type {
+                margin-top: 0;
                 strong {
                     @include font(30);
                     @include font_crimson_pro_semi_bold;
+                }
+            }
+        }
+    }
+    .sedno-social-media {
+        @include reset_ul;
+        display: inline-flex;
+        gap: var(--padding-default);
+        span {
+            display: none;
+        }
+        a {
+            display: block;
+            width: 37px;
+            height: 30px;
+            background: {
+                repeat: no-repeat;
+                position: 50% 50%;
+                size: contain;
+            }
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+body {
+    &.loaded {
+        .sedno-social-media {
+            .facebook {
+                a {
+                    background: {
+                        @include icon( 'facebook-white.svg' );
+                    }
+                }
+            }
+            .twitter {
+                a {
+                    background: {
+                        @include icon( 'twitter-white.svg' );
+                    }
+                }
+            }
+            .youtube {
+                a {
+                    background: {
+                        @include icon( 'youtube-white.svg' );
+                    }
                 }
             }
         }

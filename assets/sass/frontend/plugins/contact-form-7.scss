@@ -1,0 +1,23 @@
+@import '../_mixin';
+
+body {
+    &.loaded {
+        .wpcf7 {
+            input[type=submit] {
+                background: {
+                    repeat: no-repeat;
+                    position: 50px 50%;
+                    size: 1em auto;
+                    @include icon('mail-white.svg');
+                }
+                padding-left: 75px;
+                &:hover {
+                    background: {
+                        @include icon('mail.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+

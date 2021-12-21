@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1639741092696\n"
+"Project-Id-Version: SEDNO 1.0.0.1640105134416\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-17 11:38:12+00:00\n"
+"POT-Creation-Date: 2021-12-21 16:45:34+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -97,15 +97,15 @@ msgstr ""
 msgid "Close cookie information"
 msgstr ""
 
-#: inc/class-sedno-theme.php:96
+#: inc/class-sedno-theme.php:99
 msgid "Submit Listing"
 msgstr ""
 
-#: inc/class-sedno-theme.php:395
+#: inc/class-sedno-theme.php:397
 msgid "Main Page Footer One"
 msgstr ""
 
-#: inc/class-sedno-theme.php:403
+#: inc/class-sedno-theme.php:405
 msgid "Main Page Footer Two"
 msgstr ""
 
@@ -163,7 +163,8 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:25 template-parts/content.php:53
+#: template-parts/content-page.php:25 template-parts/content-post.php:33
+#: template-parts/content.php:53
 msgid "Pages:"
 msgstr ""
 
@@ -201,17 +202,17 @@ msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
 msgstr ""
 
-#: inc/class-sedno-theme.php:83
+#: inc/class-sedno-theme.php:87
 msgctxt "login form title"
 msgid "Login"
 msgstr ""
 
-#: inc/class-sedno-theme.php:86
+#: inc/class-sedno-theme.php:90
 msgctxt "login form title"
 msgid "Register"
 msgstr ""
 
-#: inc/class-sedno-theme.php:89
+#: inc/class-sedno-theme.php:93
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr ""

@@ -59,3 +59,10 @@ if ( is_front_page() ) {
 		</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
+<?php
+if ( ! is_front_page() && function_exists( 'bcn_display' ) ) {
+	echo '<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">';
+	bcn_display();
+	echo '</div>';
+}
+

@@ -33,6 +33,9 @@
         @include header_3;
         color: var(--color-blue-2);
     }
+    .wp-block-columns {
+        gap: 90px;
+    }
 }
 
 .most-important {

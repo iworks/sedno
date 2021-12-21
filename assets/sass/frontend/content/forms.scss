@@ -14,10 +14,13 @@ form {
     input[type=text],
     input[type=email],
     input[type=password],
-    select {
+    select,
+    textarea {
         @include radius;
-        padding: 6px 10px;
         background-color: var(--color-white);
+        border-color: var(--color-black);
+        padding: 6px 10px;
+        width: 100%;
     }
     label {
     }

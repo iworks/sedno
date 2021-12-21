@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementsByTagName('body')[0].classList.add('loaded');
+});
 /*
 (function($) {
     $(document).ready(function() {
@@ -5,7 +8,7 @@
         $('.social-media-share a').on('click', function(e) {
             var width = (840 < window.screen.width) ? 800 : window.screen.width - 40;
             var height = (640 < window.screen.height) ? 600 : window.screen.height - 40;
-            var left = (window.screen.width - width) / 2;
+     var left = (window.screen.width - width) / 2;
             var top = (window.screen.height - height) / 2;
             e.preventDefault();
             window.console.log('menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=' + height + ',width=' + width + ',top=' + top + ',left=' + left);

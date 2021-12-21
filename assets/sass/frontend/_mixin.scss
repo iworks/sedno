@@ -373,3 +373,11 @@ $font_root: 'assets/fonts/';
     @include font(28,30);
 }
 
+@mixin sedno_tag() {
+    padding: 6px 20px;
+    background-color: var(--color-blue-1);
+    color: var(--color-accent);
+    @include font(16);
+    font-family: var(--font-family-sans-serif);
+    @include radius;
+}

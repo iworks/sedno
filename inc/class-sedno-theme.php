@@ -38,6 +38,7 @@ class Sedno_Theme extends Sedno {
 		add_action( 'init', array( $this, 'register_scripts' ) );
 		add_filter( 'login_headertext', array( $this, 'login_headertext' ) );
 		add_filter( 'body_class', array( $this, 'body_classses' ) );
+		add_filter( 'the_content', array( $this, 'add_thumbnail_image' ) );
 		/**
 		 * js
 		 */
@@ -69,6 +70,14 @@ class Sedno_Theme extends Sedno {
 		add_filter( 'theme_mod_background_color', array( $this, 'get_theme_mod_background_color' ) );
 		add_action( 'widgets_init', array( $this, 'register_sidebars' ) );
 		/**
+		 * social media links
+		 */
+		add_shortcode( 'sedno_social_media_icons', array( $this, 'shortcode_social_media' ) );
+		/**
+		 * theme actions
+		 */
+		add_action( 'sedno_the_posts_navigation', array( $this, 'numeric_posts_nav' ) );
+		/**
 		 * Plugin: OG
 		 */
 		add_filter( 'og_image_init', array( $this, 'set_og_image' ) );
@@ -77,7 +86,6 @@ class Sedno_Theme extends Sedno {
 	public function login_headertext( $text ) {
 		$action = filter_input( INPUT_GET, 'action', FILTER_SANITIZE_STRING );
 		$id     = filter_input( INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT );
-
 		switch ( $action ) {
 			case '':
 				$text = esc_html( _x( 'Login', 'login form title', 'sedno' ) );
@@ -88,7 +96,6 @@ class Sedno_Theme extends Sedno {
 			case 'lostpassword':
 				$text = esc_html( _x( 'Lost Password', 'login form title', 'sedno' ) );
 				break;
-
 		}
 		if ( 0 < $id && get_option( 'job_manager_submit_job_form_page_id', true ) === $id ) {
 			return sprintf(
@@ -373,7 +380,6 @@ class Sedno_Theme extends Sedno {
 					break;
 			}
 		}
-
 		return $classes;
 	}
 
@@ -405,6 +411,116 @@ class Sedno_Theme extends Sedno {
 				'before_widget' => '<div>',
 				'after_widget'  => '</div>',
 			)
+		);
+	}
+
+	public function add_thumbnail_image( $content ) {
+		if ( ! is_singular( 'post' ) ) {
+			return $content;
+		}
+		if ( ! has_post_thumbnail() ) {
+			return $content;
+		}
+		$c       = '<figure class="thumbnail">';
+		$c      .= get_the_post_thumbnail( get_the_ID(), 'list' );
+		$caption = get_the_post_thumbnail_caption();
+		if ( ! empty( $caption ) ) {
+			$c .= sprintf(
+				'<figcaption>%s</figcaption>',
+				$caption
+			);
+		}
+		$c .= '</figure>';
+		return $c . $content;
+	}
+
+	public function shortcode_social_media( $content, $atts ) {
+		$media = array(
+			'twitter'  => 'https://twitter.com/sedno_org',
+			'facebook' => 'https://www.facebook.com/StowarzyszenieEuropejskaDemokracja/',
+			'youtube'  => 'https://www.youtube.com/channel/UChEODSnVNPU-1AV8Pvy2msQ',
+		);
+		$c     = '<ul class="sedno-social-media">';
+		foreach ( $media as $class => $url ) {
+			$c .= sprintf(
+				'<li class="%1$s"><a href="%2$s" target="%1$s"><span>%1$s</span></a></li>',
+				esc_attr( $class ),
+				esc_url( $url )
+			);
+		}
+		$c .= '</ul>';
+		return $c;
+	}
+
+	/**
+	 * Numeric pagination
+	 */
+	public function numeric_posts_nav() {
+		if ( is_singular() ) {
+			return;
+		}
+		global $wp_query;
+		/** Stop execution if there's only 1 page */
+		if ( $wp_query->max_num_pages <= 1 ) {
+			return;
+		}
+		$paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+		$max   = intval( $wp_query->max_num_pages );
+		/** Add current page to the array */
+		if ( $paged >= 1 ) {
+			$links[] = $paged;
+		}
+		/** Add the pages around the current page to the array */
+		if ( $paged >= 3 ) {
+			$links[] = $paged - 1;
+			$links[] = $paged - 2;
+		}
+		if ( ( $paged + 2 ) <= $max ) {
+			$links[] = $paged + 2;
+			$links[] = $paged + 1;
+		}
+		$content = '';
+		/** Previous Post Link */
+		if ( get_previous_posts_link() ) {
+			$content .= sprintf( '<li>%s</li>', get_previous_posts_link() );
+		}
+		/** Link to first page, plus ellipses if necessary */
+		if ( ! in_array( 1, $links ) ) {
+			$class    = 1 == $paged ? ' class="active"' : '';
+			$content .= sprintf( '<li%s><a href="%s">%s</a></li>', $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+			if ( ! in_array( 2, $links ) ) {
+				$content .= '<li><span>…</span></li>';
+			}
+		}
+
+		/** Link to current page, plus 2 pages in either direction if necessary */
+		sort( $links );
+		foreach ( (array) $links as $link ) {
+			$class    = $paged == $link ? ' class="active"' : '';
+			$content .= sprintf( '<li%s><a href="%s">%s</a></li>', $class, esc_url( get_pagenum_link( $link ) ), $link );
+		}
+		/** Link to last page, plus ellipses if necessary */
+		if ( ! in_array( $max, $links ) ) {
+			if ( ! in_array( $max - 1, $links ) ) {
+				$content .= '<li><span>…</span></li>';
+			}
+			$class    = $paged == $max ? ' class="active"' : '';
+			$content .= sprintf( '<li%s><a href="%s">%s</a></li>', $class, esc_url( get_pagenum_link( $max ) ), $max );
+		}
+		/** Next Post Link */
+		if ( get_next_posts_link() ) {
+			$content .= sprintf( '<li>%s</li>', get_next_posts_link() );
+		}
+
+		if ( empty( $content ) ) {
+			return;
+		}
+		printf(
+			'<nav class="navigation %1$s" aria-label="%4$s"><h2 class="screen-reader-text">%2$s</h2><ul class="nav-links">%3$s</ul></nav>',
+			'navigation-numeric',
+			esc_html__( 'Posts navigation pages', 'sedno' ),
+			$content,
+			esc_attr__( 'Posts navigation pages', 'sedno' )
 		);
 	}
 

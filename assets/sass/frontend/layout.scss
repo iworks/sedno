@@ -8,12 +8,24 @@
 body {
     &.archive,
     &.blog {
+        .page-header {
+            .page-title {
+                margin-top: 0;
+            }
+        }
         .site-main {
             article {
                 display: grid;
                 grid-template-columns: 460px auto;
                 column-gap: 40px;
                 padding-bottom: 2em;
+                .entry-title {
+                    margin: 0 0 10px;
+                    font-family: var(--font-family-serif);
+                }
+                .author {
+                    @include font(20);
+                }
                 .entry-content {
                     margin: 0;
                 }
