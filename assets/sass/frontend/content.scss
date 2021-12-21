@@ -50,6 +50,50 @@ body {
                 margin: 0 30px 30px 0;
             }
         }
+        .entry-footer {
+            border-bottom: 3px solid var(--color-blue-1);
+            .cat-links {
+                display: none;
+            }
+            .tags-links {
+                ul {
+                    @include reset;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: var(--padding-default);
+                    a {
+                        @include sedno_tag;
+                    }
+                }
+            }
+            .social-media-share {
+                padding: var(--padding-default) 0;
+                ul {
+                    @include sedno_social_media;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+        &.loaded {
+            .social-media-share {
+                .facebook {
+                    background: {
+                        @include icon( 'facebook.svg' );
+                    }
+                }
+                .twitter {
+                    background: {
+                        @include icon( 'twitter.svg' );
+                    }
+                }
+                .copy {
+                    background: {
+                        @include icon( 'link.svg' );
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -61,4 +105,5 @@ body {
 
 @import 'plugins/breadcrumb-navxt';
 @import 'plugins/contact-form-7';
+@import 'plugins/contextual-related-posts';
 

@@ -67,13 +67,70 @@ if ( ! function_exists( 'sedno_entry_footer' ) ) :
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'sedno' ) );
+			$tags_list = get_the_tag_list( '', _x( '</li><li>', 'list item separator', 'sedno' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'sedno' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<div class="tags-links"><ul><li>%1$s</li></ul></div>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
-		}
 
+			/**
+			 * social
+			 */
+			echo '<div class="social-media-share">';
+			echo '<ul>';
+			$links     = array(
+				'twitter'  => __( 'Share %s on twitter', 'sedno' ),
+				'facebook' => __( 'Share %s on facebook', 'sedno' ),
+				'copy'     => __( 'Copy link: %s', 'sedno' ),
+			);
+			$permalink = get_permalink();
+			$title     = html_entity_decode( get_the_title() );
+			foreach ( $links as $class => $label ) {
+				if ( 'copy' === $class ) {
+					continue;
+				}
+				$link = $permalink;
+				switch ( $class ) {
+					case 'twitter':
+						$link = add_query_arg(
+							array(
+								'url'  => urlencode( $link ),
+								'text' => urlencode( $title ),
+							),
+							'https://twitter.com/intent/tweet'
+						);
+						break;
+					case 'facebook':
+						$link = add_query_arg(
+							array(
+								'u' => urlencode( $link ),
+							),
+							'https://www.facebook.com/sharer/sharer.php'
+						);
+						break;
+					case 'copy':
+						$link = '#';
+				}
+				printf(
+					'<li><a href="%1$s" class="%4$s" data-title="%2$s" target="%4$s"><span>%3$s</span></a></li>',
+					$link,
+					get_the_title(),
+					esc_html( sprintf( $label, $permalink ) ),
+					esc_attr( $class )
+				);
+			}
+			/**
+			 * copy
+			 */
+			$class = 'copy';
+			printf(
+				'<li><a href="#" data-url="%s" class="%s"><span>%s</span></a></li>',
+				esc_url( $permalink ),
+				$class,
+				sprintf( $links[ $class ], $permalink )
+			);
+			echo '</ul></div>';
+		}
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
 			comments_popup_link(

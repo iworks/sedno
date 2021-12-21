@@ -28,25 +28,7 @@
         }
     }
     .sedno-social-media {
-        @include reset_ul;
-        display: inline-flex;
-        gap: var(--padding-default);
-        span {
-            display: none;
-        }
-        a {
-            display: block;
-            width: 37px;
-            height: 30px;
-            background: {
-                repeat: no-repeat;
-                position: 50% 50%;
-                size: contain;
-            }
-            &:hover {
-                opacity: .7;
-            }
-        }
+        @include sedno_social_media;
     }
 }
 body {
@@ -71,6 +53,46 @@ body {
                     background: {
                         @include icon( 'youtube-white.svg' );
                     }
+                }
+            }
+        }
+    }
+}
+
+.navigation {
+    &.navigation-numeric {
+        ul {
+            @include reset_ul;
+            justify-content: center;
+            display: flex;
+            gap: 25px;
+            padding: var(--padding-default);
+            a {
+                @include radius;
+                display: block;
+                border: 2px solid var(--color-accent);
+                line-height: 24px;
+                min-width: 28px;
+                text-align: center;
+                padding: 0 3px;
+                color: var(--color-accent);
+                &:hover {
+                    text-decoration: none;
+                    color: var(--color-white);
+                    background-color: var( --color-accent);
+                }
+            }
+            .previous,
+            .next {
+                a {
+                    border-color: var(--color-white);
+                    font-weight: 900;
+                }
+            }
+            .active {
+                a {
+                    color: var(--color-white);
+                    background-color: var( --color-accent);
                 }
             }
         }

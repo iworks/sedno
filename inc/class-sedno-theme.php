@@ -482,7 +482,7 @@ class Sedno_Theme extends Sedno {
 		$content = '';
 		/** Previous Post Link */
 		if ( get_previous_posts_link() ) {
-			$content .= sprintf( '<li>%s</li>', get_previous_posts_link() );
+			$content .= sprintf( '<li class="previous">%s</li>', get_previous_posts_link( '&laquo;' ) );
 		}
 		/** Link to first page, plus ellipses if necessary */
 		if ( ! in_array( 1, $links ) ) {
@@ -509,7 +509,7 @@ class Sedno_Theme extends Sedno {
 		}
 		/** Next Post Link */
 		if ( get_next_posts_link() ) {
-			$content .= sprintf( '<li>%s</li>', get_next_posts_link() );
+			$content .= sprintf( '<li class="next">%s</li>', get_next_posts_link( '&raquo;' ) );
 		}
 
 		if ( empty( $content ) ) {

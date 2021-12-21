@@ -381,3 +381,25 @@ $font_root: 'assets/fonts/';
     font-family: var(--font-family-sans-serif);
     @include radius;
 }
+
+@mixin sedno_social_media() {
+    @include reset_ul;
+    display: inline-flex;
+    gap: var(--padding-default);
+    span {
+        display: none;
+    }
+    a {
+        display: block;
+        width: 37px;
+        height: 30px;
+        background: {
+            repeat: no-repeat;
+            position: 50% 50%;
+            size: contain;
+        }
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
