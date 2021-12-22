@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-21 20:20:31+00:00\n"
+"POT-Creation-Date: 2021-12-22 11:22:34+00:00\n"
 "PO-Revision-Date: 2021-12-13 21:04+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -103,19 +103,19 @@ msgstr "Zamknij informację o ciasteczkach."
 msgid "Close cookie information"
 msgstr "Zamknij informację o ciasteczkach"
 
-#: inc/class-sedno-theme.php:103
+#: inc/class-sedno-theme.php:107
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:401
+#: inc/class-sedno-theme.php:405
 msgid "Main Page Footer One"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:409
+#: inc/class-sedno-theme.php:413
 msgid "Main Page Footer Two"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:521 inc/class-sedno-theme.php:523
+#: inc/class-sedno-theme.php:525 inc/class-sedno-theme.php:527
 msgid "Posts navigation pages"
 msgstr ""
 
@@ -218,17 +218,17 @@ msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
 
-#: inc/class-sedno-theme.php:91
+#: inc/class-sedno-theme.php:95
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:94
+#: inc/class-sedno-theme.php:98
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:97
+#: inc/class-sedno-theme.php:101
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"

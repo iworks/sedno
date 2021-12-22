@@ -225,7 +225,7 @@ $font_root: 'assets/fonts/';
 }
 
 @mixin font_crimson_pro() {
-    font-family: 'Crimson Pro', serif;
+    font-family: var(--font-family-serif);
 }
 
 @mixin font_crimson_pro_semi_bold() {
@@ -234,7 +234,7 @@ $font_root: 'assets/fonts/';
 }
 
 @mixin font_montserrat() {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family-sans-serif);
 }
 
 @mixin font_montserrat_light() {
