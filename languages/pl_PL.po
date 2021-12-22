@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-22 11:22:34+00:00\n"
-"PO-Revision-Date: 2021-12-13 21:04+0100\n"
+"POT-Creation-Date: 2021-12-22 14:53:30+00:00\n"
+"PO-Revision-Date: 2021-12-22 15:54+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -54,8 +54,8 @@ msgid "Comments are closed."
 msgstr "Komentarze zostały wyłączone."
 
 #: front-page.php:22
-msgid "The most important topics:"
-msgstr "Najważniejsze tematy:"
+msgid "The most important topics"
+msgstr "Najważniejsze tematy"
 
 #: front-page.php:52
 msgid "Browse all articles"
@@ -117,7 +117,7 @@ msgstr "Stopka 1 strony głównej"
 
 #: inc/class-sedno-theme.php:525 inc/class-sedno-theme.php:527
 msgid "Posts navigation pages"
-msgstr ""
+msgstr "Nawigacja po stronach wpisów"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:63
@@ -132,15 +132,15 @@ msgstr "Opublikowany w %s"
 #. translators: 1: list of tags.
 #: inc/template-tags.php:82
 msgid "Share %s on twitter"
-msgstr ""
+msgstr "Podziel się %s na twitterze"
 
 #: inc/template-tags.php:83
 msgid "Share %s on facebook"
-msgstr ""
+msgstr "Podziel się %s na facebooku"
 
 #: inc/template-tags.php:84
 msgid "Copy link: %s"
-msgstr ""
+msgstr "Skopiuj odnośnik: %s"
 
 #. translators: %s: post title
 #: inc/template-tags.php:140
@@ -249,7 +249,7 @@ msgstr "%s"
 #: inc/template-tags.php:70
 msgctxt "list item separator"
 msgid "</li><li>"
-msgstr ""
+msgstr "</li><li>"
 
 #~ msgid "Tagged %1$s"
 #~ msgstr "Otagowano %1$s"

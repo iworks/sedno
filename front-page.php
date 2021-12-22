@@ -19,7 +19,7 @@ get_template_part( 'template-parts/slider' );
 		?>
 		<aside class="most-important">
 			<header>
-				<p><?php esc_html_e( 'The most important topics:', 'sedno' ); ?></p>
+				<p><?php esc_html_e( 'The most important topics', 'sedno' ); ?></p>
 			</header>
 <?php
 
