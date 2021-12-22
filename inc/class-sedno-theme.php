@@ -31,13 +31,14 @@ class Sedno_Theme extends Sedno {
 		/**
 		 * hooks
 		 */
-		add_action( 'wp_head', array( $this, 'html_head' ), PHP_INT_MAX );
-		add_filter( 'get_site_icon_url', array( $this, 'get_site_default_icon_url' ), 10, 3 );
-		add_filter( 'site_icon_meta_tags', array( $this, 'site_icon_meta_tags' ) );
-		add_action( 'parse_request', array( $this, 'request_favicon' ) );
 		add_action( 'init', array( $this, 'register_scripts' ) );
-		add_filter( 'login_headertext', array( $this, 'login_headertext' ) );
+		add_action( 'parse_request', array( $this, 'request_favicon' ) );
+		add_action( 'wp_head', array( $this, 'html_head' ), PHP_INT_MAX );
 		add_filter( 'body_class', array( $this, 'body_classses' ) );
+		add_filter( 'comment_form_default_fields', array( $this, 'remove_website_field' ) );
+		add_filter( 'get_site_icon_url', array( $this, 'get_site_default_icon_url' ), 10, 3 );
+		add_filter( 'login_headertext', array( $this, 'login_headertext' ) );
+		add_filter( 'site_icon_meta_tags', array( $this, 'site_icon_meta_tags' ) );
 		add_filter( 'the_content', array( $this, 'add_thumbnail_image' ) );
 		/**
 		 * js
@@ -536,5 +537,9 @@ class Sedno_Theme extends Sedno {
 		return $days;
 	}
 
+	public function remove_website_field( $fields ) {
+		unset( $fields['url'] );
+		return $fields;
+	}
 }
 
