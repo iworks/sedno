@@ -52,12 +52,13 @@
             }
         }
         nav {
+            @include random_border_color;
             ul {
                 @include reset;
                 position: absolute;
                 display: flex;
                 bottom: 28px;
-                left: 152px;
+                left: 180px;
                 z-index: 999999;
                 li {
                     position: relative;

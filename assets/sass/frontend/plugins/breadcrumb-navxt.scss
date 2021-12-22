@@ -3,6 +3,9 @@
 .breadcrumbs {
     @include default_width;
     padding-bottom: 20px;
+    a {
+        color: var(--color-accent);
+    }
     .home {
         display: inline-block;
         width: 14px;
