@@ -485,16 +485,24 @@ class Sedno_Theme extends Sedno {
 			$links[] = $paged + 1;
 		}
 		$content = '';
-		/** Previous Post Link */
+		/** first & Previous Post Link */
 		if ( get_previous_posts_link() ) {
-			$content .= sprintf( '<li class="previous">%s</li>', get_previous_posts_link( '&laquo;' ) );
+			$content .= sprintf(
+				'<li class="first"><a href="%1$s"><span>%2$s</span></a></li>',
+				preg_replace( '@/page/\d+/@', '/', remove_query_arg( 'paged' ) ),
+				esc_html__( 'First page', 'sedno' )
+			);
+			$content .= sprintf( '<li class="previous">%s</li>', get_previous_posts_link( '<span></span>' ) );
+		} else {
+			$content .= '<li class="first"><span></span></li>';
+			$content .= '<li class="previous"><span></span></li>';
 		}
 		/** Link to first page, plus ellipses if necessary */
 		if ( ! in_array( 1, $links ) ) {
 			$class    = 1 == $paged ? ' class="active"' : '';
 			$content .= sprintf( '<li%s><a href="%s">%s</a></li>', $class, esc_url( get_pagenum_link( 1 ) ), '1' );
 			if ( ! in_array( 2, $links ) ) {
-				$content .= '<li><span>…</span></li>';
+				$content .= '<li class="dots"><span>…</span></li>';
 			}
 		}
 
@@ -507,7 +515,7 @@ class Sedno_Theme extends Sedno {
 		/** Link to last page, plus ellipses if necessary */
 		if ( ! in_array( $max, $links ) ) {
 			if ( ! in_array( $max - 1, $links ) ) {
-				$content .= '<li><span>…</span></li>';
+				$content .= '<li class="dots"><span>…</span></li>';
 			}
 			$class    = $paged == $max ? ' class="active"' : '';
 			$content .= sprintf( '<li%s><a href="%s">%s</a></li>', $class, esc_url( get_pagenum_link( $max ) ), $max );
@@ -515,6 +523,14 @@ class Sedno_Theme extends Sedno {
 		/** Next Post Link */
 		if ( get_next_posts_link() ) {
 			$content .= sprintf( '<li class="next">%s</li>', get_next_posts_link( '&raquo;' ) );
+			$content .= sprintf(
+				'<li class="last"><a href="%1$s"><span>%2$s</span></a></li>',
+				preg_replace( '@/page/\d+/@', '/page/' . $max, remove_query_arg( 'paged' ) ),
+				esc_html__( 'Last page', 'sedno' )
+			);
+		} else {
+			$content .= '<li class="next"><span></span></li>';
+			$content .= '<li class="last"><span></span></li>';
 		}
 
 		if ( empty( $content ) ) {

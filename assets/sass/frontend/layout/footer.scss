@@ -63,9 +63,10 @@ body {
     &.navigation-numeric {
         ul {
             @include reset_ul;
-            justify-content: center;
+            align-items: center;
             display: flex;
-            gap: 25px;
+            gap: 12px;
+            justify-content: center;
             padding: var(--padding-default);
             a {
                 @include radius;
@@ -82,17 +83,95 @@ body {
                     background-color: var( --color-accent);
                 }
             }
+            .first,
+            .last,
             .previous,
             .next {
                 a {
-                    border-color: var(--color-white);
-                    font-weight: 900;
+                    min-width: 0;
+                    display: block;
+                    width: 21px;
+                    height: 20px;
+                    border: 0;
+                    &:hover {
+                        background-color: var(--color-white);
+                    }
+                    span {
+                        display: none;
+                    }
+                }
+            }
+            .dots {
+                span {
+                    width: 17px;
+                    @include iconb('dots.svg');
+                    overflow: hidden;
+                    text-indent: -999em;
+                    background-position: 50% 100%;
                 }
             }
             .active {
                 a {
                     color: var(--color-white);
                     background-color: var( --color-accent);
+                }
+            }
+            li {
+                padding: 6px;
+                > {
+                    span {
+                        display: block;
+                        width: 21px;
+                        height: 20px;
+                    }
+                }
+                &.first {
+                    padding-right: 0;
+                    > {
+                        span {
+                            @include iconb('arrow-left-double-light.svg');
+                        }
+                        a {
+                            @include iconb('arrow-left-double.svg');
+                        }
+                    }
+                }
+                &.previous {
+                    padding-left: 0;
+                    > {
+                        a,
+                        span {
+                            width: 12px;
+                            @include iconb('arrow-left-light.svg');
+                        }
+                        a {
+                            @include iconb('arrow-left.svg');
+                        }
+                    }
+                }
+                &.last {
+                    padding-left: 0;
+                    > {
+                        span {
+                            @include iconb('arrow-right-double-light.svg');
+                        }
+                        a {
+                            @include iconb('arrow-right-double.svg');
+                        }
+                    }
+                }
+                &.next {
+                    padding-right: 0;
+                    > {
+                        a,
+                        span {
+                            width: 12px;
+                            @include iconb('arrow-right-light.svg');
+                        }
+                        a {
+                            @include iconb('arrow-right.svg');
+                        }
+                    }
                 }
             }
         }
