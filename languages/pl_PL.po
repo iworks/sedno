@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-21 16:45:34+00:00\n"
+"POT-Creation-Date: 2021-12-21 20:20:31+00:00\n"
 "PO-Revision-Date: 2021-12-13 21:04+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -103,17 +103,21 @@ msgstr "Zamknij informację o ciasteczkach."
 msgid "Close cookie information"
 msgstr "Zamknij informację o ciasteczkach"
 
-#: inc/class-sedno-theme.php:99
+#: inc/class-sedno-theme.php:103
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:397
+#: inc/class-sedno-theme.php:401
 msgid "Main Page Footer One"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:405
+#: inc/class-sedno-theme.php:409
 msgid "Main Page Footer Two"
 msgstr "Stopka 1 strony głównej"
+
+#: inc/class-sedno-theme.php:521 inc/class-sedno-theme.php:523
+msgid "Posts navigation pages"
+msgstr ""
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:63
@@ -126,12 +130,20 @@ msgid "Posted in %1$s"
 msgstr "Opublikowany w %s"
 
 #. translators: 1: list of tags.
-#: inc/template-tags.php:73
-msgid "Tagged %1$s"
-msgstr "Otagowano %1$s"
+#: inc/template-tags.php:82
+msgid "Share %s on twitter"
+msgstr ""
+
+#: inc/template-tags.php:83
+msgid "Share %s on facebook"
+msgstr ""
+
+#: inc/template-tags.php:84
+msgid "Copy link: %s"
+msgstr ""
 
 #. translators: %s: post title
-#: inc/template-tags.php:83
+#: inc/template-tags.php:140
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 
@@ -139,14 +151,6 @@ msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 #: search.php:21
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
-
-#: single.php:23
-msgid "Previous:"
-msgstr "Poprzedni:"
-
-#: single.php:24
-msgid "Next:"
-msgstr "Następny:"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
@@ -214,17 +218,17 @@ msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
 
-#: inc/class-sedno-theme.php:87
+#: inc/class-sedno-theme.php:91
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:90
+#: inc/class-sedno-theme.php:94
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:93
+#: inc/class-sedno-theme.php:97
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"
@@ -244,8 +248,21 @@ msgstr "%s"
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:70
 msgctxt "list item separator"
-msgid ", "
-msgstr ", "
+msgid "</li><li>"
+msgstr ""
+
+#~ msgid "Tagged %1$s"
+#~ msgstr "Otagowano %1$s"
+
+#~ msgid "Previous:"
+#~ msgstr "Poprzedni:"
+
+#~ msgid "Next:"
+#~ msgstr "Następny:"
+
+#~ msgctxt "list item separator"
+#~ msgid ", "
+#~ msgstr ", "
 
 #~ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 #~ msgstr "Edytuj <span class=\"screen-reader-text\">%s</span>"

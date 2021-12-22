@@ -5,7 +5,7 @@
 	$content = '';
 	ob_start();
 	$args  = array(
-		'posts_per_page' => 3,
+		'posts_per_page' => 4,
 		'meta_query'     => array(
 			array(
 				'key'     => '_thumbnail_id',

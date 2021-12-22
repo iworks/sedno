@@ -49,6 +49,9 @@ body {
                 float: left;
                 margin: 0 30px 30px 0;
             }
+            figcaption {
+                max-width: 460px;
+            }
         }
         .entry-footer {
             border-bottom: 3px solid var(--color-blue-1);

@@ -81,6 +81,10 @@ class Sedno_Theme extends Sedno {
 		 * Plugin: OG
 		 */
 		add_filter( 'og_image_init', array( $this, 'set_og_image' ) );
+		/**
+		 * Plugin: Simple History
+		 */
+		add_filter( 'simple_history/db_purge_days_interval', array( $this, 'filter_simple_history_db_purge_days_interval' ) );
 	}
 
 	public function login_headertext( $text ) {
@@ -522,6 +526,14 @@ class Sedno_Theme extends Sedno {
 			$content,
 			esc_attr__( 'Posts navigation pages', 'sedno' )
 		);
+	}
+
+	/**
+	 * Plugin: Simple History: db purge days interval
+	 */
+	public function filter_simple_history_db_purge_days_interval( $days ) {
+		$days = 365;
+		return $days;
 	}
 
 }
