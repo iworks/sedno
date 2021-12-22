@@ -1,26 +1,27 @@
 @import '../_mixin';
 
-.breadcrumbs {
-    @include default_width;
-    padding-bottom: 20px;
-    a {
-        color: var(--color-accent);
-    }
-    .home {
-        display: inline-block;
-        width: 14px;
-        height: 16px;
-        @include iconb('home.svg');
-        span {
-            display: none;
+body {
+    .breadcrumbs {
+        @include default_width;
+        padding-bottom: 40px;
+        a {
+            color: var(--color-accent);
+        }
+        .home {
+            display: inline-block;
+            width: 14px;
+            height: 16px;
+            @include iconb('home.svg');
+            span {
+                display: none;
+            }
+        }
+        .separator {
+            display: inline-block;
+            width: 9px;
+            height: 8px;
+            margin: 0 5px 2px;
+            @include iconb('arrow-right-double-black.svg');
         }
     }
-    .separator {
-        display: inline-block;
-        width: 9px;
-        height: 8px;
-        margin-bottom: 2px;
-        @include iconb('arrow-right-double-black.svg');
-    }
 }
-

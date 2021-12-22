@@ -53,6 +53,14 @@ body {
                 max-width: 460px;
             }
         }
+        .entry-title {
+            margin: 0;
+        }
+        .entry-content {
+            h1, h2, h3, h4, h5, h6 {
+                clear: initial;
+            }
+        }
         .entry-footer {
             border-bottom: 3px solid var(--color-blue-1);
             .cat-links {

@@ -52,7 +52,6 @@
             }
         }
         nav {
-            @include random_border_color;
             ul {
                 @include reset;
                 position: absolute;

@@ -29,6 +29,11 @@ class Sedno_Theme extends Sedno {
 			new Sedno_PWA;
 		}
 		/**
+		 * Editorial Comment
+		 */
+		include_once 'class-sedno-post-type-editorial-comment.php';
+		new Sedno_Post_Type_Editorial_Comment;
+		/**
 		 * hooks
 		 */
 		add_action( 'init', array( $this, 'register_scripts' ) );

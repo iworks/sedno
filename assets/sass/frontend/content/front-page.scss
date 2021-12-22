@@ -16,7 +16,7 @@ body {
             }
             > {
                 article {
-                    .entry-title {
+                    .entry-header {
                         @include front_page_header;
                     }
                     .entry-content {
