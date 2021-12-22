@@ -79,10 +79,11 @@ window.addEventListener('load', function() {
      * bind Menu click
      */
     for (var i = 0; i < iworks_slider_slider_elements.length; i++) {
-        iworks_slider_slider_elements[i].getElementsByTagName('a')[0].addEventListener('click', function() {
+        iworks_slider_slider_elements[i].getElementsByTagName('a')[0].addEventListener('click', function( event ) {
+            event.preventDefault();
             iworks_slider_slider_switch_to(this.dataset.index);
             return false;
-        }, {passive: true});
+        });
     }
 }, {passive: true});
 

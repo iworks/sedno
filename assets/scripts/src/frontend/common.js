@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                             return false;
                         }
                         const area = document.createElement('textarea');
+                        event.preventDefault();
                         body.appendChild(area);
                         area.value = this.dataset.url;
                         area.select();
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                         var height = (640 < window.screen.height) ? 600 : window.screen.height - 40;
                         var left = (window.screen.width - width) / 2;
                         var top = (window.screen.height - height) / 2;
+                        event.preventDefault();
                         window.open(
                             this.href,
                             this.classList[0],

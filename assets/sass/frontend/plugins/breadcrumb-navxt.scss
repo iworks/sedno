@@ -3,5 +3,21 @@
 .breadcrumbs {
     @include default_width;
     padding-bottom: 20px;
+    .home {
+        display: inline-block;
+        width: 14px;
+        height: 16px;
+        @include iconb('home.svg');
+        span {
+            display: none;
+        }
+    }
+    .separator {
+        display: inline-block;
+        width: 9px;
+        height: 8px;
+        margin-bottom: 2px;
+        @include iconb('double-arrow-right.svg');
+    }
 }
 

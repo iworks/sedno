@@ -56,11 +56,19 @@
                 @include reset;
                 position: absolute;
                 display: flex;
-                bottom: 40px;
-                left: 202px;
+                bottom: 28px;
+                left: 152px;
                 z-index: 999999;
                 li {
-                    padding: 0 10px;
+                    position: relative;
+                    a {
+                        bottom: 0;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                    padding: 0 6px;
                     span {
                         display: none;
                     }
@@ -70,9 +78,10 @@
                         }
                     }
                     &:before {
-                        display: block;
-                        content: "\25cb";
                         color: var(--color-white);
+                        content: "\25cb";
+                        display: inline-block;
+                        font-size: 2em;
                     }
                 }
             }

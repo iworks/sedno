@@ -58,6 +58,15 @@ $image_root: 'assets/images/';
     @include image( 'icons/#{$image}' );
 }
 
+@mixin iconb( $image ) {
+    background: {
+        repeat: no-repeat;
+        position: 50% 50%;
+        size: contain;
+        @include icon(#{$image});
+    }
+}
+
 @mixin default_width() {
     margin: {
         left: auto;

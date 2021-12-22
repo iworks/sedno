@@ -46,6 +46,15 @@
                 padding-right: 40px;
             }
         }
+        .current_page_item {
+            a {
+                border-bottom: 2px solid var(--color-accent);
+                &:hover {
+                    text-decoration: none;
+                    cursor: default;
+                }
+            }
+        }
     }
 }
 body {
