@@ -465,10 +465,28 @@ class Sedno_Theme extends Sedno {
 	/**
 	 * Numeric pagination
 	 */
-	public function numeric_posts_nav() {
+	public function numeric_posts_nav( $args = array() ) {
+		/**
+		 * check
+		 */
 		if ( is_singular() ) {
 			return;
 		}
+		/**
+		 * configuration
+		 */
+		$configuration = wp_parse_args(
+			$args,
+			array(
+				'show_first'    => false,
+				'show_last'     => false,
+				'show_previous' => true,
+				'show_next'     => true,
+			)
+		);
+		/**
+		 * globals
+		 */
 		global $wp_query;
 		/** Stop execution if there's only 1 page */
 		if ( $wp_query->max_num_pages <= 1 ) {
@@ -492,15 +510,23 @@ class Sedno_Theme extends Sedno {
 		$content = '';
 		/** first & Previous Post Link */
 		if ( get_previous_posts_link() ) {
-			$content .= sprintf(
-				'<li class="first"><a href="%1$s"><span>%2$s</span></a></li>',
-				preg_replace( '@/page/\d+/@', '/', remove_query_arg( 'paged' ) ),
-				esc_html__( 'First page', 'sedno' )
-			);
-			$content .= sprintf( '<li class="previous">%s</li>', get_previous_posts_link( '<span></span>' ) );
+			if ( $configuration['show_first'] ) {
+				$content .= sprintf(
+					'<li class="first"><a href="%1$s"><span>%2$s</span></a></li>',
+					preg_replace( '@/page/\d+/@', '/', remove_query_arg( 'paged' ) ),
+					esc_html__( 'First page', 'sedno' )
+				);
+			}
+			if ( $configuration['show_previous'] ) {
+				$content .= sprintf( '<li class="previous">%s</li>', get_previous_posts_link( '<span></span>' ) );
+			}
 		} else {
-			$content .= '<li class="first"><span></span></li>';
-			$content .= '<li class="previous"><span></span></li>';
+			if ( $configuration['show_first'] ) {
+				$content .= '<li class="first"><span></span></li>';
+			}
+			if ( $configuration['show_previous'] ) {
+				$content .= '<li class="previous"><span></span></li>';
+			}
 		}
 		/** Link to first page, plus ellipses if necessary */
 		if ( ! in_array( 1, $links ) ) {
@@ -527,15 +553,23 @@ class Sedno_Theme extends Sedno {
 		}
 		/** Next Post Link */
 		if ( get_next_posts_link() ) {
-			$content .= sprintf( '<li class="next">%s</li>', get_next_posts_link( '&raquo;' ) );
-			$content .= sprintf(
-				'<li class="last"><a href="%1$s"><span>%2$s</span></a></li>',
-				preg_replace( '@/page/\d+/@', '/page/' . $max, remove_query_arg( 'paged' ) ),
-				esc_html__( 'Last page', 'sedno' )
-			);
+			if ( $configuration['show_next'] ) {
+				$content .= sprintf( '<li class="next">%s</li>', get_next_posts_link( '&raquo;' ) );
+			}
+			if ( $configuration['show_last'] ) {
+				$content .= sprintf(
+					'<li class="last"><a href="%1$s"><span>%2$s</span></a></li>',
+					preg_replace( '@/page/\d+/@', '/page/' . $max, remove_query_arg( 'paged' ) ),
+					esc_html__( 'Last page', 'sedno' )
+				);
+			}
 		} else {
-			$content .= '<li class="next"><span></span></li>';
-			$content .= '<li class="last"><span></span></li>';
+			if ( $configuration['show_next'] ) {
+				$content .= '<li class="next"><span></span></li>';
+			}
+			if ( $configuration['show_last'] ) {
+				$content .= '<li class="last"><span></span></li>';
+			}
 		}
 
 		if ( empty( $content ) ) {
