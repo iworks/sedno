@@ -362,6 +362,7 @@ $font_root: 'assets/fonts/';
 @mixin header_3() {
     @include font_crimson_pro_semi_bold;
     @include font(28,30);
+    font-weight: 400;
 }
 
 @mixin sedno_tag() {
