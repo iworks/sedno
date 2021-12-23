@@ -350,7 +350,7 @@ $font_root: 'assets/fonts/';
 
 @mixin header_1() {
     @include font_crimson_pro_semi_bold;
-    @include font(40);
+    @include font(40, 40);
     color: var(--color-blue-2);
 }
 

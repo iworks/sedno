@@ -23,15 +23,14 @@
         margin: 0;
     }
     h3 {
+        @include header_1;
         margin: 19px 0 15px;
-        font-family: var(--font-family-serif);
     }
 }
 
 #sidebar-sedno-mp-2 {
     h2 {
-        @include header_3;
-        color: var(--color-blue-2);
+        @include header_1;
     }
     .wp-block-columns {
         gap: 90px;
