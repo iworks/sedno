@@ -19,7 +19,7 @@ $scale: .43;
             width: #{ $scale * 6px };
             height: #{ $scale * 18px };
             border-radius: 20%;
-            background: $color_primary;
+            background: var(--color-primary);
         }
         &:nth-child(1) {
             transform: rotate(0deg);

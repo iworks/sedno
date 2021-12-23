@@ -1,29 +1,8 @@
 @import '_mixin';
 
-:root {
-    --font-family-serif: 'Crimson Pro', serif;
-    --font-family-sans-serif: 'Montserrat', sans-serif;
-
-    --color-white: #{$white};
-    --color-black: #{$black};
-
-    --color-accent: #{$color_accent};
-
-    --color-blue-1: #{$color_blue_1};
-    --color-blue-2: #{$color_blue_2};
-    --color-blue-3: #{$color_blue_3};
-
-    --color-gray-1: #{$color_gray_1};
-    --color-gray-2: #{$color_gray_2};
-    --color-gray-3: #{rgba( $color_gray_1, .3 )};
-
-    --padding-default: 30px;
-}
-
-
 body {
-    background-color: $white;
-    color: $color_primary;
+    background-color: var(--color-white);
+    color: var(--color-primary);
     @include font( 14, 22 );
     a {
         @include link;

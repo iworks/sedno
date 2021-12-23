@@ -11,7 +11,7 @@
     body {
         padding: 0 1em;
         a {
-            color: $black !important;
+            color: var(--color-black) !important;
         }
         #colophon,
         .navigation,
@@ -21,7 +21,7 @@
         }
         .page-header {
             .page-title {
-                color: $black;
+                color: var(--color-black);
             }
         }
         .site-main {
@@ -44,7 +44,7 @@
                 font-size: 1.1em;
             }
             h1, h2, h3, h4, h5, h6, {
-                color: $black;
+                color: var(--color-black);
             }
         }
     }

@@ -39,10 +39,11 @@ module.exports = function(grunt) {
 
         // SASS files to process. Resulting CSS files will be minified as well.
         css_files_compile: {
-            "assets/css/frontend/_s.css":           "assets/sass/frontend/_s/style.scss",
-            "assets/css/frontend/font-family.css":  "assets/sass/frontend/font-family.scss",
-            "assets/css/frontend/layout.css":       "assets/sass/frontend/layout.scss",
-            "assets/css/frontend/content.css":      "assets/sass/frontend/content.scss",
+            "assets/css/frontend/settings.css": "assets/sass/frontend/settings.scss",
+            "assets/css/frontend/_s.css": "assets/sass/frontend/_s/style.scss",
+            "assets/css/frontend/font-family.css": "assets/sass/frontend/font-family.scss",
+            "assets/css/frontend/layout.css": "assets/sass/frontend/layout.scss",
+            "assets/css/frontend/content.css": "assets/sass/frontend/content.scss",
             /**
              * Last at ALL!
              */
@@ -107,10 +108,10 @@ module.exports = function(grunt) {
             options: {
                 stripBanners: true,
                 banner: '/*! <%= pkg.title %> - v<%= pkg.version %>\n' +
-                ' * <%= pkg.homepage %>\n' +
-                ' * Copyright (c) <%= grunt.template.today("yyyy") %>;\n' +
-                ' * Licensed GPLv2+\n' +
-                ' */\n'
+                    ' * <%= pkg.homepage %>\n' +
+                    ' * Copyright (c) <%= grunt.template.today("yyyy") %>;\n' +
+                    ' * Licensed GPLv2+\n' +
+                    ' */\n'
             },
             scripts: {
                 files: conf.js_files_concat
@@ -161,10 +162,10 @@ module.exports = function(grunt) {
             },
             options: {
                 banner: '/*! <%= pkg.title %> - v<%= pkg.version %>\n' +
-                ' * <%= pkg.homepage %>\n' +
-                ' * Copyright (c) <%= grunt.template.today("yyyy") %>;\n' +
-                ' * Licensed GPLv2+\n' +
-                ' */\n',
+                    ' * <%= pkg.homepage %>\n' +
+                    ' * Copyright (c) <%= grunt.template.today("yyyy") %>;\n' +
+                    ' * Licensed GPLv2+\n' +
+                    ' */\n',
                 mangle: {
                     reserved: ['jQuery']
                 }
@@ -228,16 +229,16 @@ module.exports = function(grunt) {
         cssmin: {
             options: {
                 banner: '/*!\n' +
-                'Theme Name: <%= pkg.title %>\n' +
-                'Theme URI: <%= pkg.uri %>\n' +
-                'Author: <%= pkg.author %>\n' +
-                'Author URI: <%= pkg.author_uri %>\n' +
-                'Description: <%= pkg.description %>\n' +
-                'Version: <%= pkg.version %>.<%= new Date().getTime() %>\n' +
-                'License: GNU General Public License v2 or later\n' +
-                'Text Domain: ' + conf.translation.textdomain + '\n' +
-                '\n' +
-                ' */\n'
+                    'Theme Name: <%= pkg.title %>\n' +
+                    'Theme URI: <%= pkg.uri %>\n' +
+                    'Author: <%= pkg.author %>\n' +
+                    'Author URI: <%= pkg.author_uri %>\n' +
+                    'Description: <%= pkg.description %>\n' +
+                    'Version: <%= pkg.version %>.<%= new Date().getTime() %>\n' +
+                    'License: GNU General Public License v2 or later\n' +
+                    'Text Domain: ' + conf.translation.textdomain + '\n' +
+                    '\n' +
+                    ' */\n'
             },
             minify: {
                 expand: true,

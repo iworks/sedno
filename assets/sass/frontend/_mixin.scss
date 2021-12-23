@@ -13,31 +13,12 @@ $width_x: 1200px;
 
 $default_width: $width_x;
 
-$white: #fff;
-$black: #000;
-
-/**
- * colors
- */
-
-$color_primary: #2a2d2e;
-$color_accent:  #406aa6;
-$color_alert:   #dd5137;
-
-$color_gray_1:  #c8cfd8;
-$color_gray_2:  #5b6773;
-
-$color_blue_1:  #ccdaeb;
-$color_blue_2:  #254473;
-$color_blue_3:  #1c2b3f;
-
-
 /**
  * Links
  */
-$color_link:    $black;
-$color_visited: $black;
-$color_hover:   $color_primary;
+$color_link:    var(--color-black);
+$color_visited: var(--color-black);
+$color_hover:   var(--color-primary);
 
 /**
  * radius
@@ -271,7 +252,7 @@ $font_root: 'assets/fonts/';
         text-decoration: underline;
     }
     &:active {
-        color: $color_accent;
+        color: var(--color-accent);
     }
 }
 
@@ -279,20 +260,21 @@ $font_root: 'assets/fonts/';
     display: inline-block;
     @include link;
     @include font( 16, 18 );
-    border: 1px solid var(--color-accent);
+    border: 1px solid var(--button-border);
     padding: 10px 50px;
     @include radius;
     background: {
-        color: var(--color-accent);
+        color: var(--button-background);
         repeat: no-repeat;
     }
-    color: var(--color-white);
+    color: var(--button-color);
     &:visited {
-        color: var(--color-white);
+        color: var(--button-color);
     }
     &:hover {
-        background-color: var(--color-white);
-        color: var(--color-accent);
+        background-color: var(--button-background-hover);
+        border-color: var(--button-border-hover);
+        color: var(--button-color);
         cursor: pointer;
         text-decoration: none;
     }
@@ -301,12 +283,12 @@ $font_root: 'assets/fonts/';
 
 @mixin button_reverse() {
     @include button;
-    color: $color_accent;
-    background-color: $white;
-    border: 1px solid $color_accent;
+    color: var(--color-accent);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-accent);
     &:hover {
-        background-color: $color_accent;
-        color: $white;
+        background-color: var(--color-accent);
+        color: var(--color-white);
     }
 }
 
@@ -333,11 +315,11 @@ $font_root: 'assets/fonts/';
 
 @mixin a_color_primary() {
     a {
-        color: $color_primary;
+        color: var(--color-primary);
         text-decoration: none;
         border-bottom: 1px solid transparent;
         &:focus {
-            border-bottom: 1px dashed $color_primary;
+            border-bottom: 1px dashed var(--color-primary);
         }
     }
 }
@@ -358,7 +340,7 @@ $font_root: 'assets/fonts/';
     padding-right: 10px;
 }
 
-@mixin background_gradient( $color1: $white, $color2: $color_accent ) {
+@mixin background_gradient( $color1: var(--color-white), $color2: var(--color-accent) ) {
     background: transparent linear-gradient(90deg, $color1 0%, $color2 17%, $color2 83%, $color1 100%) 0% 0% no-repeat padding-box;
 }
 

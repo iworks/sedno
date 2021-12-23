@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-22 20:27:56+00:00\n"
+"POT-Creation-Date: 2021-12-22 20:42:05+00:00\n"
 "PO-Revision-Date: 2021-12-22 21:29+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -182,15 +182,15 @@ msgstr "Stopka 1 strony głównej"
 msgid "Main Page Footer Two"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:498
+#: inc/class-sedno-theme.php:517
 msgid "First page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:534
+#: inc/class-sedno-theme.php:563
 msgid "Last page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:547 inc/class-sedno-theme.php:549
+#: inc/class-sedno-theme.php:581 inc/class-sedno-theme.php:583
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
 

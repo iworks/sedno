@@ -26,7 +26,7 @@ form {
     }
     .required-descrpition {
         strong {
-            color: $color_alert;
+            color: var(--color-alert);
         }
     }
     .required {
@@ -34,7 +34,7 @@ form {
             span {
                 &:after {
                     content: "*";
-                    color: $color_alert;
+                    color: var(--color-alert);
                 }
             }
             div {

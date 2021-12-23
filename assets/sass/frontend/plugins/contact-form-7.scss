@@ -11,11 +11,6 @@ body {
                     @include icon('mail-white.svg');
                 }
                 padding-left: 75px;
-                &:hover {
-                    background: {
-                        @include icon('mail.svg');
-                    }
-                }
             }
         }
     }
