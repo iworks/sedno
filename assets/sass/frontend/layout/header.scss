@@ -44,14 +44,50 @@
         > {
             li {
                 padding-right: 40px;
+                &.current-menu-parent,
+                &.current-menu-item,
+                &.current_page_item {
+                    > {
+                        a {
+                            border-bottom: 2px solid var(--color-accent);
+                            &:hover {
+                                text-decoration: none;
+                                cursor: default;
+                            }
+                        }
+                    }
+                }
+                &.menu-item-has-children {
+                    > {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            &:after {
+                                display: block;
+                                content: "";
+                                width: 16px;
+                                height: 9px;
+                                margin-left: 6px;
+                                @include iconb('metro-chevron-thin-down.svg');
+                            }
+                        }
+                    }
+                }
             }
         }
-        .current_page_item {
+        .sub-menu {
+            background-color: var(--color-white);
+            flex-direction: column;
             a {
-                border-bottom: 2px solid var(--color-accent);
-                &:hover {
-                    text-decoration: none;
-                    cursor: default;
+                padding: 5px 10px;
+            }
+            .current-menu-item {
+                a {
+                    border-bottom: 2px solid var(--color-accent);
+                    &:hover {
+                        text-decoration: none;
+                        cursor: default;
+                    }
                 }
             }
         }

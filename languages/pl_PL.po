@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-23 10:10:23+00:00\n"
+"POT-Creation-Date: 2021-12-23 10:35:18+00:00\n"
 "PO-Revision-Date: 2021-12-23 11:10+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -295,6 +295,14 @@ msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 
+#: template-parts/announcement/files.php:13
+msgid "View"
+msgstr "Zobacz"
+
+#: template-parts/announcement/files.php:13
+msgid "Read"
+msgstr "Czytaj"
+
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Niczego nie znaleziono"
@@ -329,14 +337,6 @@ msgstr "Czytaj dalej"
 #: template-parts/content.php:40
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Czytaj dalej<span class=\"screen-reader-text\"> \"%s\"</span>"
-
-#: template-parts/list-item-announcement.php:29
-msgid "View"
-msgstr "Zobacz"
-
-#: template-parts/list-item-announcement.php:29
-msgid "Read"
-msgstr "Czytaj"
 
 #. Theme Name of the plugin/theme
 msgid "SEDNO"
