@@ -24,6 +24,9 @@
                 @include header_3;
                 margin: 0;
             }
+            .entry-meta {
+                margin-top: 10px;
+            }
             .entry {
                 background-color: var(--color-blue-3);
                 color: var(--color-white);
