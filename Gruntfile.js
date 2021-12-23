@@ -35,6 +35,7 @@ module.exports = function(grunt) {
                 "assets/scripts/src/frontend/fonts.js",
                 "assets/scripts/src/frontend/slider.js",
             ],
+			'assets/scripts/admin/media.js': [ 'assets/scripts/src/admin/media.js' ],
         },
 
         // SASS files to process. Resulting CSS files will be minified as well.
@@ -48,6 +49,10 @@ module.exports = function(grunt) {
              * Last at ALL!
              */
             "assets/css/frontend/print.css": "assets/sass/frontend/print.scss",
+            /**
+             * admin area
+             */
+			'assets/css/admin/media.css': 'assets/sass/admin/media.scss',
         },
 
         // BUILD patterns to exclude code for specific builds.

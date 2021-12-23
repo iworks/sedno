@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-22 20:42:05+00:00\n"
-"PO-Revision-Date: 2021-12-22 21:29+0100\n"
+"POT-Creation-Date: 2021-12-23 10:10:23+00:00\n"
+"PO-Revision-Date: 2021-12-23 11:10+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -43,6 +43,10 @@ msgstr "Najczęściej używane kategorie"
 #: 404.php:48
 msgid "Try looking in the monthly archives. %1$s"
 msgstr "Proszę spróbować w archiwum miesięcznym. %1$s"
+
+#: archive-announcement.php:18
+msgid "What is worth knowing about our business"
+msgstr "Co warto wiedzieć o naszej działalności"
 
 #. translators: 1: title.
 #: comments.php:35
@@ -112,6 +116,75 @@ msgstr "Zamknij informację o ciasteczkach."
 msgid "Close cookie information"
 msgstr "Zamknij informację o ciasteczkach"
 
+#: inc/class-sedno-post-type-announcement.php:30
+msgid "Files"
+msgstr "Pliki"
+
+#: inc/class-sedno-post-type-announcement.php:47
+#: inc/class-sedno-post-type-announcement.php:48
+#: inc/class-sedno-post-type-announcement.php:49
+#: inc/class-sedno-post-type-announcement.php:50
+#: inc/class-sedno-post-type-announcement.php:72
+msgid "Announcements"
+msgstr "Ogłoszenia"
+
+#: inc/class-sedno-post-type-announcement.php:51
+msgid "Add New Announcement"
+msgstr "Dodaj nowe ogłoszenie"
+
+#: inc/class-sedno-post-type-announcement.php:52
+#: inc/class-sedno-post-type-editorial-comment.php:28
+msgid "Add New"
+msgstr "Dodaj"
+
+#: inc/class-sedno-post-type-announcement.php:53
+msgid "New Announcement"
+msgstr "Nowe ogłoszenie"
+
+#: inc/class-sedno-post-type-announcement.php:54
+msgid "Edit Announcement"
+msgstr "Edytuj ogłoszenie"
+
+#: inc/class-sedno-post-type-announcement.php:55
+msgid "Update Announcement"
+msgstr "Aktualizuj ogłoszenie"
+
+#: inc/class-sedno-post-type-announcement.php:56
+#: inc/class-sedno-post-type-announcement.php:57
+msgid "View Announcement"
+msgstr "Zobacz ogłoszenie"
+
+#: inc/class-sedno-post-type-announcement.php:58
+msgid "Search Announcement"
+msgstr "Szukaj ogłoszeń"
+
+#: inc/class-sedno-post-type-announcement.php:59
+#: inc/class-sedno-post-type-editorial-comment.php:35
+msgid "Not found"
+msgstr "Niczego nie znaleziono"
+
+#: inc/class-sedno-post-type-announcement.php:60
+#: inc/class-sedno-post-type-editorial-comment.php:36
+msgid "Not found in Trash"
+msgstr "Nie znaleziono w koszu"
+
+#: inc/class-sedno-post-type-announcement.php:61
+msgid "Announcement list"
+msgstr "Lista ogłoszeń"
+
+#: inc/class-sedno-post-type-announcement.php:62
+msgid "Announcement list navigation"
+msgstr "Nawigacja ogłoszeń"
+
+#: inc/class-sedno-post-type-announcement.php:63
+#: inc/class-sedno-post-type-editorial-comment.php:39
+msgid "Filter items list"
+msgstr "Filtrowanie listy elementów"
+
+#: inc/class-sedno-post-type-announcement.php:68
+msgid "Announcement"
+msgstr "Ogłoszenie"
+
 #: inc/class-sedno-post-type-editorial-comment.php:23
 #: inc/class-sedno-post-type-editorial-comment.php:24
 #: inc/class-sedno-post-type-editorial-comment.php:25
@@ -124,13 +197,9 @@ msgstr "Komentarze redakcyjne"
 msgid "Add New Editorial Comment"
 msgstr "Dodaj nowy komentarz redakcyjny"
 
-#: inc/class-sedno-post-type-editorial-comment.php:28
-msgid "Add New"
-msgstr "Dodaj"
-
 #: inc/class-sedno-post-type-editorial-comment.php:29
 msgid "New Editorial Comment"
-msgstr ""
+msgstr "Nowy komentarz redakcyjny"
 
 #: inc/class-sedno-post-type-editorial-comment.php:30
 msgid "Edit Editorial Comment"
@@ -138,25 +207,16 @@ msgstr "Edytuj komentarz redakcyjny"
 
 #: inc/class-sedno-post-type-editorial-comment.php:31
 msgid "Update Editorial Comment"
-msgstr ""
+msgstr "Aktualizuj komentarz redakcyjny"
 
 #: inc/class-sedno-post-type-editorial-comment.php:32
 #: inc/class-sedno-post-type-editorial-comment.php:33
 msgid "View Editorial Comment"
-msgstr ""
+msgstr "Zobacz komentarz redakcyjny"
 
 #: inc/class-sedno-post-type-editorial-comment.php:34
 msgid "Search Editorial Comment"
-msgstr ""
-
-#: inc/class-sedno-post-type-editorial-comment.php:35
-#, fuzzy
-msgid "Not found"
-msgstr "Niczego nie znaleziono"
-
-#: inc/class-sedno-post-type-editorial-comment.php:36
-msgid "Not found in Trash"
-msgstr ""
+msgstr "Szukaj komentarzy redakcyjnych"
 
 #: inc/class-sedno-post-type-editorial-comment.php:37
 msgid "Editorial Comment list"
@@ -166,33 +226,41 @@ msgstr "Lista komentarzy redakcyjnych"
 msgid "Editorial Comment list navigation"
 msgstr "Nawigacja komentarzy redakcyjnych"
 
-#: inc/class-sedno-post-type-editorial-comment.php:39
-msgid "Filter items list"
-msgstr ""
-
-#: inc/class-sedno-theme.php:113
+#: inc/class-sedno-theme.php:117
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:411
+#: inc/class-sedno-theme.php:415
 msgid "Main Page Footer One"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:419
+#: inc/class-sedno-theme.php:423
 msgid "Main Page Footer Two"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:517
+#: inc/class-sedno-theme.php:465
+msgid "Visit out profile on %s"
+msgstr "Zobacz nasz profil społecznościowy na %s"
+
+#: inc/class-sedno-theme.php:527
 msgid "First page"
-msgstr ""
+msgstr "Pierwsza strona"
 
-#: inc/class-sedno-theme.php:563
+#: inc/class-sedno-theme.php:573
 msgid "Last page"
-msgstr ""
+msgstr "Ostatnia strona"
 
-#: inc/class-sedno-theme.php:581 inc/class-sedno-theme.php:583
+#: inc/class-sedno-theme.php:591 inc/class-sedno-theme.php:593
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
+
+#: inc/class-sedno.php:212
+msgid "Add file"
+msgstr "Dodaj plik"
+
+#: inc/class-sedno.php:254
+msgid "Remove file"
+msgstr "Usuń plik"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:63
@@ -262,6 +330,14 @@ msgstr "Czytaj dalej"
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Czytaj dalej<span class=\"screen-reader-text\"> \"%s\"</span>"
 
+#: template-parts/list-item-announcement.php:29
+msgid "View"
+msgstr "Zobacz"
+
+#: template-parts/list-item-announcement.php:29
+msgid "Read"
+msgstr "Czytaj"
+
 #. Theme Name of the plugin/theme
 msgid "SEDNO"
 msgstr "SEDNO"
@@ -288,37 +364,57 @@ msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
 
+#: inc/class-sedno-post-type-announcement.php:45
+msgctxt "Post Type General Name"
+msgid "Announcements"
+msgstr "Ogłoszenia"
+
 #: inc/class-sedno-post-type-editorial-comment.php:21
 msgctxt "Post Type General Name"
 msgid "Editorial Commentes"
 msgstr "Komentarze redakcyjne"
+
+#: inc/class-sedno-post-type-announcement.php:46
+msgctxt "Post Type Singular Name"
+msgid "Announcement"
+msgstr "Ogłoszenie"
 
 #: inc/class-sedno-post-type-editorial-comment.php:22
 msgctxt "Post Type Singular Name"
 msgid "Editorial Comment"
 msgstr "Komentarz redakcyjny"
 
+#: inc/class-sedno-post-type-announcement.php:70
+msgctxt "archive slug"
+msgid "announcements"
+msgstr "ogloszenia"
+
 #: inc/class-sedno-post-type-editorial-comment.php:46
 msgctxt "archive slug"
 msgid "editorial-comments"
 msgstr "komentarze-redakcyjne"
+
+#: inc/class-sedno-post-type-announcement.php:81
+msgctxt "rewrite slug"
+msgid "announcement"
+msgstr "ogloszenie"
 
 #: inc/class-sedno-post-type-editorial-comment.php:57
 msgctxt "rewrite slug"
 msgid "editorial-comment"
 msgstr "komentarz-redakcyjny"
 
-#: inc/class-sedno-theme.php:101
+#: inc/class-sedno-theme.php:105
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:104
+#: inc/class-sedno-theme.php:108
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:107
+#: inc/class-sedno-theme.php:111
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"

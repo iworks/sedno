@@ -29,10 +29,14 @@ class Sedno_Theme extends Sedno {
 			new Sedno_PWA;
 		}
 		/**
-		 * Editorial Comment
+		 * Custom Post Types:
+		 * - Editorial Comment
+		 * - Announcement
 		 */
 		include_once 'class-sedno-post-type-editorial-comment.php';
 		new Sedno_Post_Type_Editorial_Comment;
+		include_once 'class-sedno-post-type-announcement.php';
+		new Sedno_Post_Type_Announcement;
 		/**
 		 * hooks
 		 */
@@ -446,16 +450,22 @@ class Sedno_Theme extends Sedno {
 
 	public function shortcode_social_media( $content, $atts ) {
 		$media = array(
-			'twitter'  => 'https://twitter.com/sedno_org',
-			'facebook' => 'https://www.facebook.com/StowarzyszenieEuropejskaDemokracja/',
-			'youtube'  => 'https://www.youtube.com/channel/UChEODSnVNPU-1AV8Pvy2msQ',
+			'Twitter'  => 'https://twitter.com/sedno_org',
+			'Facebook' => 'https://www.facebook.com/StowarzyszenieEuropejskaDemokracja/',
+			'YouTube'  => 'https://www.youtube.com/channel/UChEODSnVNPU-1AV8Pvy2msQ',
 		);
 		$c     = '<ul class="sedno-social-media">';
 		foreach ( $media as $class => $url ) {
 			$c .= sprintf(
-				'<li class="%1$s"><a href="%2$s" target="%1$s"><span>%1$s</span></a></li>',
-				esc_attr( $class ),
-				esc_url( $url )
+				'<li class="%1$s"><a href="%2$s" target="%1$s"><span>%3$s</span></a></li>',
+				esc_attr( strtolower( $class ) ),
+				esc_url( $url ),
+				esc_html(
+					sprintf(
+						__( 'Visit out profile on %s', 'sedno' ),
+						$class
+					)
+				)
 			);
 		}
 		$c .= '</ul>';

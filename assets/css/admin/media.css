@@ -1,0 +1,17 @@
+.iworks-media-container .iworks-media-file-row {
+  display: grid;
+  grid-template-columns: 32px 32px auto 32px;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+.iworks-media-container .iworks-media-file-row .icon {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=media.css.map */

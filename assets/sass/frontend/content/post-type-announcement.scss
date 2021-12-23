@@ -1,0 +1,40 @@
+@import '../_mixin';
+
+@mixin announcement_files() {
+    .files {
+        justify-self: end;
+        ul {
+            @include reset;
+            display: grid;
+            row-gap: 1em;
+        }
+        a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+body {
+    &.post-type-archive-announcement {
+        #primary {
+            article {
+                display: grid;
+                grid-template-columns: 160px auto 250px;
+                .entry-meta {
+                    line-height: 40.45px;
+                }
+                @include announcement_files;
+            }
+        }
+    }
+    &.single-announcement {
+        .entry-footer {
+            @include announcement_files;
+            .files {
+                max-width: 200px;
+            }
+            padding-bottom: 2em;
+        }
+    }
+}
