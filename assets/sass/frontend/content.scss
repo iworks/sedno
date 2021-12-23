@@ -45,6 +45,9 @@ body {
             h1, h2, h3, h4, h5, h6 {
                 clear: initial;
             }
+            a {
+                text-decoration: underline;
+            }
         }
         .entry-footer {
             border-bottom: 3px solid var(--color-blue-1);

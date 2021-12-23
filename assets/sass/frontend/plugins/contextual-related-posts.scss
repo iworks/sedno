@@ -4,8 +4,8 @@
     padding: 20px 0 var(--padding-default);
     h3 {
         color: var(--color-accent);
-        margin: 0;
-        @include font(40);
+        margin: 0 0 var(--padding-default);
+        @include font(40, 40);
     }
     ul {
         @include reset;
@@ -21,7 +21,7 @@
     }
     span {
         font-family: var(--font-family-serif);
-        @include font(28);
+        @include font(28,30);
     }
 }
 

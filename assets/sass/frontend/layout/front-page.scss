@@ -1,5 +1,13 @@
 @import '_mixin';
 
+body {
+    &.home {
+        #primary {
+            margin-bottom: 110px;
+        }
+    }
+}
+
 #sidebar-sedno-mp-1 {
     background-color: var(--color-gray-3);
     color: var(--color-blue-2);

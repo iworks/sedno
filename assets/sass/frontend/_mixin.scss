@@ -248,7 +248,7 @@ $font_root: 'assets/fonts/';
         color: $color_visited;
     }
     &:hover {
-        color: $color_hover;
+        color: var(--color-accent);
         text-decoration: underline;
     }
     &:active {
