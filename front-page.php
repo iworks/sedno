@@ -31,18 +31,8 @@ if ( $the_query->have_posts() ) {
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_title( '<h3>', '</h3>' ); ?>
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sedno' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+		<?php the_content(); ?>
 	</div><!-- .entry-content -->
-
 </article><!-- #post-<?php the_ID(); ?> -->
 		<?php
 	}
