@@ -41,6 +41,13 @@
     .menu {
         display: flex;
         float: right;
+        a {
+                border-bottom: 2px solid var(--color-white);
+            &:hover {
+                border-bottom-color: var(--color-blue-1);
+                text-decoration: none;
+            }
+        }
         > {
             li {
                 padding-right: 40px;
@@ -49,10 +56,10 @@
                 &.current_page_item {
                     > {
                         a {
-                            border-bottom: 2px solid var(--color-accent);
+                            border-bottom-color: var(--color-accent);
                             &:hover {
-                                text-decoration: none;
                                 cursor: default;
+                                border-bottom-color: var(--color-blue-3);
                             }
                         }
                     }
@@ -85,7 +92,7 @@
                 a {
                     border-bottom: 2px solid var(--color-accent);
                     &:hover {
-                        text-decoration: none;
+                        border-bottom-color: var(--color-blue-3);
                         cursor: default;
                     }
                 }
