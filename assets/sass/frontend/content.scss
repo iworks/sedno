@@ -13,11 +13,17 @@ body {
             @include button_reverse;
         }
     }
+    .required {
+        color: var(--color-alert);
+    }
     &.archive {
         .page-header {
             .page-title {
+                display: flex;
+                align-items: baseline;
                 span {
                     @include sedno_tag;
+                    margin-left: var(--padding-default);
                 }
             }
         }

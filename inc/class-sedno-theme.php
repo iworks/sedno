@@ -49,6 +49,8 @@ class Sedno_Theme extends Sedno {
 		add_filter( 'login_headertext', array( $this, 'login_headertext' ) );
 		add_filter( 'site_icon_meta_tags', array( $this, 'site_icon_meta_tags' ) );
 		add_filter( 'the_content', array( $this, 'add_thumbnail_image' ) );
+		add_filter( 'get_the_archive_title', array( $this, 'archive_title' ), 10, 3 );
+		add_filter( 'excerpt_more', array( $this, 'excerpt_more' ) );
 		/**
 		 * js
 		 */
@@ -605,6 +607,30 @@ class Sedno_Theme extends Sedno {
 	public function remove_website_field( $fields ) {
 		unset( $fields['url'] );
 		return $fields;
+	}
+
+	public function archive_title( $title, $orginal_title, $prefix ) {
+		if ( is_tag() ) {
+			$title  = __( 'Articles with tag', 'sedno' );
+			$title .= sprintf( ' <span>%s</span>', single_tag_title( '', false ) );
+			return $title;
+		}
+				/*
+		if ( is_category() ) {
+			$title = single_cat_title( '', false );
+		} elseif ( is_author() ) {
+			$title = '<span class="vcard">' . get_the_author() . '</span>';
+		} elseif ( is_post_type_archive() ) {
+			$title = post_type_archive_title( '', false );
+		} elseif ( is_tax() ) {
+			$title = single_term_title( '', false );
+		}*/
+
+		return $title;
+	}
+
+	public function excerpt_more( $more ) {
+		return '&hellip;';
 	}
 }
 
