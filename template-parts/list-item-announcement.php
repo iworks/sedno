@@ -13,7 +13,7 @@
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
 		</header>
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 	</div>
 <?php get_template_part( 'template-parts/announcement/files' ); ?>
 </article>
