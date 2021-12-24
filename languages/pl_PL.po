@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-24 06:37:03+00:00\n"
-"PO-Revision-Date: 2021-12-23 13:48+0100\n"
+"POT-Creation-Date: 2021-12-24 07:08:21+00:00\n"
+"PO-Revision-Date: 2021-12-24 08:08+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -47,6 +47,10 @@ msgstr "Proszę spróbować w archiwum miesięcznym. %1$s"
 #: archive-announcement.php:18
 msgid "What is worth knowing about our business"
 msgstr "Co warto wiedzieć o naszej działalności"
+
+#: archive-editorial_comment.php:14
+msgid "Archival Editorial Comments"
+msgstr "Komentarze archiwalne"
 
 #. translators: 1: title.
 #: comments.php:35

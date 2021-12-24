@@ -11,7 +11,7 @@ if ( isset( $args['index'] ) && 0 === $args['index'] ) {
 		<div class="entry-wrap">
 		<div class="entry" style="z-index:<?php echo $z_index + 1; ?>">
 				<header class="entry-header"><?php the_title( '<h2 class="entry-title">', '</h2>' ); ?></header>
-                <div class="entry-meta"><?php echo esc_html( get_the_author() ); ?> </div><!-- .entry-meta -->
+				<div class="entry-meta"><?php echo esc_html( get_the_author() ); ?> </div><!-- .entry-meta -->
 				<div class="entry-content"><?php the_excerpt(); ?></div>
 				<span class="button"><?php esc_html_e( 'Read more', 'sedno' ); ?></span>
 			</div>

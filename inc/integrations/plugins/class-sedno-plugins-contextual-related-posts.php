@@ -43,7 +43,6 @@ class Sedno_Integration_Plugin_Contextual_Rlated_Posts {
 			$link_attributes,
 			implode( ' ', get_post_class( 'crp_link', $result ) )
 		);
-
 		$output .= sprintf(
 			'<span class="%s" style="%s"%s></span>',
 			esc_attr( implode( ' ', $classes ) ),
@@ -55,6 +54,4 @@ class Sedno_Integration_Plugin_Contextual_Rlated_Posts {
 		return $output;
 	}
 }
-
-
 

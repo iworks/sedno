@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1640327823389\n"
+"Project-Id-Version: SEDNO 1.0.0.1640328135752\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-24 06:37:03+00:00\n"
+"POT-Creation-Date: 2021-12-24 07:08:21+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,6 +45,10 @@ msgstr ""
 
 #: archive-announcement.php:18
 msgid "What is worth knowing about our business"
+msgstr ""
+
+#: archive-editorial_comment.php:14
+msgid "Archival Editorial Comments"
 msgstr ""
 
 #: comments.php:35
