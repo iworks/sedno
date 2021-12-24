@@ -38,6 +38,11 @@ class Sedno_Theme extends Sedno {
 		include_once 'class-sedno-post-type-announcement.php';
 		new Sedno_Post_Type_Announcement;
 		/**
+		 * integrations
+		 */
+		include_once 'integrations/plugins/class-sedno-plugins-contextual-related-posts.php';
+		new Sedno_Integration_Plugin_Contextual_Rlated_Posts;
+		/**
 		 * hooks
 		 */
 		add_action( 'init', array( $this, 'register_scripts' ) );

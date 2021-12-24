@@ -21,7 +21,7 @@ body {
                 padding-bottom: 2em;
                 .entry-title {
                     margin: 0 0 10px;
-                    font-family: var(--font-family-serif);
+                    @include header_3;
                 }
                 .author {
                     @include font(20);

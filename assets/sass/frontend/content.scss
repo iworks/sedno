@@ -28,6 +28,12 @@ body {
             }
         }
     }
+    &.blog,
+    &.single-post {
+        .entry-meta {
+            margin-bottom: 5px;
+        }
+    }
     &.single-post {
         figure {
             &.thumbnail {
@@ -39,7 +45,9 @@ body {
             }
         }
         .entry-title {
-            margin: 0;
+            margin: 0 0 15px;
+            @include header_3;
+            color: var(--color-black);
         }
         .entry-content {
             h1, h2, h3, h4, h5, h6 {
@@ -59,7 +67,7 @@ body {
                     @include reset;
                     display: flex;
                     flex-wrap: wrap;
-                    gap: var(--padding-default);
+                    gap: var(--padding-small);
                     a {
                         @include sedno_tag;
                     }
@@ -94,6 +102,31 @@ body {
             }
         }
     }
+    &.page {
+        .entry-content {
+            strong {
+                font-weight: 600;
+            }
+            h2 {
+                @include header_1;
+                font-weight: 600;
+            }
+            h3 {
+                @include font(30, 30);
+            }
+            .wp-block-column {
+                h3 {
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.entry-meta {
+    font-weight: 200;
 }
 
 @import 'content/login';

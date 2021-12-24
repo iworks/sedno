@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-23 12:48:28+00:00\n"
+"POT-Creation-Date: 2021-12-23 15:19:29+00:00\n"
 "PO-Revision-Date: 2021-12-23 13:48+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -61,16 +61,11 @@ msgstr "Komentarze zostały wyłączone."
 msgid "Editorial Comment"
 msgstr "Komentarz redakcyjny"
 
-#: front-page.php:39 template-parts/content-page.php:25
-#: template-parts/content-post.php:33 template-parts/content.php:53
-msgid "Pages:"
-msgstr "Strony:"
-
-#: front-page.php:53
+#: front-page.php:43
 msgid "The most important topics"
 msgstr "Najważniejsze tematy"
 
-#: front-page.php:81
+#: front-page.php:71
 msgid "Browse all articles"
 msgstr "Zobacz wszystkie artykuły"
 
@@ -226,35 +221,35 @@ msgstr "Lista komentarzy redakcyjnych"
 msgid "Editorial Comment list navigation"
 msgstr "Nawigacja komentarzy redakcyjnych"
 
-#: inc/class-sedno-theme.php:118
+#: inc/class-sedno-theme.php:119
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:416
+#: inc/class-sedno-theme.php:417
 msgid "Main Page Footer One"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:424
+#: inc/class-sedno-theme.php:425
 msgid "Main Page Footer Two"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:466
+#: inc/class-sedno-theme.php:467
 msgid "Visit out profile on %s"
 msgstr "Zobacz nasz profil społecznościowy na %s"
 
-#: inc/class-sedno-theme.php:528
+#: inc/class-sedno-theme.php:529
 msgid "First page"
 msgstr "Pierwsza strona"
 
-#: inc/class-sedno-theme.php:574
+#: inc/class-sedno-theme.php:575
 msgid "Last page"
 msgstr "Ostatnia strona"
 
-#: inc/class-sedno-theme.php:592 inc/class-sedno-theme.php:594
+#: inc/class-sedno-theme.php:593 inc/class-sedno-theme.php:595
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
 
-#: inc/class-sedno-theme.php:613
+#: inc/class-sedno-theme.php:614
 msgid "Articles with tag"
 msgstr "Artykuły z tagiem"
 
@@ -333,7 +328,12 @@ msgid ""
 msgstr ""
 "Wygląda na to, że szukana strona nie istnieje. Być może warto jej poszukać."
 
-#: template-parts/content-slider.php:15
+#: template-parts/content-page.php:25 template-parts/content-post.php:33
+#: template-parts/content.php:53
+msgid "Pages:"
+msgstr "Strony:"
+
+#: template-parts/content-slider.php:16
 msgid "Read more"
 msgstr "Czytaj dalej"
 
@@ -408,17 +408,17 @@ msgctxt "rewrite slug"
 msgid "editorial-comment"
 msgstr "komentarz-redakcyjny"
 
-#: inc/class-sedno-theme.php:106
+#: inc/class-sedno-theme.php:107
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:109
+#: inc/class-sedno-theme.php:110
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:112
+#: inc/class-sedno-theme.php:113
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"

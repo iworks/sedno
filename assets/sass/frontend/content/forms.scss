@@ -65,4 +65,9 @@ form {
 .button {
     @include button;
 }
-
+.wp-block-file {
+    text-align: right;
+    .wp-block-file__button {
+        @include button_reverse;;
+    }
+}
