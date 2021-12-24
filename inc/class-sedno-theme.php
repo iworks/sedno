@@ -37,6 +37,8 @@ class Sedno_Theme extends Sedno {
 		new Sedno_Post_Type_Editorial_Comment;
 		include_once 'class-sedno-post-type-announcement.php';
 		new Sedno_Post_Type_Announcement;
+		include_once 'class-sedno-post-type-lecture.php';
+		new Sedno_Post_Type_Lecture;
 		/**
 		 * integrations
 		 */
@@ -431,6 +433,16 @@ class Sedno_Theme extends Sedno {
 				'id'            => 'sedno-mp-2',
 				'before_widget' => '<div>',
 				'after_widget'  => '</div>',
+			)
+		);
+		register_sidebar(
+			array(
+				'name'           => __( 'After title of Lectures Archive Page', 'doctor-herbal' ),
+				'id'             => 'sedno-lecture-header',
+				'before_widget'  => '<div id="%1$s" class="%2$s">',
+				'after_widget'   => '</div>',
+				'after_sidebar'  => '</aside>',
+				'before_sidebar' => '<aside id="%1$s" class="%2$s">',
 			)
 		);
 	}

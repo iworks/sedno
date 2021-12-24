@@ -1,0 +1,15 @@
+@import '../_mixin';
+
+body {
+    &.post-type-archive-editorial_comment {
+        #primary {
+            article {
+                display: grid;
+                grid-template-columns: 160px auto;
+                .entry-meta {
+                    line-height: 40.45px;
+                }
+            }
+        }
+    }
+}

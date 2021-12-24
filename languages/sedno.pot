@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1640328135752\n"
+"Project-Id-Version: SEDNO 1.0.0.1640333669114\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-24 07:08:21+00:00\n"
+"POT-Creation-Date: 2021-12-24 08:14:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,6 +49,10 @@ msgstr ""
 
 #: archive-editorial_comment.php:14
 msgid "Archival Editorial Comments"
+msgstr ""
+
+#: archive-lecture.php:18
+msgid "We organize lectures"
 msgstr ""
 
 #: comments.php:35
@@ -127,6 +131,7 @@ msgstr ""
 
 #: inc/class-sedno-post-type-announcement.php:52
 #: inc/class-sedno-post-type-editorial-comment.php:28
+#: inc/class-sedno-post-type-lecture.php:28
 msgid "Add New"
 msgstr ""
 
@@ -153,11 +158,13 @@ msgstr ""
 
 #: inc/class-sedno-post-type-announcement.php:59
 #: inc/class-sedno-post-type-editorial-comment.php:35
+#: inc/class-sedno-post-type-lecture.php:35
 msgid "Not found"
 msgstr ""
 
 #: inc/class-sedno-post-type-announcement.php:60
 #: inc/class-sedno-post-type-editorial-comment.php:36
+#: inc/class-sedno-post-type-lecture.php:36
 msgid "Not found in Trash"
 msgstr ""
 
@@ -171,6 +178,7 @@ msgstr ""
 
 #: inc/class-sedno-post-type-announcement.php:63
 #: inc/class-sedno-post-type-editorial-comment.php:39
+#: inc/class-sedno-post-type-lecture.php:39
 msgid "Filter items list"
 msgstr ""
 
@@ -219,35 +227,84 @@ msgstr ""
 msgid "Editorial Comment list navigation"
 msgstr ""
 
-#: inc/class-sedno-theme.php:124
+#: inc/class-sedno-post-type-lecture.php:23
+#: inc/class-sedno-post-type-lecture.php:24
+#: inc/class-sedno-post-type-lecture.php:25
+#: inc/class-sedno-post-type-lecture.php:26
+#: inc/class-sedno-post-type-lecture.php:48
+msgid "Lectures"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:27
+msgid "Add New Lecture"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:29
+msgid "New Lecture"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:30
+msgid "Edit Lecture"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:31
+msgid "Update Lecture"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:32
+#: inc/class-sedno-post-type-lecture.php:33
+msgid "View Lecture"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:34
+msgid "Search Lecture"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:37
+msgid "Lecture list"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:38
+msgid "Lecture list navigation"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:44
+msgid "Lecture"
+msgstr ""
+
+#: inc/class-sedno-theme.php:126
 msgid "Submit Listing"
 msgstr ""
 
-#: inc/class-sedno-theme.php:422
+#: inc/class-sedno-theme.php:424
 msgid "Main Page Footer One"
 msgstr ""
 
-#: inc/class-sedno-theme.php:430
+#: inc/class-sedno-theme.php:432
 msgid "Main Page Footer Two"
 msgstr ""
 
-#: inc/class-sedno-theme.php:472
+#: inc/class-sedno-theme.php:440
+msgid "After title of Lectures Archive Page"
+msgstr ""
+
+#: inc/class-sedno-theme.php:484
 msgid "Visit out profile on %s"
 msgstr ""
 
-#: inc/class-sedno-theme.php:534
+#: inc/class-sedno-theme.php:546
 msgid "First page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:580
+#: inc/class-sedno-theme.php:592
 msgid "Last page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:598 inc/class-sedno-theme.php:600
+#: inc/class-sedno-theme.php:610 inc/class-sedno-theme.php:612
 msgid "Posts navigation pages"
 msgstr ""
 
-#: inc/class-sedno-theme.php:619
+#: inc/class-sedno-theme.php:631
 msgid "Articles with tag"
 msgstr ""
 
@@ -370,6 +427,11 @@ msgctxt "Post Type General Name"
 msgid "Editorial Commentes"
 msgstr ""
 
+#: inc/class-sedno-post-type-lecture.php:21
+msgctxt "Post Type General Name"
+msgid "Lectures"
+msgstr ""
+
 #: inc/class-sedno-post-type-announcement.php:46
 msgctxt "Post Type Singular Name"
 msgid "Announcement"
@@ -378,6 +440,11 @@ msgstr ""
 #: inc/class-sedno-post-type-editorial-comment.php:22
 msgctxt "Post Type Singular Name"
 msgid "Editorial Comment"
+msgstr ""
+
+#: inc/class-sedno-post-type-lecture.php:22
+msgctxt "Post Type Singular Name"
+msgid "Lecture"
 msgstr ""
 
 #: inc/class-sedno-post-type-announcement.php:70
@@ -390,6 +457,11 @@ msgctxt "archive slug"
 msgid "editorial-comments"
 msgstr ""
 
+#: inc/class-sedno-post-type-lecture.php:46
+msgctxt "archive slug"
+msgid "lectures"
+msgstr ""
+
 #: inc/class-sedno-post-type-announcement.php:81
 msgctxt "rewrite slug"
 msgid "announcement"
@@ -400,17 +472,22 @@ msgctxt "rewrite slug"
 msgid "editorial-comment"
 msgstr ""
 
-#: inc/class-sedno-theme.php:112
+#: inc/class-sedno-post-type-lecture.php:57
+msgctxt "rewrite slug"
+msgid "lecture"
+msgstr ""
+
+#: inc/class-sedno-theme.php:114
 msgctxt "login form title"
 msgid "Login"
 msgstr ""
 
-#: inc/class-sedno-theme.php:115
+#: inc/class-sedno-theme.php:117
 msgctxt "login form title"
 msgid "Register"
 msgstr ""
 
-#: inc/class-sedno-theme.php:118
+#: inc/class-sedno-theme.php:120
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr ""

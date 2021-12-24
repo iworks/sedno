@@ -1,0 +1,11 @@
+@import '../_mixin';
+
+body {
+    &.post-type-archive-lecture {
+        #sedno-lecture-header {
+            margin-bottom: 40px;
+        }
+    }
+    &.single-lecture {
+    }
+}
