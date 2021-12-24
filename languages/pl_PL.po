@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-23 15:19:29+00:00\n"
+"POT-Creation-Date: 2021-12-24 06:37:03+00:00\n"
 "PO-Revision-Date: 2021-12-23 13:48+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -221,35 +221,35 @@ msgstr "Lista komentarzy redakcyjnych"
 msgid "Editorial Comment list navigation"
 msgstr "Nawigacja komentarzy redakcyjnych"
 
-#: inc/class-sedno-theme.php:119
+#: inc/class-sedno-theme.php:124
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:417
+#: inc/class-sedno-theme.php:422
 msgid "Main Page Footer One"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:425
+#: inc/class-sedno-theme.php:430
 msgid "Main Page Footer Two"
 msgstr "Stopka 1 strony głównej"
 
-#: inc/class-sedno-theme.php:467
+#: inc/class-sedno-theme.php:472
 msgid "Visit out profile on %s"
 msgstr "Zobacz nasz profil społecznościowy na %s"
 
-#: inc/class-sedno-theme.php:529
+#: inc/class-sedno-theme.php:534
 msgid "First page"
 msgstr "Pierwsza strona"
 
-#: inc/class-sedno-theme.php:575
+#: inc/class-sedno-theme.php:580
 msgid "Last page"
 msgstr "Ostatnia strona"
 
-#: inc/class-sedno-theme.php:593 inc/class-sedno-theme.php:595
+#: inc/class-sedno-theme.php:598 inc/class-sedno-theme.php:600
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
 
-#: inc/class-sedno-theme.php:614
+#: inc/class-sedno-theme.php:619
 msgid "Articles with tag"
 msgstr "Artykuły z tagiem"
 
@@ -408,17 +408,17 @@ msgctxt "rewrite slug"
 msgid "editorial-comment"
 msgstr "komentarz-redakcyjny"
 
-#: inc/class-sedno-theme.php:107
+#: inc/class-sedno-theme.php:112
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:110
+#: inc/class-sedno-theme.php:115
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:113
+#: inc/class-sedno-theme.php:118
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"

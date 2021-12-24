@@ -10,8 +10,11 @@
     ul {
         @include reset;
         display: grid;
-        grid-template-columns: repeat( 3, 1fr );
         column-gap: var(--padding-default);
+        row-gap: var(--padding-default);
+        @media screen and( min-width: #{$width_m} ) {
+            grid-template-columns: repeat( 3, 1fr );
+        }
     }
     figure {
         margin: 0;
