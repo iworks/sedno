@@ -39,6 +39,8 @@ class Sedno_Theme extends Sedno {
 		new Sedno_Post_Type_Announcement;
 		include_once 'class-sedno-post-type-lecture.php';
 		new Sedno_Post_Type_Lecture;
+		include_once 'class-sedno-post-type-debate.php';
+		new Sedno_Post_Type_Debate;
 		/**
 		 * integrations
 		 */
@@ -437,8 +439,18 @@ class Sedno_Theme extends Sedno {
 		);
 		register_sidebar(
 			array(
-				'name'           => __( 'After title of Lectures Archive Page', 'doctor-herbal' ),
+				'name'           => __( 'After title of Lectures Archive Page', 'sedno' ),
 				'id'             => 'sedno-lecture-header',
+				'before_widget'  => '<div id="%1$s" class="%2$s">',
+				'after_widget'   => '</div>',
+				'after_sidebar'  => '</aside>',
+				'before_sidebar' => '<aside id="%1$s" class="%2$s">',
+			)
+		);
+		register_sidebar(
+			array(
+				'name'           => __( 'After title of Debates Archive Page', 'sedno' ),
+				'id'             => 'sedno-debate-header',
 				'before_widget'  => '<div id="%1$s" class="%2$s">',
 				'after_widget'   => '</div>',
 				'after_sidebar'  => '</aside>',

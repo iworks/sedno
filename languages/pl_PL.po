@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-24 08:11:15+00:00\n"
-"PO-Revision-Date: 2021-12-24 09:11+0100\n"
+"POT-Creation-Date: 2021-12-24 08:28:10+00:00\n"
+"PO-Revision-Date: 2021-12-24 09:28+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -47,6 +47,10 @@ msgstr "Proszę spróbować w archiwum miesięcznym. %1$s"
 #: archive-announcement.php:18
 msgid "What is worth knowing about our business"
 msgstr "Co warto wiedzieć o naszej działalności"
+
+#: archive-debate.php:18
+msgid "We organize debates"
+msgstr "Urządzamy debaty"
 
 #: archive-editorial_comment.php:14
 msgid "Archival Editorial Comments"
@@ -136,6 +140,7 @@ msgid "Add New Announcement"
 msgstr "Dodaj nowe ogłoszenie"
 
 #: inc/class-sedno-post-type-announcement.php:52
+#: inc/class-sedno-post-type-debate.php:28
 #: inc/class-sedno-post-type-editorial-comment.php:28
 #: inc/class-sedno-post-type-lecture.php:28
 msgid "Add New"
@@ -163,12 +168,14 @@ msgid "Search Announcement"
 msgstr "Szukaj ogłoszeń"
 
 #: inc/class-sedno-post-type-announcement.php:59
+#: inc/class-sedno-post-type-debate.php:35
 #: inc/class-sedno-post-type-editorial-comment.php:35
 #: inc/class-sedno-post-type-lecture.php:35
 msgid "Not found"
 msgstr "Niczego nie znaleziono"
 
 #: inc/class-sedno-post-type-announcement.php:60
+#: inc/class-sedno-post-type-debate.php:36
 #: inc/class-sedno-post-type-editorial-comment.php:36
 #: inc/class-sedno-post-type-lecture.php:36
 msgid "Not found in Trash"
@@ -183,6 +190,7 @@ msgid "Announcement list navigation"
 msgstr "Nawigacja ogłoszeń"
 
 #: inc/class-sedno-post-type-announcement.php:63
+#: inc/class-sedno-post-type-debate.php:39
 #: inc/class-sedno-post-type-editorial-comment.php:39
 #: inc/class-sedno-post-type-lecture.php:39
 msgid "Filter items list"
@@ -191,6 +199,51 @@ msgstr "Filtrowanie listy elementów"
 #: inc/class-sedno-post-type-announcement.php:68
 msgid "Announcement"
 msgstr "Ogłoszenie"
+
+#: inc/class-sedno-post-type-debate.php:23
+#: inc/class-sedno-post-type-debate.php:24
+#: inc/class-sedno-post-type-debate.php:25
+#: inc/class-sedno-post-type-debate.php:26
+#: inc/class-sedno-post-type-debate.php:48
+msgid "Debates"
+msgstr "Debaty"
+
+#: inc/class-sedno-post-type-debate.php:27
+msgid "Add New Debate"
+msgstr "Dodaj nową debatę"
+
+#: inc/class-sedno-post-type-debate.php:29
+msgid "New Debate"
+msgstr "Nowa debata"
+
+#: inc/class-sedno-post-type-debate.php:30
+msgid "Edit Debate"
+msgstr "Edytuj debatę"
+
+#: inc/class-sedno-post-type-debate.php:31
+msgid "Update Debate"
+msgstr "Aktualizuj debatę"
+
+#: inc/class-sedno-post-type-debate.php:32
+#: inc/class-sedno-post-type-debate.php:33
+msgid "View Debate"
+msgstr "Zobacz debatę"
+
+#: inc/class-sedno-post-type-debate.php:34
+msgid "Search Debate"
+msgstr "Szukaj debat"
+
+#: inc/class-sedno-post-type-debate.php:37
+msgid "Debate list"
+msgstr "Lista debat"
+
+#: inc/class-sedno-post-type-debate.php:38
+msgid "Debate list navigation"
+msgstr "Nawigacja debat"
+
+#: inc/class-sedno-post-type-debate.php:44
+msgid "Debate"
+msgstr "Debata"
 
 #: inc/class-sedno-post-type-editorial-comment.php:23
 #: inc/class-sedno-post-type-editorial-comment.php:24
@@ -278,39 +331,43 @@ msgstr "Nawigacja wykładów"
 msgid "Lecture"
 msgstr "Wykład"
 
-#: inc/class-sedno-theme.php:126
+#: inc/class-sedno-theme.php:128
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:424
+#: inc/class-sedno-theme.php:426
 msgid "Main Page Footer One"
 msgstr "Pierwsza stopka strony głównej"
 
-#: inc/class-sedno-theme.php:432
+#: inc/class-sedno-theme.php:434
 msgid "Main Page Footer Two"
 msgstr "Druga stopka strony głównej"
 
-#: inc/class-sedno-theme.php:440
+#: inc/class-sedno-theme.php:442
 msgid "After title of Lectures Archive Page"
 msgstr "Po tytule na stronie archiwum wykładów"
 
-#: inc/class-sedno-theme.php:484
+#: inc/class-sedno-theme.php:452
+msgid "After title of Debates Archive Page"
+msgstr "Po tytule na stronie archiwum debat"
+
+#: inc/class-sedno-theme.php:496
 msgid "Visit out profile on %s"
 msgstr "Zobacz nasz profil społecznościowy na %s"
 
-#: inc/class-sedno-theme.php:546
+#: inc/class-sedno-theme.php:558
 msgid "First page"
 msgstr "Pierwsza strona"
 
-#: inc/class-sedno-theme.php:592
+#: inc/class-sedno-theme.php:604
 msgid "Last page"
 msgstr "Ostatnia strona"
 
-#: inc/class-sedno-theme.php:610 inc/class-sedno-theme.php:612
+#: inc/class-sedno-theme.php:622 inc/class-sedno-theme.php:624
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
 
-#: inc/class-sedno-theme.php:631
+#: inc/class-sedno-theme.php:643
 msgid "Articles with tag"
 msgstr "Artykuły z tagiem"
 
@@ -434,6 +491,11 @@ msgctxt "Post Type General Name"
 msgid "Announcements"
 msgstr "Ogłoszenia"
 
+#: inc/class-sedno-post-type-debate.php:21
+msgctxt "Post Type General Name"
+msgid "Debates"
+msgstr "Debaty"
+
 #: inc/class-sedno-post-type-editorial-comment.php:21
 msgctxt "Post Type General Name"
 msgid "Editorial Commentes"
@@ -448,6 +510,11 @@ msgstr "Wykłady"
 msgctxt "Post Type Singular Name"
 msgid "Announcement"
 msgstr "Ogłoszenie"
+
+#: inc/class-sedno-post-type-debate.php:22
+msgctxt "Post Type Singular Name"
+msgid "Debate"
+msgstr "Debata"
 
 #: inc/class-sedno-post-type-editorial-comment.php:22
 msgctxt "Post Type Singular Name"
@@ -464,6 +531,11 @@ msgctxt "archive slug"
 msgid "announcements"
 msgstr "ogloszenia"
 
+#: inc/class-sedno-post-type-debate.php:46
+msgctxt "archive slug"
+msgid "debates"
+msgstr "debaty"
+
 #: inc/class-sedno-post-type-editorial-comment.php:46
 msgctxt "archive slug"
 msgid "editorial-comments"
@@ -479,6 +551,11 @@ msgctxt "rewrite slug"
 msgid "announcement"
 msgstr "ogloszenie"
 
+#: inc/class-sedno-post-type-debate.php:57
+msgctxt "rewrite slug"
+msgid "debate"
+msgstr "debata"
+
 #: inc/class-sedno-post-type-editorial-comment.php:57
 msgctxt "rewrite slug"
 msgid "editorial-comment"
@@ -489,17 +566,17 @@ msgctxt "rewrite slug"
 msgid "lecture"
 msgstr "wyklad"
 
-#: inc/class-sedno-theme.php:114
+#: inc/class-sedno-theme.php:116
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:117
+#: inc/class-sedno-theme.php:119
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:120
+#: inc/class-sedno-theme.php:122
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"
