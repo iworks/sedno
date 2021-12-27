@@ -46,6 +46,8 @@ class Sedno_Theme extends Sedno {
 		 */
 		include_once 'integrations/plugins/class-sedno-plugins-contextual-related-posts.php';
 		new Sedno_Integration_Plugin_Contextual_Rlated_Posts;
+		include_once 'integrations/services/class-sedno-service-google-analytics.php';
+		new Sedno_Integration_Service_Google_Analitics;
 		/**
 		 * hooks
 		 */
