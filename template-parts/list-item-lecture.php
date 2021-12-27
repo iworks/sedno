@@ -8,20 +8,7 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-<?php
-the_post_thumbnail(
-	'list',
-	array(
-		'alt' => the_title_attribute(
-			array(
-				'echo' => false,
-			)
-		),
-	)
-);
-?>
-</a>
+<?php get_template_part( 'template-parts/thumbnail' ); ?>
 	<div class="entry-content">
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>

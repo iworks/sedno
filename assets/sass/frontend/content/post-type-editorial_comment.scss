@@ -12,4 +12,9 @@ body {
             }
         }
     }
+    &.single-editorial_comment {
+        .entry-title {
+            margin: 0 0 15px;
+        }
+    }
 }

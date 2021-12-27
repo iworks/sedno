@@ -105,6 +105,9 @@ body {
         }
     }
     &.page {
+        .entry-title {
+            margin: 0 0 15px;
+        }
         .entry-content {
             strong {
                 font-weight: 600;

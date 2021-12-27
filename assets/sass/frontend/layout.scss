@@ -6,6 +6,10 @@
 }
 
 body {
+    .page,
+    .post {
+        margin: 0;
+    }
     &.archive,
     &.blog,
     &.search {
@@ -16,6 +20,7 @@ body {
         }
         .site-main {
             article {
+                padding-bottom: var(--padding-default);
                 @media screen and (min-width: #{$width_m} ) {
                     display: grid;
                     grid-template-columns: 460px auto;

@@ -29,12 +29,15 @@ body {
         }
     }
     &.single-announcement {
+        .entry-title {
+            margin: 0 0 15px;
+        }
         .entry-footer {
             @include announcement_files;
             .files {
                 max-width: 200px;
             }
-            padding-bottom: 2em;
+            padding-bottom: var(--padding-default);
         }
     }
 }
