@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-24 08:28:10+00:00\n"
+"POT-Creation-Date: 2021-12-27 11:00:06+00:00\n"
 "PO-Revision-Date: 2021-12-24 09:28+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -93,11 +93,11 @@ msgstr "Panel boczny"
 msgid "Add widgets here."
 msgstr "Tutaj można dodać widżety."
 
-#: header.php:26
+#: header.php:25
 msgid "Skip to content"
 msgstr "Przejdź do treści"
 
-#: header.php:49
+#: header.php:48
 msgid "Primary Menu"
 msgstr "Menu główne"
 
@@ -331,43 +331,43 @@ msgstr "Nawigacja wykładów"
 msgid "Lecture"
 msgstr "Wykład"
 
-#: inc/class-sedno-theme.php:128
+#: inc/class-sedno-theme.php:130
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:426
+#: inc/class-sedno-theme.php:428
 msgid "Main Page Footer One"
 msgstr "Pierwsza stopka strony głównej"
 
-#: inc/class-sedno-theme.php:434
+#: inc/class-sedno-theme.php:436
 msgid "Main Page Footer Two"
 msgstr "Druga stopka strony głównej"
 
-#: inc/class-sedno-theme.php:442
+#: inc/class-sedno-theme.php:444
 msgid "After title of Lectures Archive Page"
 msgstr "Po tytule na stronie archiwum wykładów"
 
-#: inc/class-sedno-theme.php:452
+#: inc/class-sedno-theme.php:454
 msgid "After title of Debates Archive Page"
 msgstr "Po tytule na stronie archiwum debat"
 
-#: inc/class-sedno-theme.php:496
+#: inc/class-sedno-theme.php:498
 msgid "Visit out profile on %s"
 msgstr "Zobacz nasz profil społecznościowy na %s"
 
-#: inc/class-sedno-theme.php:558
+#: inc/class-sedno-theme.php:560
 msgid "First page"
 msgstr "Pierwsza strona"
 
-#: inc/class-sedno-theme.php:604
+#: inc/class-sedno-theme.php:606
 msgid "Last page"
 msgstr "Ostatnia strona"
 
-#: inc/class-sedno-theme.php:622 inc/class-sedno-theme.php:624
+#: inc/class-sedno-theme.php:624 inc/class-sedno-theme.php:626
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
 
-#: inc/class-sedno-theme.php:643
+#: inc/class-sedno-theme.php:645
 msgid "Articles with tag"
 msgstr "Artykuły z tagiem"
 
@@ -380,30 +380,30 @@ msgid "Remove file"
 msgstr "Usuń plik"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:63
+#: inc/template-tags.php:62
 msgid ", "
 msgstr ", "
 
 #. translators: 1: list of categories.
-#: inc/template-tags.php:66
+#: inc/template-tags.php:65
 msgid "Posted in %1$s"
 msgstr "Opublikowany w %s"
 
 #. translators: 1: list of tags.
-#: inc/template-tags.php:82
+#: inc/template-tags.php:81
 msgid "Share %s on twitter"
 msgstr "Podziel się %s na twitterze"
 
-#: inc/template-tags.php:83
+#: inc/template-tags.php:82
 msgid "Share %s on facebook"
 msgstr "Podziel się %s na facebooku"
 
-#: inc/template-tags.php:84
+#: inc/template-tags.php:83
 msgid "Copy link: %s"
 msgstr "Skopiuj odnośnik: %s"
 
 #. translators: %s: post title
-#: inc/template-tags.php:140
+#: inc/template-tags.php:139
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 
@@ -566,35 +566,35 @@ msgctxt "rewrite slug"
 msgid "lecture"
 msgstr "wyklad"
 
-#: inc/class-sedno-theme.php:116
+#: inc/class-sedno-theme.php:118
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:119
+#: inc/class-sedno-theme.php:121
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:122
+#: inc/class-sedno-theme.php:124
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"
 
 #. translators: %s: post date.
-#: inc/template-tags.php:30
+#: inc/template-tags.php:28
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "%s"
 
 #. translators: %s: post author.
-#: inc/template-tags.php:46
+#: inc/template-tags.php:45
 msgctxt "post author"
 msgid "by %s"
 msgstr "%s"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:70
+#: inc/template-tags.php:69
 msgctxt "list item separator"
 msgid "</li><li>"
 msgstr "</li><li>"

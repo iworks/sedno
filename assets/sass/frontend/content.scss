@@ -16,7 +16,8 @@ body {
     .required {
         color: var(--color-alert);
     }
-    &.archive {
+    &.archive,
+    &.search {
         .page-header {
             .page-title {
                 display: flex;
@@ -29,7 +30,8 @@ body {
         }
     }
     &.blog,
-    &.single-post {
+    &.single-post,
+    &.search {
         .entry-meta {
             margin-bottom: 5px;
         }

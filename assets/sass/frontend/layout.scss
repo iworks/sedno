@@ -7,7 +7,8 @@
 
 body {
     &.archive,
-    &.blog {
+    &.blog,
+    &.search {
         .page-header {
             .page-title {
                 margin-top: 0;
@@ -17,8 +18,7 @@ body {
             article {
                 display: grid;
                 grid-template-columns: 460px auto;
-                column-gap: 40px;
-                padding-bottom: 2em;
+                column-gap: 30px;
                 .entry-title {
                     margin: 0 0 10px;
                     @include header_3;
@@ -28,6 +28,9 @@ body {
                 }
                 .entry-content {
                     margin: 0;
+                    p {
+                        margin-bottom: 0;
+                    }
                 }
                 .post-thumbnail {
                     img {

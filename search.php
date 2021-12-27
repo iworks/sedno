@@ -36,8 +36,7 @@ get_header();
 				get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
-
-			the_posts_navigation();
+			do_action( 'sedno_the_posts_navigation' );
 
 		else :
 

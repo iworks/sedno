@@ -14,5 +14,15 @@ body {
             }
         }
     }
+    &.page {
+        .entry-content {
+            .wpcf7-container {
+                h3 {
+                    @include font(28,30);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
 }
 

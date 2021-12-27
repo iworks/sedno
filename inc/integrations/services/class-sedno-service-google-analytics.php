@@ -2,7 +2,7 @@
 
 class Sedno_Integration_Service_Google_Analitics {
 
-	private $id = 'G-RQKN1QZTZL';
+	private $id = 'G-7VWC448QKQ';
 
 	public function __construct() {
 		add_action( 'wp_head', array( $this, 'add_gtag' ) );
