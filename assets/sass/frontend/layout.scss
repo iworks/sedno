@@ -16,9 +16,15 @@ body {
         }
         .site-main {
             article {
-                display: grid;
-                grid-template-columns: 460px auto;
-                column-gap: 30px;
+                @media screen and (min-width: #{$width_m} ) {
+                    display: grid;
+                    grid-template-columns: 460px auto;
+                    align-items: start;
+                    @media screen and (max-width: #{$width_l} ) {
+                        grid-template-columns: 300px auto;
+                    }
+                    column-gap: 30px;
+                }
                 .entry-title {
                     margin: 0 0 10px;
                     @include header_3;
@@ -33,9 +39,7 @@ body {
                     }
                 }
                 .post-thumbnail {
-                    img {
-                        @include radius;
-                    }
+                    @include thumbnail_as_background_setting;
                 }
             }
         }
