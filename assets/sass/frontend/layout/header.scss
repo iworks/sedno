@@ -42,7 +42,9 @@
         display: flex;
         float: right;
         a {
-                border-bottom: 2px solid var(--color-white);
+            white-space: nowrap;
+            width: auto;
+            border-bottom: 2px solid var(--color-white);
             &:hover {
                 border-bottom-color: var(--color-blue-1);
                 text-decoration: none;
