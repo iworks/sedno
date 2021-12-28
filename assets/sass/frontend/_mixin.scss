@@ -260,16 +260,17 @@ $font_root: 'assets/fonts/';
     @include link;
     @include font( 16, 18 );
     padding: 10px 50px;
+    font-weight: 500;
     @include radius;
+    border: {
+        width: 2px;
+        style: solid;
+    }
+    background-repeat: no-repeat;
     &:hover {
         cursor: pointer;
         text-decoration: none;
     }
-    border: {
-        width: 1px;
-        style: solid;
-    }
-    background-repeat: no-repeat;
 }
 
 @mixin button() {
@@ -420,5 +421,11 @@ $font_root: 'assets/fonts/';
         position: 50% 50%;
         size: cover;
     }
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
 }
 
