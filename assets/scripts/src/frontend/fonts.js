@@ -6,4 +6,6 @@ window.addEventListener('load', function() {
     link.rel = 'stylesheet';
     head.append(link);
     document.body.classList.add('fonts-added');
-}, {passive: true} );
+}, {
+    passive: true
+});
