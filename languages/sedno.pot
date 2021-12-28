@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1640706437015\n"
+"Project-Id-Version: SEDNO 1.0.0.1640712868204\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-28 15:47:17+00:00\n"
+"POT-Creation-Date: 2021-12-28 17:34:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -358,43 +358,43 @@ msgstr ""
 msgid "Submit Listing"
 msgstr ""
 
-#: inc/class-sedno-theme.php:433
+#: inc/class-sedno-theme.php:432
 msgid "Main Page Footer One"
 msgstr ""
 
-#: inc/class-sedno-theme.php:441
+#: inc/class-sedno-theme.php:440
 msgid "Main Page Footer Two"
 msgstr ""
 
-#: inc/class-sedno-theme.php:449
+#: inc/class-sedno-theme.php:448
 msgid "After title of Lectures Archive Page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:459
+#: inc/class-sedno-theme.php:458
 msgid "After title of Debates Archive Page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:503
+#: inc/class-sedno-theme.php:502
 msgid "Visit out profile on %s"
 msgstr ""
 
-#: inc/class-sedno-theme.php:565
+#: inc/class-sedno-theme.php:564
 msgid "First page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:611
+#: inc/class-sedno-theme.php:610
 msgid "Last page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:629 inc/class-sedno-theme.php:631
+#: inc/class-sedno-theme.php:628 inc/class-sedno-theme.php:630
 msgid "Posts navigation pages"
 msgstr ""
 
-#: inc/class-sedno-theme.php:650
+#: inc/class-sedno-theme.php:649
 msgid "Articles with tag"
 msgstr ""
 
-#: inc/class-sedno-theme.php:655
+#: inc/class-sedno-theme.php:654
 msgid "Our publications"
 msgstr ""
 

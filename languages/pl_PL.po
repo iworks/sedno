@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-28 15:43:32+00:00\n"
+"POT-Creation-Date: 2021-12-28 17:31:48+00:00\n"
 "PO-Revision-Date: 2021-12-28 16:33+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -367,43 +367,43 @@ msgstr "Film"
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:433
+#: inc/class-sedno-theme.php:432
 msgid "Main Page Footer One"
 msgstr "Pierwsza stopka strony głównej"
 
-#: inc/class-sedno-theme.php:441
+#: inc/class-sedno-theme.php:440
 msgid "Main Page Footer Two"
 msgstr "Druga stopka strony głównej"
 
-#: inc/class-sedno-theme.php:449
+#: inc/class-sedno-theme.php:448
 msgid "After title of Lectures Archive Page"
 msgstr "Po tytule na stronie archiwum wykładów"
 
-#: inc/class-sedno-theme.php:459
+#: inc/class-sedno-theme.php:458
 msgid "After title of Debates Archive Page"
 msgstr "Po tytule na stronie archiwum debat"
 
-#: inc/class-sedno-theme.php:503
+#: inc/class-sedno-theme.php:502
 msgid "Visit out profile on %s"
 msgstr "Zobacz nasz profil społecznościowy na %s"
 
-#: inc/class-sedno-theme.php:565
+#: inc/class-sedno-theme.php:564
 msgid "First page"
 msgstr "Pierwsza strona"
 
-#: inc/class-sedno-theme.php:611
+#: inc/class-sedno-theme.php:610
 msgid "Last page"
 msgstr "Ostatnia strona"
 
-#: inc/class-sedno-theme.php:629 inc/class-sedno-theme.php:631
+#: inc/class-sedno-theme.php:628 inc/class-sedno-theme.php:630
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
 
-#: inc/class-sedno-theme.php:650
+#: inc/class-sedno-theme.php:649
 msgid "Articles with tag"
 msgstr "Artykuły z tagiem"
 
-#: inc/class-sedno-theme.php:655
+#: inc/class-sedno-theme.php:654
 msgid "Our publications"
 msgstr "Nasze publikacje"
 

@@ -108,7 +108,7 @@ class Sedno_Theme extends Sedno {
 		/**
 		 * Plugin: OG
 		 */
-		add_filter( 'og_image_init', array( $this, 'set_og_image' ) );
+		add_filter( 'og_og_image_value', array( $this, 'set_og_image' ) );
 		/**
 		 * Plugin: Simple History
 		 */
@@ -391,12 +391,11 @@ class Sedno_Theme extends Sedno {
 	 *
 	 * @since 1.0.0
 	 */
-	public function set_og_image( $images ) {
-		array_unshift(
-			$images,
-			$this->get_asset_url( 'og-image.png' )
-		);
-		return $images;
+	public function set_og_image( $image ) {
+		if ( empty( $image ) ) {
+			return $this->get_asset_url( 'sedno-dziennik.png' );
+		}
+		return $image;
 	}
 
 	public function body_classses( $classes ) {
