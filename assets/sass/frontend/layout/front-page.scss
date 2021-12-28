@@ -3,7 +3,7 @@
 body {
     &.home {
         #primary {
-            margin-bottom: 110px;
+            margin-bottom: 60px;
         }
     }
 }
@@ -33,6 +33,13 @@ body {
     h3 {
         @include header_1;
         margin: 19px 0 15px;
+    }
+    .sedno-motto-plus-logo {
+        .wp-block-column {
+            &:last-child {
+                max-width: 318px;
+            }
+        }
     }
 }
 

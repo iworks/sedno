@@ -16,8 +16,8 @@ $default_width: $width_x;
 /**
  * Links
  */
-$color_link:    var(--color-black);
-$color_visited: var(--color-black);
+$color_link:    var(--color-accent);
+$color_visited: var(--color-accent);
 $color_hover:   var(--color-primary);
 
 /**
@@ -275,7 +275,7 @@ $font_root: 'assets/fonts/';
 
 @mixin button() {
     @include button_shape;
-    border-color: var(--button-border);
+    border-color: var(--button-border-color);
     background-color: var(--button-background);
     color: var(--button-color);
     &:visited {
@@ -283,7 +283,7 @@ $font_root: 'assets/fonts/';
     }
     &:hover {
         background-color: var(--button-background-hover);
-        border-color: var(--button-border-hover);
+        border-color: var(--button-border-color-hover);
         color: var(--button-color);
     }
 
