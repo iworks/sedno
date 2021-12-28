@@ -41,9 +41,12 @@ body {
             &.thumbnail {
                 float: left;
                 margin: 0 30px 30px 0;
-            }
-            figcaption {
-                max-width: 460px;
+                img {
+                    @include radius(10px);
+                }
+                figcaption {
+                    max-width: 460px;
+                }
             }
         }
         .entry-title {

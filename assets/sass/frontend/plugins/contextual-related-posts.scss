@@ -16,9 +16,6 @@
             grid-template-columns: repeat( 3, 1fr );
         }
     }
-    figure {
-        margin: 0;
-    }
     span {
         &.thumbnail {
             @include thumbnail_as_background_setting;
@@ -29,10 +26,12 @@
                 }
             }
         }
-    }
-    span {
-        font-family: var(--font-family-serif);
-        @include font(28,30);
+        &.crp_title {
+            display: block;
+            font-family: var(--font-family-serif);
+            @include font(28,30);
+            padding-top: 10px;
+        }
     }
 }
 

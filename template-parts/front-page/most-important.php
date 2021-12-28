@@ -7,21 +7,22 @@
  * @package sedno
  */
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+<a href="<?php the_permalink(); ?>">
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php
-the_post_thumbnail(
-	'news',
-	array(
-		'alt' => the_title_attribute(
-			array(
-				'echo' => false,
-			)
-		),
-	)
+$args = array(
+	'size' => 'news',
+	'tag'  => 'span',
 );
+get_template_part( 'template-parts/thumbnail', null, $args );
+?>
+		<header class="entry-header">
+<?php
 the_title( '<h2>', '</h2>' );
 ?>
-	</a>
-</article><!-- #post-<?php the_ID(); ?> -->
+			<div class="entry-meta"><?php echo esc_html( get_the_author() ); ?> </div><!-- .entry-meta -->
+		</header>
+	</article>
+</a>
+<!-- #post-<?php the_ID(); ?> -->
 

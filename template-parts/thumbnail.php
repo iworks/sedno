@@ -1,6 +1,14 @@
 <?php
+
+$args = wp_parse_args(
+	$args,
+	array(
+		'size' => 'list',
+		'tag'  => 'a',
+	)
+);
 if ( has_post_thumbnail() ) {
-	$attachment_id = get_post_thumbnail_id( get_the_ID(), 'list' );
+	$attachment_id = get_post_thumbnail_id( get_the_ID(), $args['size'] );
 	if ( $attachment_id ) {
 		$styles = array();
 		$data   = '';
@@ -17,8 +25,9 @@ if ( has_post_thumbnail() ) {
 			esc_url( get_the_post_thumbnail_url( get_the_ID(), 'list' ) )
 		);
 		printf(
-			'<a class="post-thumbnail" href="%s" style="%s"%s aria-hidden="true" tabindex="-1"></a>',
-			esc_url( get_permalink() ),
+			'<%1$s class="post-thumbnail" %2$s style="%3$s" %4$s></%1$s>',
+			$args['tag'],
+			'a' === $args['tag'] ? sprintf( ' aria-hidden="true" tabindex="-1" href="%s"', esc_url( get_permalink() ) ) : '',
 			esc_attr( implode( ';', $styles ) ),
 			$data
 		);

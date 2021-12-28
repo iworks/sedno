@@ -47,8 +47,9 @@ body {
 
 .most-important {
     article {
+        align-items: start;
         display: flex;
-        align-items: top;
+        padding-bottom: var(--padding-small);
     }
     .post-thumbnail {
         display: block;
