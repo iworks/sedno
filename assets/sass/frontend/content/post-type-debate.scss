@@ -1,9 +1,32 @@
 @import '../_mixin';
 
 body {
-    &.post-type-archive-lecture {
+    &.post-type-archive-debate {
         #sedno-debate-header {
             margin-bottom: 40px;
+        }
+        .site-main {
+            article {
+                .post-thumbnail {
+                    &.post-thumbnail-youtube {
+                        position: relative;
+                        &:after {
+                            content: "";
+                            display: block;
+                            height: 102px;
+                            @include iconb('movie.svg');
+                            position: absolute;
+                            width: 102px;
+                            left: calc( 50% - 51px );
+                            top: calc( 50% - 51px );
+                        }
+                    }
+                    &.no-thumbnail {
+                        @include iconb('../logo.svg');
+                        background-size: 50% auto;
+                    }
+                }
+            }
         }
     }
     &.single-lecture {

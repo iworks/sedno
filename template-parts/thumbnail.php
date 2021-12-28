@@ -33,5 +33,9 @@ if ( has_post_thumbnail() ) {
 		);
 	}
 } else {
+	printf(
+		'<%1$s class="post-thumbnail no-thumbnail"></%1$s>',
+		'span'
+	);
 }
 

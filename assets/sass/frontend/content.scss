@@ -30,10 +30,27 @@ body {
         }
     }
     &.blog,
-    &.single-post,
+    &.single,
     &.search {
         .entry-meta {
             margin-bottom: 5px;
+        }
+    }
+    &.single {
+        .entry-title {
+            margin: 0 0 15px;
+            @include header_3;
+            color: var(--color-black);
+        }
+        .entry-content {
+            margin: 0;
+            padding-bottom: var(--padding-default);
+            h1, h2, h3, h4, h5, h6 {
+                clear: initial;
+            }
+            a {
+                text-decoration: underline;
+            }
         }
     }
     &.single-post {
@@ -47,19 +64,6 @@ body {
                 figcaption {
                     max-width: 460px;
                 }
-            }
-        }
-        .entry-title {
-            margin: 0 0 15px;
-            @include header_3;
-            color: var(--color-black);
-        }
-        .entry-content {
-            h1, h2, h3, h4, h5, h6 {
-                clear: initial;
-            }
-            a {
-                text-decoration: underline;
             }
         }
         .entry-footer {

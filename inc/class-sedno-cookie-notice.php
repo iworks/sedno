@@ -68,7 +68,7 @@ class Sedno_Cookie_Notice extends Sedno {
 	/**
 	 * Cookie notice output.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 */
 	public function add_cookie_notice() {
 		$show = $this->show_cookie_notice();
@@ -115,7 +115,7 @@ class Sedno_Cookie_Notice extends Sedno {
 	/**
 	 * Show cookie notice?
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 */
 	private function show_cookie_notice() {
 		$time = filter_input( INPUT_COOKIE, $this->cookie_name, FILTER_SANITIZE_NUMBER_INT );
@@ -165,7 +165,7 @@ class Sedno_Cookie_Notice extends Sedno {
 	/**
 	 * Save user meta info about cookie.
 	 *
-	 * @since 2.2.0
+	 * @since 1.0.0
 	 */
 	public function save_user_meta() {
 		if ( ! isset( $_POST['nonce'] ) ) {
@@ -199,7 +199,7 @@ class Sedno_Cookie_Notice extends Sedno {
 	 * To dismiss cookie notice, we need to clear caches
 	 * if HB is active.
 	 *
-	 * @since 3.0
+	 * @since 1.0.0
 	 */
 	public function dismiss_visitor_notice() {
 		// Verify nonce first.
@@ -219,7 +219,7 @@ class Sedno_Cookie_Notice extends Sedno {
 	 * dismissed by a visitor. Otherwise it will keep on showing
 	 * the notice even after dismissal.
 	 *
-	 * @since 3.0
+	 * @since 1.0.0
 	 */
 	private function clear_cache() {
 		// Clear HB cache.
@@ -229,7 +229,7 @@ class Sedno_Cookie_Notice extends Sedno {
 	/**
 	 * Check Privacy policy page
 	 *
-	 * @since 3.1.2
+	 * @since 1.0.0
 	 */
 	private function check_privacy_policy_page() {
 		$policy_page_id = (int) get_option( 'wp_page_for_privacy_policy' );

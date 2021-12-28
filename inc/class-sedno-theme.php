@@ -197,7 +197,7 @@ class Sedno_Theme extends Sedno {
 	/**
 	 * Remove styles to improve speed
 	 *
-	 * @since 1.4.0
+	 * @since 1.0.0
 	 */
 	public function dequeue_styles() {
 		if ( is_admin() ) {
@@ -375,7 +375,7 @@ class Sedno_Theme extends Sedno {
 	/**
 	 * theme_mod filter
 	 *
-	 * @since 1.0.4
+	 * @since 1.0.0
 	 */
 	public function get_theme_mod_background_color( $color ) {
 		return $this->color_background;
@@ -384,7 +384,7 @@ class Sedno_Theme extends Sedno {
 	/**
 	 * Set OG:image.
 	 *
-	 * @since 1.0.5
+	 * @since 1.0.0
 	 */
 	public function set_og_image( $images ) {
 		array_unshift(

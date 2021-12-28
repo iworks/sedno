@@ -14,7 +14,7 @@ class Sedno_Post_Type_Editorial_Comment extends Sedno {
 	/**
 	 * Register Custom Post Type
 	 *
-	 * @since 1.3.9
+	 * @since 1.0.0
 	 */
 	public function custom_post_type() {
 		$labels = array(

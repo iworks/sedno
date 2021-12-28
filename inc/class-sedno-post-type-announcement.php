@@ -22,7 +22,7 @@ class Sedno_Post_Type_Announcement extends Sedno {
 	/**
 	 * Add meta boxes
 	 *
-	 * @since 2.1.2
+	 * @since 1.0.0
 	 */
 	public function add_meta_boxes() {
 		add_meta_box(
@@ -38,7 +38,7 @@ class Sedno_Post_Type_Announcement extends Sedno {
 	/**
 	 * Register Custom Post Type
 	 *
-	 * @since 1.3.9
+	 * @since 1.0.0
 	 */
 	public function custom_post_type() {
 		$labels = array(
@@ -98,7 +98,7 @@ class Sedno_Post_Type_Announcement extends Sedno {
 	/**
 	 * Register plugin assets.
 	 *
-	 * @since 2.1.4
+	 * @since 1.0.0
 	 */
 	public function register() {
 		wp_register_style(
@@ -122,7 +122,7 @@ class Sedno_Post_Type_Announcement extends Sedno {
 	/**
 	 * Enqueue plugin assets.
 	 *
-	 * @since 2.1.4
+	 * @since 1.0.0
 	 */
 	public function admin_enqueue() {
 		global $typenow;
@@ -136,7 +136,7 @@ class Sedno_Post_Type_Announcement extends Sedno {
 	/**
 	 * Save project data.
 	 *
-	 * @since 2.1.2
+	 * @since 1.0.0
 	 *
 	 * @param integer $post_id Post ID.
 	 */

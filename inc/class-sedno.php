@@ -190,7 +190,7 @@ abstract class Sedno {
 	/**
 	 * Media files
 	 *
-	 * @since 2.0.6
+	 * @since 1.0.0
 	 */
 	public function html_media( $post ) {
 		wp_enqueue_media();
@@ -232,7 +232,7 @@ abstract class Sedno {
 	/**
 	 * Media row helper
 	 *
-	 * @since 2.0.6
+	 * @since 1.0.0
 	 */
 	protected function media_row( $data = array() ) {
 		$data = wp_parse_args(
