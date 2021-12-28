@@ -150,7 +150,7 @@ $image_root: 'assets/images/';
     font: {
         size: 100%;
         style: normal;
-        weight: 200;
+        weight: 300;
     }
     left: auto;
     line-height: $au;
@@ -382,7 +382,7 @@ $font_root: 'assets/fonts/';
     @include font(16);
     font: {
         family: var(--font-family-sans-serif);
-        weight: 200;
+        weight: 300;
     }
     @include radius;
 }

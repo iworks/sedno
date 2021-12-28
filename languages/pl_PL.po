@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-28 15:31:07+00:00\n"
+"POT-Creation-Date: 2021-12-28 15:43:32+00:00\n"
 "PO-Revision-Date: 2021-12-28 16:33+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -456,6 +456,12 @@ msgstr "Zobacz"
 msgid "Read"
 msgstr "Czytaj"
 
+#: template-parts/content-editorial_comment.php:28
+#: template-parts/content-page.php:25 template-parts/content-post.php:33
+#: template-parts/content.php:53
+msgid "Pages:"
+msgstr "Strony:"
+
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr "Niczego nie znaleziono"
@@ -481,11 +487,6 @@ msgid ""
 "searching can help."
 msgstr ""
 "Wygląda na to, że szukana strona nie istnieje. Być może warto jej poszukać."
-
-#: template-parts/content-page.php:25 template-parts/content-post.php:33
-#: template-parts/content.php:53
-msgid "Pages:"
-msgstr "Strony:"
 
 #: template-parts/content-slider.php:16
 msgid "Read more"
