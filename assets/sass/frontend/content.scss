@@ -51,6 +51,10 @@ body {
             a {
                 text-decoration: underline;
             }
+            iframe {
+                display: flex;
+                margin: 0 auto;
+            }
         }
     }
     &.single-post {

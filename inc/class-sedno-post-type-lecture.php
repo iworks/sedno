@@ -1,14 +1,14 @@
 <?php
 
-require_once 'class-sedno.php';
+require_once 'class-sedno-post-type.php';
 
-class Sedno_Post_Type_Lecture extends Sedno {
+class Sedno_Post_Type_Lecture extends Sedno_Post_Type {
 
-	private $post_type_name = 'lecture';
+	protected $post_type_name = 'lecture';
 
 	public function __construct() {
 		parent::__construct();
-		add_action( 'init', array( $this, 'custom_post_type' ), 0 );
+		add_filter( 'the_content', array( $this, 'add_movie' ), 0 );
 	}
 
 	/**
