@@ -43,15 +43,15 @@ if ( $the_query->have_posts() ) {
 				<p><?php esc_html_e( 'The most important topics', 'sedno' ); ?></p>
 			</header>
 <?php
-
-$args = array(
-	'category_name'  => 'wazny-temat',
-	'posts_per_page' => 5,
+$args = apply_filters(
+	'sedno_most_important_wp_query_args',
+	array(
+		'posts_per_page' => 5,
+		'order'          => 'rand',
+	)
 );
-
 // The Query
 $the_query = new WP_Query( $args );
-
 // The Loop
 if ( $the_query->have_posts() ) {
 	while ( $the_query->have_posts() ) {

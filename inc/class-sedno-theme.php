@@ -29,6 +29,11 @@ class Sedno_Theme extends Sedno {
 			new Sedno_PWA;
 		}
 		/**
+		 * Most Important
+		 */
+		include_once 'class-sedno-most-important-posts.php';
+		new Sedno_Most_important_Posts;
+		/**
 		 * Custom Post Types:
 		 * - Editorial Comment
 		 * - Announcement
