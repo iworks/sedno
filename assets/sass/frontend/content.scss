@@ -34,10 +34,11 @@ body {
         .page-header {
             .page-title {
                 display: flex;
-                align-items: baseline;
+                align-items: center;
                 span {
                     @include sedno_tag;
-                    margin-left: var(--padding-default);
+                    margin-left: var(--padding-small);
+                    margin-top: 3px;
                 }
             }
         }

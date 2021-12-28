@@ -380,7 +380,7 @@ $font_root: 'assets/fonts/';
     padding: 6px 20px;
     background-color: var(--color-blue-1);
     color: var(--color-accent);
-    @include font(16);
+    @include font(16, 18);
     font: {
         family: var(--font-family-sans-serif);
         weight: 300;
