@@ -646,6 +646,9 @@ class Sedno_Theme extends Sedno {
 			$title .= sprintf( ' <span>%s</span>', single_tag_title( '', false ) );
 			return $title;
 		}
+		if ( is_home() && ! is_front_page() ) {
+			return esc_html__( 'Our publications', 'sedno' );
+		}
 				/*
 		if ( is_category() ) {
 			$title = single_cat_title( '', false );

@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1640674145308\n"
+"Project-Id-Version: SEDNO 1.0.0.1640690600373\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-28 06:49:05+00:00\n"
+"POT-Creation-Date: 2021-12-28 11:23:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -325,6 +325,10 @@ msgstr ""
 msgid "Lecture"
 msgstr ""
 
+#: inc/class-sedno-post-type.php:58
+msgid "Movie"
+msgstr ""
+
 #: inc/class-sedno-theme.php:130
 msgid "Submit Listing"
 msgstr ""
@@ -363,6 +367,10 @@ msgstr ""
 
 #: inc/class-sedno-theme.php:645
 msgid "Articles with tag"
+msgstr ""
+
+#: inc/class-sedno-theme.php:650
+msgid "Our publications"
 msgstr ""
 
 #: inc/class-sedno.php:212

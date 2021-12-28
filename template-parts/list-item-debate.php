@@ -10,7 +10,7 @@
 <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php
-$movie          = apply_filters( 'sedno_get_debate_movie_data', array() );
+$movie          = apply_filters( 'sedno_get_movie_data', array() );
 $show_thumbnail = true;
 if ( is_array( $movie ) && isset( $movie['provider'] ) && ! empty( $movie['provider'] ) ) {
 	switch ( $movie['provider'] ) {
@@ -27,7 +27,6 @@ if ( is_array( $movie ) && isset( $movie['provider'] ) && ! empty( $movie['provi
 					$data,
 					sprintf( 'https://img.youtube.com/vi/%s/%s.jpg', $movie['id'], '0' )
 				);
-
 			}
 			break;
 		default:
