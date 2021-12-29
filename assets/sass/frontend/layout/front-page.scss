@@ -31,8 +31,12 @@ body {
         margin: 0;
     }
     h3 {
-        @include header_1;
-        margin: 19px 0 15px;
+        margin: 20px 0 10px;
+        + {
+            p {
+                margin-top: 0;
+            }
+        }
     }
     .sedno-motto-plus-logo {
         .wp-block-column {

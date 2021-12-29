@@ -43,13 +43,6 @@ body {
             }
         }
     }
-    &.blog,
-    &.single,
-    &.search {
-        .entry-meta {
-            margin-bottom: 5px;
-        }
-    }
     &.page {
         .entry-content {
             h2, h3, h4 {
@@ -62,6 +55,15 @@ body {
                 + {
                     p {
                         margin-top: 10px;
+                    }
+                }
+            }
+            .wp-block-columns,
+            p {
+                + {
+                    h2
+                    {
+                        padding-top: var(--padding-small);
                     }
                 }
             }
@@ -81,15 +83,25 @@ body {
             }
         }
     }
+    &.blog,
+    &.single,
+    &.search {
+        .entry-meta {
+            margin-bottom: 5px;
+        }
+    }
     &.single {
         .entry-title {
-            margin: 0 0 15px;
             @include header_3;
+            margin: 0;
             color: var(--color-black);
+        }
+        .entry-meta {
+            margin-bottom: 0;
         }
         .entry-content {
             margin: 0;
-            padding-bottom: var(--padding-default);
+            padding: var(--padding-default) 0;
             h1, h2, h3, h4, h5, h6 {
                 clear: initial;
             }

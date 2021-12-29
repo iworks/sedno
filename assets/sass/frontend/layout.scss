@@ -19,8 +19,20 @@ body {
             }
         }
         .site-main {
+            > {
+                a {
+                    display: block;
+                    margin-bottom: var(--padding-default);
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
             article {
                 padding-bottom: var(--padding-default);
+                &:last-child {
+                    padding-bottom: 0;
+                }
                 @media screen and (min-width: #{$width_m} ) {
                     display: grid;
                     grid-template-columns: 460px auto;

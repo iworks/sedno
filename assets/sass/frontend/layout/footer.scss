@@ -1,5 +1,9 @@
 @import '_mixin';
 
+#colophon {
+    margin-top: 60px;
+}
+
 .site-footer {
     background-color: var(--color-blue-3);
     color: var(--color-white);
@@ -67,7 +71,7 @@ body {
             display: flex;
             gap: 12px;
             justify-content: center;
-            padding: var(--padding-default);
+            padding: var(--padding-default) 0 0;
             a {
                 @include radius;
                 display: block;
