@@ -491,10 +491,10 @@ class Sedno_Theme extends Sedno {
 			'Facebook' => 'https://www.facebook.com/StowarzyszenieEuropejskaDemokracja/',
 			'YouTube'  => 'https://www.youtube.com/channel/UChEODSnVNPU-1AV8Pvy2msQ',
 		);
-		$c     = '<ul class="sedno-social-media">';
+		$c     = '<span class="sedno-social-media">';
 		foreach ( $media as $class => $url ) {
 			$c .= sprintf(
-				'<li class="%1$s"><a href="%2$s" target="%1$s"><span>%3$s</span></a></li>',
+				'<a class="%1$s" href="%2$s" target="%1$s"><span>%3$s</span></a>',
 				esc_attr( strtolower( $class ) ),
 				esc_url( $url ),
 				esc_html(
