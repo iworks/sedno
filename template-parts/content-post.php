@@ -16,10 +16,8 @@
 				sedno_posted_on();
 				?>
 			</div><!-- .entry-meta -->
-<?php
-			the_title( '<h1 class="entry-title">', '</h1>' );
-?>
-			<div class="entry-meta">
+<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<div class="entry-meta entry-meta-author">
 				<?php
 				sedno_posted_by();
 				?>

@@ -21,7 +21,7 @@ if ( ! function_exists( 'sedno_posted_on' ) ) :
 			esc_attr( get_the_date( DATE_W3C ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( DATE_W3C ) ),
-			esc_html( get_the_modified_date() )
+			esc_html( get_the_modified_date( get_option( 'date_format' ) ) )
 		);
 		$posted_on   = sprintf(
 			/* translators: %s: post date. */
