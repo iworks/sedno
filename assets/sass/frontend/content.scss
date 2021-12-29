@@ -4,13 +4,6 @@ body {
     background-color: var(--color-white);
     color: var(--color-primary);
     @include font( 14, 22 );
-    a {
-        @include link;
-        color: var(--color-accent);
-        &:hover {
-            color: var(--color-primary);
-        }
-    }
     .button {
         @include button;
         &.button-reverse {
@@ -24,6 +17,42 @@ body {
     @media (min-width: 782px) {
         .wp-block-column:not(:first-child) {
             margin-left: var(--padding-default);
+        }
+    }
+    a {
+        color: var(--color-default);
+        text-decoration: none;
+        &:visited {
+            color: var(--color-default);
+        }
+    }
+    .entry-title {
+        a {
+            color: var(--color-default);
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+    }
+    .entry-content {
+        a {
+            @include link;
+            color: var(--color-accent);
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+        h1, h2, h3, h3, h4, h5, h6,
+        .entry-meta {
+            a {
+                color: var(--color-primary);
+                &:visited {
+                    color: var(--color-primary);
+                }
+                &:hover {
+                    color: var(--color-accent);
+                }
+            }
         }
     }
     .author {
@@ -104,9 +133,6 @@ body {
             padding: var(--padding-default) 0;
             h1, h2, h3, h4, h5, h6 {
                 clear: initial;
-            }
-            a {
-                text-decoration: underline;
             }
             iframe {
                 display: flex;

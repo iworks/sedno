@@ -19,10 +19,18 @@ body {
     &.post-type-archive-announcement {
         #primary {
             article {
-                display: grid;
-                grid-template-columns: 120px auto 160px;
-                .entry-meta {
-                    line-height: 40.45px;
+                .entry-content {
+                    padding-bottom: var(--padding-default);
+                }
+                @media screen and (min-width: #{$width_l}) {
+                    display: grid;
+                    grid-template-columns: 120px auto 200px;
+                    .entry-meta {
+                        line-height: 40.45px;
+                    }
+                    .entry-content {
+                        padding-bottom: 0;
+                    }
                 }
                 @include announcement_files;
             }

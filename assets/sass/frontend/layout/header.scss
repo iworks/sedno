@@ -39,6 +39,7 @@
 
 .main-navigation {
     .menu {
+        @include font(20,30);
         display: flex;
         float: right;
         a {

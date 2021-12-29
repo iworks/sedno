@@ -2,6 +2,31 @@
 
 #colophon {
     margin-top: 60px;
+    section {
+        margin-bottom: var(--padding-small);
+        &:last-child {
+            margin: 0;
+        }
+    }
+    .wp-block-columns {
+        margin: 0;
+    }
+    .widget {
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    a {
+        color: var(--color-white);
+        &:visited {
+            color: var(--color-white);
+        }
+        &:hover {
+            color: var(--color-gray-1);
+        }
+    }
 }
 
 .site-footer {
@@ -39,24 +64,18 @@ body {
     &.loaded {
         .sedno-social-media {
             .facebook {
-                a {
-                    background: {
-                        @include icon( 'facebook-white.svg' );
-                    }
+                background: {
+                    @include icon( 'facebook-white.svg' );
                 }
             }
             .twitter {
-                a {
-                    background: {
-                        @include icon( 'twitter-white.svg' );
-                    }
+                background: {
+                    @include icon( 'twitter-white.svg' );
                 }
             }
             .youtube {
-                a {
-                    background: {
-                        @include icon( 'youtube-white.svg' );
-                    }
+                background: {
+                    @include icon( 'youtube-white.svg' );
                 }
             }
         }

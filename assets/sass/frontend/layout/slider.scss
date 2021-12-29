@@ -26,6 +26,7 @@
             }
             .entry-meta {
                 margin-top: 10px;
+                @include font(20,25);
             }
             .entry {
                 background-color: var(--color-blue-3);
