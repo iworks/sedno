@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-28 17:31:48+00:00\n"
-"PO-Revision-Date: 2021-12-28 16:33+0100\n"
+"POT-Creation-Date: 2021-12-30 06:50:35+00:00\n"
+"PO-Revision-Date: 2021-12-30 07:51+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -54,7 +54,7 @@ msgstr "Urządzamy debaty"
 
 #: archive-editorial_comment.php:14
 msgid "Archival Editorial Comments"
-msgstr "Komentarze archiwalne"
+msgstr "Archiwum komentarzy redakcyjnych"
 
 #: archive-lecture.php:18
 msgid "We organize lectures"
@@ -359,9 +359,17 @@ msgstr "Nawigacja wykładów"
 msgid "Lecture"
 msgstr "Wykład"
 
-#: inc/class-sedno-post-type.php:58
+#: inc/class-sedno-post-type.php:63
 msgid "Movie"
 msgstr "Film"
+
+#: inc/class-sedno-post-type.php:81
+msgid "Movie URL"
+msgstr "Adres URL filmu"
+
+#: inc/class-sedno-post-type.php:96
+msgid "Number of movies"
+msgstr "Liczba filmów"
 
 #: inc/class-sedno-theme.php:135
 msgid "Submit Listing"
@@ -454,10 +462,10 @@ msgstr "Zobacz"
 
 #: template-parts/announcement/files.php:13
 msgid "Read"
-msgstr "Czytaj"
+msgstr "Przeczytaj"
 
 #: template-parts/content-editorial_comment.php:28
-#: template-parts/content-page.php:25 template-parts/content-post.php:33
+#: template-parts/content-page.php:25 template-parts/content-post.php:31
 #: template-parts/content.php:53
 msgid "Pages:"
 msgstr "Strony:"

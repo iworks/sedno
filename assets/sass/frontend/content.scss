@@ -54,6 +54,13 @@ body {
                 }
             }
         }
+        figure {
+            + {
+                p {
+                    margin-top: 0;
+                }
+            }
+        }
     }
     .author {
         @include font(20, 25);

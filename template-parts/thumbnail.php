@@ -3,8 +3,9 @@
 $args = wp_parse_args(
 	$args,
 	array(
-		'size' => 'list',
-		'tag'  => 'a',
+		'size'  => 'list',
+		'tag'   => 'a',
+		'inner' => '',
 	)
 );
 if ( has_post_thumbnail() ) {
@@ -25,11 +26,12 @@ if ( has_post_thumbnail() ) {
 			esc_url( get_the_post_thumbnail_url( get_the_ID(), 'list' ) )
 		);
 		printf(
-			'<%1$s class="post-thumbnail" %2$s style="%3$s" %4$s></%1$s>',
+			'<%1$s class="post-thumbnail" %2$s style="%3$s" %4$s>%5$s</%1$s>',
 			$args['tag'],
 			'a' === $args['tag'] ? sprintf( ' aria-hidden="true" tabindex="-1" href="%s"', esc_url( get_permalink() ) ) : '',
 			esc_attr( implode( ';', $styles ) ),
-			$data
+			$data,
+			$args['inner']
 		);
 	}
 } else {

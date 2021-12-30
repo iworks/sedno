@@ -1,34 +1,68 @@
 @import '../_mixin';
 
 body {
-    &.post-type-archive-debate {
-        #sedno-debate-header {
-            margin-bottom: 40px;
-        }
-        .site-main {
-            article {
-                .post-thumbnail {
-                    &.post-thumbnail-youtube {
-                        position: relative;
-                        &:after {
-                            content: "";
-                            display: block;
-                            height: 102px;
-                            @include iconb('movie.svg');
-                            position: absolute;
-                            width: 102px;
-                            left: calc( 50% - 51px );
-                            top: calc( 50% - 51px );
+    &.post-type-archive {
+        &-debate,
+        &-lecture {
+            #sedno-debate-header {
+                margin-bottom: 40px;
+            }
+            .site-main {
+                article {
+                    &.has-movie-url {
+                        .post-thumbnail {
+                            position: relative;
+                            &:after {
+                                content: "";
+                                display: block;
+                                height: 102px;
+                                @include iconb('movie.svg');
+                                position: absolute;
+                                width: 102px;
+                                left: calc( 50% - 51px );
+                                top: calc( 50% - 51px );
+                            }
+                            .filling {
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background-color: var(--color-blue-2);
+                                opacity: .5;
+                                @include radius(10px);
+                            }
                         }
-                    }
-                    &.no-thumbnail {
-                        @include iconb('../logo.svg');
-                        background-size: 50% auto;
+                        &.is-playlist {
+                            .playlist {
+                                &:before {
+                                    content: "";
+                                    display: block;
+                                    height: 72px;
+                                    @include iconb('playlist.svg');
+                                    position: absolute;
+                                    width: 55px;
+                                    right: 22px;
+                                    bottom: 16px;
+                                }
+                            }
+                            .post-thumbnail {
+                                .number {
+                                    font-weight: 600;
+                                    color: var(--color-black);
+                                    @include font(32, 60);
+                                    position: absolute;
+                                    width: 46px;
+                                    right: 23px;
+                                    bottom: 16px;
+                                    text-align: center;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    &.single-lecture {
-    }
 }
+
