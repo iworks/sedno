@@ -31,6 +31,12 @@ body {
                                 background-color: var(--color-blue-2);
                                 opacity: .5;
                                 @include radius(10px);
+                                transition: all 1s;
+                            }
+                            &:hover {
+                                .filling {
+                                    opacity: 0;
+                                }
                             }
                         }
                         &.is-playlist {
