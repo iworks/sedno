@@ -18,6 +18,9 @@ body {
             display: grid;
             grid-template-columns: 3px auto;
             column-gap: 16px;
+            @media (min-width: 600px) and (max-width: 781px) {
+                flex-basis: unset !important;
+            }
             &:before {
                 content: "";
                 display: block;
@@ -41,7 +44,7 @@ body {
     .sedno-motto-plus-logo {
         .wp-block-column {
             &:last-child {
-                max-width: 318px;
+                max-width: 330px;
             }
         }
     }

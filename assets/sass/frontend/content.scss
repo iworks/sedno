@@ -154,10 +154,24 @@ body {
     &.single-post {
         figure {
             &.thumbnail {
-                float: left;
-                margin: 0 30px 30px 0;
+                width: 100%;
+                margin-bottom: var(--padding-default);
                 figcaption {
-                    max-width: 460px;
+                    width: 100%;
+                }
+                @media screen and ( min-width: #{$width_m} ) {
+                    margin: {
+                        left: auto;
+                        right: auto;
+                    }
+                        max-width: 460px;
+                    figcaption {
+                        max-width: 460px;
+                    }
+                }
+                @media screen and ( min-width: #{$width_l} ) {
+                    float: left;
+                    margin-right: var(--padding-default);
                 }
             }
         }

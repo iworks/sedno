@@ -48,7 +48,7 @@ $image_root: 'assets/images/';
     }
 }
 
-@mixin default_width() {
+@mixin default_width_no_paddings() {
     margin: {
         left: auto;
         right: auto;
@@ -57,6 +57,10 @@ $image_root: 'assets/images/';
     @media print {
         max-width: 100%;
     }
+}
+
+@mixin default_width() {
+    @include default_width_no_paddings;
     @media screen and ( max-width: #{ $width_x + 20px } ) {
         padding: {
             left: 10px;

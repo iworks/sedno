@@ -1,13 +1,22 @@
 @import '_mixin';
 
-#main-slider {
-    @media only screen and (max-width: 599px) {
-        display: none;
+@mixin slider_article_width() {
+    width: 500px;
+    @media only screen and (max-width: #{$width_m}) {
+        width: 100%;
     }
-    @include default_width;
+}
+
+#main-slider {
+    @include default_width_no_paddings;
     position: relative;
     height: 620px;
-
+    @media only screen and (max-width: #{$width_m}) {
+        height: 500px;
+    }
+    @media only screen and (max-width: #{$width_s}) {
+        height: 600px;
+    }
     .slider-wrap {
         article {
             position: absolute;
@@ -31,12 +40,20 @@
             .entry {
                 background-color: var(--color-blue-3);
                 color: var(--color-white);
-                height: 600px;
                 left: 0;
                 padding: 120px 43px 0 56px;
                 position: absolute;
                 top: 0;
-                width: 500px;
+                bottom: 20px;
+                @media only screen and (max-width: #{$width_m}) {
+                    bottom: 0;
+                    padding: {
+                        top: var(--padding-default);
+                        left: var(--padding-small);
+                        right: var(--padding-small);
+                    }
+                }
+                @include slider_article_width;
                 .entry-content {
                     padding-bottom: 10px;
                     @include font(16,18);
@@ -44,11 +61,17 @@
                 }
             }
             .thumbnail {
+                @media only screen and (max-width: #{$width_m}) {
+                    display: none;
+                }
                 position: absolute;
                 top: 20px;
                 left: 445px;
                 height: 600px;
-                width: 755px;
+                width: calc( 100vw - 445px );
+                @media screen and (min-width: #{$width_x} ) {
+                    width: 755px;
+                }
                 background: {
                     position: 50%;
                     size: cover;
@@ -57,36 +80,48 @@
             }
         }
         nav {
+            position: absolute;
+            bottom: 48px;
+            left: 0;
+            z-index: 999999;
+            @include slider_article_width;
             ul {
                 @include reset;
-                position: absolute;
-                display: flex;
-                bottom: 28px;
-                left: 180px;
-                z-index: 999999;
+                display: grid;
+                grid-template-columns: repeat(4, 20px);
+                gap: var(--padding-small);
+                justify-content: center;   
                 li {
                     position: relative;
                     a {
-                        bottom: 0;
-                        left: 0;
-                        position: absolute;
-                        right: 0;
-                        top: 0;
+                        display: block;
+                        width: 20px;
+                        height: 20px;
                     }
-                    padding: 0 6px;
                     span {
                         display: none;
                     }
-                    &.active {
-                        &:before {
-                            content: "\25cf";
+                }
+            }
+        }
+    }
+}
+body {
+    &.loaded {
+        #main-slider {
+            .slider-wrap {
+                nav {
+                    ul {
+                        li {
+                            a {
+                                @include iconb('ellipse-ring.svg');
+                            }
+                            &.active {
+                                a {
+                                    @include iconb('ellipse-full.svg');
+                                }
+                            }
                         }
-                    }
-                    &:before {
-                        color: var(--color-white);
-                        content: "\25cb";
-                        display: inline-block;
-                        font-size: 2em;
                     }
                 }
             }

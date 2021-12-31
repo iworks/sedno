@@ -13,7 +13,7 @@
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 		</header>
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 	</div>
 </article>
 <!-- #post-<?php the_ID(); ?> -->

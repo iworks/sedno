@@ -43,12 +43,19 @@ body {
                 }
             }
             article {
-                display: grid;
-                grid-template-columns: 200px auto;
-                column-gap: 20px;
+                display: block;
+                @media screen and ( min-width: #{$width_m} ) {
+                    display: grid;
+                    grid-template-columns: 200px auto;
+                    column-gap: 20px;
+                }
                 .post-thumbnail {
                     @include thumbnail_as_background_setting;
                     padding-bottom: 100%;
+                    margin-bottom: var(--padding-small);
+                    @media screen and ( min-width: #{$width_m} ) {
+                        margin-bottom: 0;
+                    }
                 }
                 h2 {
                     @include header_3;

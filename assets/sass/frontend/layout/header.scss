@@ -14,6 +14,10 @@
     display: block;
     width: 210px;
     height: 90px;
+    @media screen and (max-width: #{$width_m} ) {
+        width: 105px;
+        height: 45px;
+    }
 }
 
 .site-branding {
@@ -40,7 +44,9 @@
 .main-navigation {
     .menu {
         @include font(20,30);
-        display: flex;
+        @media screen and (max-width: #{$width_m} ) {
+            @include font(18,24);
+        }
         float: right;
         a {
             white-space: nowrap;
@@ -54,6 +60,9 @@
         > {
             li {
                 padding-right: 40px;
+                @media screen and (max-width: #{$width_m} ) {
+                    padding-right: 10px;
+                }
                 &.current-menu-parent,
                 &.current-menu-item,
                 &.current_page_item {
