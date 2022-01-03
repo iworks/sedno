@@ -155,6 +155,7 @@ body {
         figure {
             &.thumbnail {
                 width: 100%;
+                margin: 0;
                 margin-bottom: var(--padding-default);
                 figcaption {
                     width: 100%;

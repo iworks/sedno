@@ -1,6 +1,6 @@
 /*! SEDNO - v1.0.0
  * 
- * Copyright (c) 2021;
+ * Copyright (c) 2022;
  * Licensed GPLv2+
  */
 (function($) {

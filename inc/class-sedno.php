@@ -33,9 +33,9 @@ abstract class Sedno {
 	 *
 	 * @since 1.0.0
 	 */
-	protected $color_title      = '#2d2683';
-	protected $color_theme      = '#2d2683';
-	protected $color_background = '#2d2683';
+	protected $color_title      = '#2a2d2e';
+	protected $color_theme      = '#406aa6';
+	protected $color_background = '#2a2d2e';
 	protected $short_name       = 'Dziennik SEDNO';
 
 	/**
