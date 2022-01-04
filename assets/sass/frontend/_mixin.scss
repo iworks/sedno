@@ -6,7 +6,8 @@ $au: 1.618;
 
 $width: 100%;
 
-$width_s: 320px;
+$width_sx: 320px;
+$width_s: 600px;
 $width_m: 768px;
 $width_l: 1024px;
 $width_x: 1200px;
@@ -72,7 +73,7 @@ $image_root: 'assets/images/';
 @mixin short_width() {
     @include default_width;
     max-width: 880px;
-    @media screen and ( max-width: #{ $width_s + 1px } ) {
+    @media screen and ( max-width: #{ $width_sx + 1px } ) {
         max-width: 300px;
     }
 }
@@ -395,18 +396,25 @@ $font_root: 'assets/fonts/';
 @mixin sedno_social_media() {
     @include reset_ul;
     display: inline-flex;
-    gap: var(--padding-default);
+    gap: var(--padding-small);
+    @media screen and ( min-width: $width_s ) {
+        gap: var(--padding-default);
+    }
     span {
         display: none;
     }
     a {
         display: block;
-        width: 37px;
-        height: 30px;
+        width: 30px;
+        height: 24px;
         background: {
             repeat: no-repeat;
             position: 50% 50%;
             size: contain;
+        }
+        @media screen and ( min-width: $width_s ) {
+            width: 37px;
+            height: 30px;
         }
         &:hover {
             opacity: .7;
@@ -424,6 +432,9 @@ $font_root: 'assets/fonts/';
         repeat:no-repeat;
         position: 50% 50%;
         size: cover;
+    }
+    @media screen and ( max-width: $width_m ) {
+        margin-bottom: var(--padding-small);
     }
 }
 @mixin placeholder {

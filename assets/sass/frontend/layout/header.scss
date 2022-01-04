@@ -111,6 +111,30 @@
             }
         }
     }
+    button {
+        &.menu-toggle {
+            @include reset;
+            @include iconb('menu.svg');
+            float: right;
+            width: 45px;
+            height: 60px;
+            overflow: hidden;
+            text-indent: -999em;
+        }
+    }
+    &.toggled {
+        .menu {
+            background-color: var(--color-white);
+            position: absolute;
+            right: 70px;
+
+        }
+        button {
+            &.menu-toggle {
+                @include iconb('menu-close.svg');
+            }
+        }
+    }
 }
 body {
     &.admin-bar {

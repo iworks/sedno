@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2021-12-30 06:50:35+00:00\n"
-"PO-Revision-Date: 2021-12-30 07:51+0100\n"
+"POT-Creation-Date: 2022-01-03 10:44:50+00:00\n"
+"PO-Revision-Date: 2022-01-03 11:45+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -415,6 +415,10 @@ msgstr "Artykuły z tagiem"
 msgid "Our publications"
 msgstr "Nasze publikacje"
 
+#: inc/class-sedno-theme.php:657
+msgid "Author"
+msgstr "Autor"
+
 #: inc/class-sedno.php:212
 msgid "Add file"
 msgstr "Dodaj plik"
@@ -424,30 +428,30 @@ msgid "Remove file"
 msgstr "Usuń plik"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:62
+#: inc/template-tags.php:71
 msgid ", "
 msgstr ", "
 
 #. translators: 1: list of categories.
-#: inc/template-tags.php:65
+#: inc/template-tags.php:74
 msgid "Posted in %1$s"
 msgstr "Opublikowany w %s"
 
 #. translators: 1: list of tags.
-#: inc/template-tags.php:81
+#: inc/template-tags.php:90
 msgid "Share %s on twitter"
 msgstr "Podziel się %s na twitterze"
 
-#: inc/template-tags.php:82
+#: inc/template-tags.php:91
 msgid "Share %s on facebook"
 msgstr "Podziel się %s na facebooku"
 
-#: inc/template-tags.php:83
+#: inc/template-tags.php:92
 msgid "Copy link: %s"
 msgstr "Skopiuj odnośnik: %s"
 
 #. translators: %s: post title
-#: inc/template-tags.php:139
+#: inc/template-tags.php:148
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 
@@ -496,7 +500,7 @@ msgid ""
 msgstr ""
 "Wygląda na to, że szukana strona nie istnieje. Być może warto jej poszukać."
 
-#: template-parts/content-slider.php:16
+#: template-parts/content-slider.php:24
 msgid "Read more"
 msgstr "Czytaj dalej"
 
@@ -633,13 +637,13 @@ msgid "Posted on %s"
 msgstr "%s"
 
 #. translators: %s: post author.
-#: inc/template-tags.php:45
+#: inc/template-tags.php:47 inc/template-tags.php:53
 msgctxt "post author"
 msgid "by %s"
 msgstr "%s"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:69
+#: inc/template-tags.php:78
 msgctxt "list item separator"
 msgid "</li><li>"
 msgstr "</li><li>"

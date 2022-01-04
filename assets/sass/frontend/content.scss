@@ -1,5 +1,9 @@
 @import '_mixin';
 
+.archive-description {
+    padding-bottom: var(--padding-default);
+}
+
 body {
     background-color: var(--color-white);
     color: var(--color-primary);
@@ -75,46 +79,6 @@ body {
                     @include sedno_tag;
                     margin-left: var(--padding-small);
                     margin-top: 3px;
-                }
-            }
-        }
-    }
-    &.page {
-        .entry-content {
-            h2, h3, h4 {
-                margin: 0;
-            }
-            h2 {
-                padding-bottom: var(--padding-default);
-            }
-            h3 {
-                + {
-                    p {
-                        margin-top: 10px;
-                    }
-                }
-            }
-            .wp-block-columns,
-            p {
-                + {
-                    h2
-                    {
-                        padding-top: var(--padding-small);
-                    }
-                }
-            }
-            .wp-block-columns {
-                margin-bottom: 0;
-                padding-bottom: var(--padding-default);
-                &.wide-gap {
-                    gap: 90px;
-                }
-            }
-            .wp-block-column {
-                p {
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
                 }
             }
         }
@@ -226,6 +190,44 @@ body {
             margin: 0 0 15px;
         }
         .entry-content {
+            h2, h3, h4 {
+                margin: 0;
+            }
+            h2 {
+                padding-bottom: var(--padding-default);
+            }
+            h3 {
+                + {
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .wp-block-columns,
+            p {
+                + {
+                    h2
+                    {
+                        padding-top: var(--padding-small);
+                    }
+                }
+            }
+            .wp-block-columns {
+                margin-bottom: 0;
+                @media screen and (min-width: $width_s) {
+                    padding-bottom: var(--padding-default);
+                }
+                &.wide-gap {
+                    gap: 90px;
+                }
+            }
+            .wp-block-column {
+                p {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
             strong {
                 font-weight: 600;
             }
@@ -238,8 +240,13 @@ body {
             }
             .wp-block-column {
                 h3 {
-                    &:first-child {
-                        margin-top: 0;
+                    @media screen and (max-width: #{ $width_s - 1px }) {
+                        margin-top: var(--padding-default);
+                    }
+                    @media screen and (min-width: $width_s) {
+                        &:first-child {
+                            margin-top: 0;
+                        }
                     }
                 }
             }

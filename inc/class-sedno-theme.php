@@ -653,11 +653,20 @@ class Sedno_Theme extends Sedno {
 		if ( is_home() && ! is_front_page() ) {
 			return esc_html__( 'Our publications', 'sedno' );
 		}
+		if ( is_author() ) {
+			$title  = __( 'Author', 'sedno' );
+			$title .= '<span class="vcard">';
+			if ( function_exists( 'coauthors' ) ) {
+				$title .= coauthors( null, null, null, null, false );
+			} else {
+				$title .= esc_html( get_the_author() );
+			}
+			$title .= '</span>';
+			return $title;
+		}
 				/*
 		if ( is_category() ) {
 			$title = single_cat_title( '', false );
-		} elseif ( is_author() ) {
-			$title = '<span class="vcard">' . get_the_author() . '</span>';
 		} elseif ( is_post_type_archive() ) {
 			$title = post_type_archive_title( '', false );
 		} elseif ( is_tax() ) {

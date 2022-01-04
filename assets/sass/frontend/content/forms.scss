@@ -70,7 +70,16 @@ form {
     @include button;
 }
 .wp-block-file {
-    text-align: right;
+    @media screen and (max-width: #{ $width_s - 1px }) {
+        padding-top: var(--padding-small);
+        .wp-block-file__button {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    @media screen and (min-width: $width_s) {
+        text-align: right;
+    }
     .wp-block-file__button {
         @include button_reverse;;
     }

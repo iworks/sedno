@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1641201067959\n"
+"Project-Id-Version: SEDNO 1.0.0.1641290914763\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2022-01-03 09:11:08+00:00\n"
+"POT-Creation-Date: 2022-01-04 10:08:35+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -406,6 +406,10 @@ msgstr ""
 msgid "Our publications"
 msgstr ""
 
+#: inc/class-sedno-theme.php:657
+msgid "Author"
+msgstr ""
+
 #: inc/class-sedno.php:212
 msgid "Add file"
 msgstr ""
@@ -414,30 +418,30 @@ msgstr ""
 msgid "Remove file"
 msgstr ""
 
-#: inc/template-tags.php:62
+#: inc/template-tags.php:71
 #. translators: used between list items, there is a space after the comma
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:65
+#: inc/template-tags.php:74
 #. translators: 1: list of categories.
 msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:81
+#: inc/template-tags.php:90
 #. translators: 1: list of tags.
 msgid "Share %s on twitter"
 msgstr ""
 
-#: inc/template-tags.php:82
+#: inc/template-tags.php:91
 msgid "Share %s on facebook"
 msgstr ""
 
-#: inc/template-tags.php:83
+#: inc/template-tags.php:92
 msgid "Copy link: %s"
 msgstr ""
 
-#: inc/template-tags.php:139
+#: inc/template-tags.php:148
 #. translators: %s: post title
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
@@ -482,7 +486,7 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-slider.php:16
+#: template-parts/content-slider.php:24
 msgid "Read more"
 msgstr ""
 
@@ -617,13 +621,13 @@ msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#: inc/template-tags.php:45
+#: inc/template-tags.php:47 inc/template-tags.php:53
 #. translators: %s: post author.
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: inc/template-tags.php:69
+#: inc/template-tags.php:78
 #. translators: used between list items, there is a space after the comma
 msgctxt "list item separator"
 msgid "</li><li>"

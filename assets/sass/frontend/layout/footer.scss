@@ -36,6 +36,9 @@
     a {
         color: var(--color-white);
     }
+    .widget {
+        margin: 0;
+    }
     .wp-block-columns {
         justify-content: space-between;
     }
@@ -45,6 +48,10 @@
         }
         @media screen and ( min-width: $width_l ) {
             max-width: 400px;
+        }
+        @media screen and (max-width: #{ $width_s - 1px }) {
+            width: 100%;
+            padding-bottom: var(--padding-small);
         }
         p {
             &:first-of-type {

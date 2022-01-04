@@ -13,6 +13,7 @@ body {
                         .post-thumbnail {
                             position: relative;
                             &:after {
+                                opacity: .75;
                                 content: "";
                                 display: block;
                                 height: 102px;
@@ -31,11 +32,17 @@ body {
                                 background-color: var(--color-blue-2);
                                 opacity: .5;
                                 @include radius(10px);
+                            }
+                            &:after,
+                            .filling {
                                 transition: all 1s;
                             }
                             &:hover {
                                 .filling {
                                     opacity: 0;
+                                }
+                                &:after {
+                                    opacity: 1;
                                 }
                             }
                         }
