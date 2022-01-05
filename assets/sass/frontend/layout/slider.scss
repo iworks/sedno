@@ -33,7 +33,7 @@
                 @include header_3;
                 margin: 0;
             }
-            .entry-meta {
+            .entry-meta-author {
                 margin-top: 10px;
                 @include font(20,25);
             }
@@ -41,7 +41,7 @@
                 background-color: var(--color-blue-3);
                 color: var(--color-white);
                 left: 0;
-                padding: 120px 43px 0 56px;
+                padding: 100px 43px 0 56px;
                 position: absolute;
                 top: 0;
                 bottom: 20px;

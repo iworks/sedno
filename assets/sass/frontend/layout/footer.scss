@@ -66,6 +66,17 @@
     .sedno-social-media {
         @include sedno_social_media;
     }
+    section {
+        &:last-child {
+            @media screen and (max-width: #{ $width_s - 1px }) {
+                .wp-block-column {
+                    &:first-child {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
 }
 body {
     &.loaded {

@@ -14,9 +14,11 @@
     display: block;
     width: 210px;
     height: 90px;
+    background-size: auto 88px;
     @media screen and (max-width: #{$width_m} ) {
         width: 105px;
         height: 45px;
+        background-size: auto 43px;
     }
 }
 
@@ -31,7 +33,6 @@
         repeat: no-repeat;
         @include image('sedno-dziennik.svg');
         position: center;
-        size: contain;
     }
     span {
         display: none;
@@ -113,7 +114,7 @@
     }
     button {
         &.menu-toggle {
-            @include reset;
+            @include reset_min;
             @include iconb('menu.svg');
             float: right;
             width: 45px;
