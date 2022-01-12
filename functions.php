@@ -4,6 +4,9 @@
 require_once get_template_directory() . '/inc/class-sedno-theme.php';
 new Sedno_Theme;
 
+require_once get_template_directory() . '/inc/class-iworks-cache.php';
+new iWorks_Cache;
+
 /**
  * sedno functions and definitions
  *

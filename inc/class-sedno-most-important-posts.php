@@ -33,11 +33,11 @@ class Sedno_Most_important_Posts extends Sedno {
 		if ( ! is_array( $value ) ) {
 			$value = array( $value );
 		}
-        $args = array(
-            'orderby'    => 'post__in',
-            'post__in' => $value,
-            'posts_per_page' => 5,
-        );
+		$args = array(
+			'orderby'        => 'post__in',
+			'post__in'       => $value,
+			'posts_per_page' => 5,
+		);
 		return $args;
 	}
 
@@ -116,6 +116,7 @@ class Sedno_Most_important_Posts extends Sedno {
 	 * @since 1.0.0
 	 */
 	public function admin_page() {
+		do_action( 'iworks_cache_set', 'most', null );
 		$this->update();
 		echo '<div class="wrap">';
 		echo '<form method="post">';

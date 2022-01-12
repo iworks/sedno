@@ -11,9 +11,6 @@
     @include default_width_no_paddings;
     position: relative;
     height: 620px;
-    @media only screen and (max-width: #{$width_m}) {
-        height: 500px;
-    }
     @media only screen and (max-width: #{$width_sx}) {
         height: 600px;
     }

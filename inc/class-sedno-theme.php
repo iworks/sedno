@@ -67,6 +67,7 @@ class Sedno_Theme extends Sedno {
 		add_filter( 'the_content', array( $this, 'add_thumbnail_image' ) );
 		add_filter( 'get_the_archive_title', array( $this, 'archive_title' ), 10, 3 );
 		add_filter( 'excerpt_more', array( $this, 'excerpt_more' ) );
+		add_action( 'plugins_loaded', array( $this, 'set_iworks_cache_keys' ) );
 		/**
 		 * js
 		 */
@@ -679,5 +680,11 @@ class Sedno_Theme extends Sedno {
 	public function excerpt_more( $more ) {
 		return '&hellip;';
 	}
+
+	public function set_iworks_cache_keys() {
+		do_action( 'iworks_cache_keys', array( $this, 'add_iworks_cache_keys' ), 'slider' );
+		do_action( 'iworks_cache_keys', array( $this, 'add_iworks_cache_keys' ), 'most' );
+	}
+
 }
 
