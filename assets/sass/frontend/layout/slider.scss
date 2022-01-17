@@ -78,22 +78,22 @@
         }
         nav {
             position: absolute;
-            bottom: 48px;
+            bottom: 36px;
             left: 0;
             z-index: 999999;
             @include slider_article_width;
             ul {
                 @include reset;
                 display: grid;
-                grid-template-columns: repeat(4, 20px);
-                gap: var(--padding-small);
-                justify-content: center;   
+                grid-template-columns: repeat(4, 32px);
+                gap: 8px;
+                justify-content: center; 
                 li {
                     position: relative;
                     a {
                         display: block;
-                        width: 20px;
-                        height: 20px;
+                        width: 32px;
+                        height: 32px;
                     }
                     span {
                         display: none;
@@ -112,10 +112,15 @@ body {
                         li {
                             a {
                                 @include iconb('ellipse-ring.svg');
+                                background-size: 20px;
+                                &:hover {
+                                    opacity: .7;
+                                }
                             }
                             &.active {
                                 a {
                                     @include iconb('ellipse-full.svg');
+                                    background-size: 20px;
                                 }
                             }
                         }

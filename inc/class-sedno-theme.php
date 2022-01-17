@@ -495,10 +495,16 @@ class Sedno_Theme extends Sedno {
 		$c     = '<span class="sedno-social-media">';
 		foreach ( $media as $class => $url ) {
 			$c .= sprintf(
-				'<a class="%1$s" href="%2$s" target="%1$s"><span>%3$s</span></a>',
+				'<a class="%1$s" href="%2$s" target="%1$s" aria-label="%4$s><span>%3$s</span></a>',
 				esc_attr( strtolower( $class ) ),
 				esc_url( $url ),
 				esc_html(
+					sprintf(
+						__( 'Visit out profile on %s', 'sedno' ),
+						$class
+					)
+				),
+				esc_attr(
 					sprintf(
 						__( 'Visit out profile on %s', 'sedno' ),
 						$class
