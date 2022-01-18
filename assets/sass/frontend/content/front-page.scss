@@ -60,6 +60,7 @@ body {
                 h2 {
                     @include header_3;
                     margin: 0 0 10px;
+                    @include hover_text;
                 }
             }
             .button {

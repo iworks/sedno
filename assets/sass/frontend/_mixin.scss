@@ -433,6 +433,7 @@ $font_root: 'assets/fonts/';
         margin-bottom: var(--padding-small);
     }
 }
+
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder           {@content}
@@ -440,3 +441,9 @@ $font_root: 'assets/fonts/';
   &:-ms-input-placeholder      {@content}
 }
 
+@mixin hover_text {
+    &:hover {
+        color: var(--color-accent);
+        text-decoration: underline;
+    }
+}

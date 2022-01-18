@@ -31,6 +31,7 @@
             font-family: var(--font-family-serif);
             @include font(28,30);
             padding-top: 10px;
+            @include hover_text;
         }
     }
 }
