@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SEDNO 1.0.0.1638213419112\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2022-01-17 17:29:35+00:00\n"
+"POT-Creation-Date: 2022-01-23 20:17:39+00:00\n"
 "PO-Revision-Date: 2022-01-03 11:45+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -371,51 +371,51 @@ msgstr "Adres URL filmu"
 msgid "Number of movies"
 msgstr "Liczba filmów"
 
-#: inc/class-sedno-theme.php:136
+#: inc/class-sedno-theme.php:129
 msgid "Submit Listing"
 msgstr "Dodaj ogłoszenie"
 
-#: inc/class-sedno-theme.php:433
+#: inc/class-sedno-theme.php:323
 msgid "Main Page Footer One"
 msgstr "Pierwsza stopka strony głównej"
 
-#: inc/class-sedno-theme.php:441
+#: inc/class-sedno-theme.php:331
 msgid "Main Page Footer Two"
 msgstr "Druga stopka strony głównej"
 
-#: inc/class-sedno-theme.php:449
+#: inc/class-sedno-theme.php:339
 msgid "After title of Lectures Archive Page"
 msgstr "Po tytule na stronie archiwum wykładów"
 
-#: inc/class-sedno-theme.php:459
+#: inc/class-sedno-theme.php:349
 msgid "After title of Debates Archive Page"
 msgstr "Po tytule na stronie archiwum debat"
 
-#: inc/class-sedno-theme.php:503 inc/class-sedno-theme.php:509
+#: inc/class-sedno-theme.php:393 inc/class-sedno-theme.php:399
 msgid "Visit out profile on %s"
 msgstr "Zobacz nasz profil społecznościowy na %s"
 
-#: inc/class-sedno-theme.php:571
+#: inc/class-sedno-theme.php:461
 msgid "First page"
 msgstr "Pierwsza strona"
 
-#: inc/class-sedno-theme.php:617
+#: inc/class-sedno-theme.php:507
 msgid "Last page"
 msgstr "Ostatnia strona"
 
-#: inc/class-sedno-theme.php:635 inc/class-sedno-theme.php:637
+#: inc/class-sedno-theme.php:525 inc/class-sedno-theme.php:527
 msgid "Posts navigation pages"
 msgstr "Nawigacja po stronach wpisów"
 
-#: inc/class-sedno-theme.php:656
+#: inc/class-sedno-theme.php:546
 msgid "Articles with tag"
 msgstr "Artykuły z tagiem"
 
-#: inc/class-sedno-theme.php:661
+#: inc/class-sedno-theme.php:551
 msgid "Our publications"
 msgstr "Nasze publikacje"
 
-#: inc/class-sedno-theme.php:664
+#: inc/class-sedno-theme.php:554
 msgid "Author"
 msgstr "Autor"
 
@@ -615,17 +615,17 @@ msgctxt "rewrite slug"
 msgid "lecture"
 msgstr "wyklad"
 
-#: inc/class-sedno-theme.php:124
+#: inc/class-sedno-theme.php:117
 msgctxt "login form title"
 msgid "Login"
 msgstr "Logowanie"
 
-#: inc/class-sedno-theme.php:127
+#: inc/class-sedno-theme.php:120
 msgctxt "login form title"
 msgid "Register"
 msgstr "Zarejestruj się"
 
-#: inc/class-sedno-theme.php:130
+#: inc/class-sedno-theme.php:123
 msgctxt "login form title"
 msgid "Lost Password"
 msgstr "Odzyskiwanie hasła"

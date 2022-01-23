@@ -213,7 +213,6 @@ class Sedno_Theme extends Sedno {
 		 * turn off iOS phone number scraping
 		 */
 		echo '<meta name="format-detection" content="telephone=no" />' . PHP_EOL;
-		echo '<meta name="msapplication-config" content="/browserconfig.xml" />' . PHP_EOL;
 		/**
 		 * preload fonts
 		 */
