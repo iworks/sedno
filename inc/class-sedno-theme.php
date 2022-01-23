@@ -22,12 +22,6 @@ class Sedno_Theme extends Sedno {
 			new Sedno_Cookie_Notice;
 		}
 		/**
-		 * PWA Class
-		 */
-		if ( ! is_admin() ) {
-			include_once 'class-sedno-pwa.php';
-			new Sedno_PWA;
-		}
 		/**
 		 * Most Important
 		 */
@@ -63,7 +57,6 @@ class Sedno_Theme extends Sedno {
 		add_filter( 'comment_form_default_fields', array( $this, 'remove_website_field' ) );
 		add_filter( 'get_site_icon_url', array( $this, 'get_site_default_icon_url' ), 10, 3 );
 		add_filter( 'login_headertext', array( $this, 'login_headertext' ) );
-		add_filter( 'site_icon_meta_tags', array( $this, 'site_icon_meta_tags' ) );
 		add_filter( 'the_content', array( $this, 'add_thumbnail_image' ) );
 		add_filter( 'get_the_archive_title', array( $this, 'archive_title' ), 10, 3 );
 		add_filter( 'excerpt_more', array( $this, 'excerpt_more' ) );
@@ -247,73 +240,6 @@ class Sedno_Theme extends Sedno {
 	}
 
 	/**
-	 * Favicons + meta settings
-	 *
-	 * @since 1.0.0
-	 */
-	public function site_icon_meta_tags( $meta_tags ) {
-		$meta_tags = array();
-		$icons     = array(
-			'icon'    => array(
-				16,
-				32,
-				96,
-			),
-			'apple'   => array(
-				57,
-				60,
-				72,
-				76,
-				114,
-				120,
-				152,
-				180,
-			),
-			'android' => array(
-				192,
-			),
-		);
-		foreach ( $icons as $type => $sizes ) {
-			foreach ( $sizes as $size ) {
-				$s    = sprintf( '%1$dx%1$d', $size );
-				$mask = $file = '';
-				switch ( $type ) {
-					case 'icon':
-						$file = sprintf( 'favicon-%s', $s );
-						$mask = '<link rel="icon" type="image/png" sizes="%1$s" href="%2$s" />';
-						break;
-					case 'apple':
-						$file = sprintf( 'apple-icon-%s', $s );
-						$mask = '<link rel="apple-touch-icon" sizes="%1$s" href="%2$s" />';
-						break;
-					case 'android':
-						$file = sprintf( 'android-icon-%s', $s );
-						$mask = '<link rel="apple-touch-icon" sizes="%1$s" href="%2$s" />';
-						break;
-				}
-				if ( ! empty( $mask ) && ! empty( $file ) ) {
-					$meta_tags[] = sprintf( $mask, $s, $this->get_favicon_url( $file ) );
-				}
-			}
-		}
-		$meta_tags[] = sprintf(
-			'<link rel="shortcut icon" href="%s" />',
-			$this->get_favicon_url( 'favicon', 'ico' )
-		);
-		$meta_tags[] = sprintf(
-			'<link rel="mask-icon" href="%s" color="#5bbad5" />',
-			$this->get_favicon_url( 'safari-pinned-tab', 'svg' )
-		);
-		$meta_tags[] = sprintf( '<meta name="msapplication-TileColor" content="%s">', esc_attr( $this->color_title ) );
-		$meta_tags[] = sprintf( '<meta name="theme-color" content="%s" />', esc_attr( $this->color_theme ) );
-		$meta_tags[] = sprintf(
-			'<meta name="msapplication-TileImage" content="%s" />',
-			$this->get_favicon_url( 'ms-icon-144x144' )
-		);
-		return $meta_tags;
-	}
-
-	/**
 	 * Handle "/favicon.json" request.
 	 *
 	 * @since 1.0.0
@@ -327,42 +253,6 @@ class Sedno_Theme extends Sedno {
 			return;
 		}
 		header( 'Location: ' . $this->get_favicon_url( 'favicon', 'ico' ) );
-		exit;
-	}
-
-	/**
-	 * Handle "/browserconfig.xml" request.
-	 *
-	 * @since 1.0.0
-	 */
-	public function browserconfig_xml() {
-		if (
-			! isset( $_SERVER['REQUEST_URI'] ) ) {
-			return;
-		}
-		if ( '/browserconfig.xml' !== $_SERVER['REQUEST_URI'] ) {
-			return;
-		}
-		header( 'Content-type: text/xml' );
-		echo '<' . '?xml version="1.0" encoding="utf-8"?' . '>';
-		echo PHP_EOL;
-		echo '<browserconfig>';
-		echo '<msapplication>';
-		echo '<tile>';
-		$sizes = array( 70, 150, 310 );
-		foreach ( $sizes as $size ) {
-			$url = $this->get_asset_url(
-				sprintf(
-					'icons/favicon/ms-icon-%1$dx%1$d.png',
-					$size
-				)
-			);
-			printf( '<square%1$dx%1$dlogo src="%2$s"/>', $size, esc_url( $url ) );
-		}
-		printf( '<TileColor>%s</TileColor>', $this->color_title );
-		echo '</tile>';
-		echo '</msapplication>';
-		echo '</browserconfig>';
 		exit;
 	}
 
