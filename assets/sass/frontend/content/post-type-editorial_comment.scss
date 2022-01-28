@@ -4,10 +4,12 @@ body {
     &.post-type-archive-editorial_comment {
         #primary {
             article {
-                display: grid;
-                grid-template-columns: 120px auto;
-                .entry-meta {
-                    line-height: 40.45px;
+                @media screen and (min-width: #{$width_m} ) {
+                    display: grid;
+                    grid-template-columns: 120px auto;
+                    .entry-meta {
+                        line-height: 40.45px;
+                    }
                 }
             }
         }

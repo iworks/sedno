@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: SEDNO 1.0.0.1642969059227\n"
+"Project-Id-Version: SEDNO 1.0.0.1643359960046\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sedno\n"
-"POT-Creation-Date: 2022-01-23 20:17:39+00:00\n"
+"POT-Creation-Date: 2022-01-28 08:52:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -366,55 +366,55 @@ msgstr ""
 msgid "Submit Listing"
 msgstr ""
 
-#: inc/class-sedno-theme.php:323
+#: inc/class-sedno-theme.php:322
 msgid "Main Page Footer One"
 msgstr ""
 
-#: inc/class-sedno-theme.php:331
+#: inc/class-sedno-theme.php:330
 msgid "Main Page Footer Two"
 msgstr ""
 
-#: inc/class-sedno-theme.php:339
+#: inc/class-sedno-theme.php:338
 msgid "After title of Lectures Archive Page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:349
+#: inc/class-sedno-theme.php:348
 msgid "After title of Debates Archive Page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:393 inc/class-sedno-theme.php:399
+#: inc/class-sedno-theme.php:392 inc/class-sedno-theme.php:398
 msgid "Visit out profile on %s"
 msgstr ""
 
-#: inc/class-sedno-theme.php:461
+#: inc/class-sedno-theme.php:460
 msgid "First page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:507
+#: inc/class-sedno-theme.php:506
 msgid "Last page"
 msgstr ""
 
-#: inc/class-sedno-theme.php:525 inc/class-sedno-theme.php:527
+#: inc/class-sedno-theme.php:524 inc/class-sedno-theme.php:526
 msgid "Posts navigation pages"
 msgstr ""
 
-#: inc/class-sedno-theme.php:546
+#: inc/class-sedno-theme.php:545
 msgid "Articles with tag"
 msgstr ""
 
-#: inc/class-sedno-theme.php:551
+#: inc/class-sedno-theme.php:550
 msgid "Our publications"
 msgstr ""
 
-#: inc/class-sedno-theme.php:554
+#: inc/class-sedno-theme.php:553
 msgid "Author"
 msgstr ""
 
-#: inc/class-sedno.php:212
+#: inc/class-sedno.php:142
 msgid "Add file"
 msgstr ""
 
-#: inc/class-sedno.php:254
+#: inc/class-sedno.php:184
 msgid "Remove file"
 msgstr ""
 
