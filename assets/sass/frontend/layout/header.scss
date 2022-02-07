@@ -125,10 +125,35 @@
         .menu {
             background-color: var(--color-white);
             position: absolute;
-            right: 70px;
+            right: 0;
+            left: 0;
+            top: 120px;
             border: 1px solid var(--color-gray-3);
+            z-index: 99999;
+            li {
+                padding: 0;
+                border: 0;
+                &.menu-item-has-children {
+                    > {
+                        a {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
             a {
                 padding: 10px;
+            }
+            ul {
+                position: static;
+                float: none;
+
+                a {
+                    padding-left: 2em;
+                    border: 0;
+                }
             }
 
         }
