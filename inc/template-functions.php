@@ -41,10 +41,11 @@ function sedno_single_post_article_header_style( $post_ID, $z_index ) {
 	$thumb        = apply_filters( 'iworks_aggresive_lazy_load_get_tiny_thumbnail', '', $thumbnail_id );
 	$color        = apply_filters( 'iworks_aggresive_lazy_load_get_dominant_color', '', $thumbnail_id );
 	printf(
-		' style="z-index:%1$d;background-color:#%2$s;background-image:url(%3$s)" data-src="%4$s" data-int5o5src="%4$s"',
+		' style="z-index:%1$d;%2$s;%3$s" data-src="%4$s" data-thumbnail-id="%5d$" ',
 		$z_index,
-		esc_attr( $color ),
-		esc_attr( $thumb ),
-		esc_url( get_the_post_thumbnail_url( $post_ID, 'full' ) )
+		empty( $color ) ? '' : sprintf( 'background-color:#%s', esc_attr( $color ) ),
+		empty( $thumb ) ? '' : sprintf( 'background-image:url(%s)', esc_attr( $thumb ) ),
+		esc_url( get_the_post_thumbnail_url( $post_ID, 'full' ) ),
+		$thumbnail_id
 	);
 }
