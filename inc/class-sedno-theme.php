@@ -185,12 +185,13 @@ class Sedno_Theme extends Sedno {
 	 * @since 1.0.0
 	 */
 	public function dequeue_scripts() {
-		if ( ! is_admin() ) {
-			wp_deregister_script( 'wp-embed' );
-			wp_deregister_script( 'jquery-migrate' );
-			wp_deregister_script( 'jquery' );
-			wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, '3.5.1' );
+		if ( is_admin() ) {
+			return;
 		}
+		wp_deregister_script( 'wp-embed' );
+		wp_deregister_script( 'jquery-migrate' );
+		wp_deregister_script( 'jquery' );
+		wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, '3.5.1' );
 	}
 
 	/**
@@ -202,6 +203,8 @@ class Sedno_Theme extends Sedno {
 		if ( is_admin() ) {
 			return;
 		}
+		wp_deregister_style( 'wp-block-library' );
+		wp_deregister_style( 'global-styles' );
 	}
 
 	/**
