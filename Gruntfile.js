@@ -46,6 +46,8 @@ module.exports = function(grunt) {
             "assets/css/frontend/font-family.css": "assets/sass/frontend/font-family.scss",
             "assets/css/frontend/layout.css": "assets/sass/frontend/layout.scss",
             "assets/css/frontend/content.css": "assets/sass/frontend/content.scss",
+            "assets/css/frontend/blocks-columns-style.css": "../../../wp-includes/blocks/columns/style.css",
+
             /**
              * Last at ALL!
              */

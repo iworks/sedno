@@ -16,6 +16,11 @@
             &:last-child {
                 margin-bottom: 0;
             }
+            &.email {
+                a {
+                    line-height: 2em;
+                }
+            }
         }
     }
     a {
